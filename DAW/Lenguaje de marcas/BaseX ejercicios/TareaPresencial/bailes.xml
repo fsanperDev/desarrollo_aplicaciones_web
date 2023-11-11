@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bailes SYSTEM "bailes-profesores.dtd" [
+    <!ENTITY % datos_bailes "INCLUDE">
+    <!ENTITY % datos_profesores "IGNORE">
+
+]>
+<bailes>
+<baile id="1">
+ <nombre>Tango </nombre>
+ <precio cuota="mensual" moneda="euro">27</precio>
+ <plazas>20</plazas>
+ <comienzo>2016-01-01</comienzo>
+ <fin>2016-12-31</fin>
+ <profesor>p2</profesor>
+ <sala>1</sala>
+</baile>
+
+<baile id="2">
+ <nombre>Cha-cha-cha </nombre>
+ <precio cuota="trimestral" moneda="euro">80</precio>
+ <plazas>18</plazas>
+ <comienzo>2016-07-01</comienzo>
+ <fin>2016-10-01</fin>
+ <profesor>p3</profesor>
+ <sala>1</sala>
+</baile>
+
+<baile id="3">
+ <nombre>Rock </nombre>
+ <precio cuota="mensual" moneda="euro">30</precio>
+ <plazas>15</plazas>
+ <comienzo>2016-10-15</comienzo>
+ <fin>2017-04-14</fin>
+ <profesor>p1</profesor>
+ <sala>1</sala>
+</baile>
+
+<baile id="4">
+ <nombre>Merengue </nombre>
+ <precio cuota="trimestral" moneda="dolares">75</precio>
+ <plazas>12</plazas>
+ <comienzo>2017-01-06</comienzo>
+ <fin>2017-06-15</fin>
+ <profesor>p2</profesor>
+ <sala>2</sala>
+</baile>
+
+<baile id="5">
+ <nombre>Salsa </nombre>
+ <precio cuota="mensual" moneda="dolares">32</precio>
+ <plazas>10</plazas>
+ <comienzo>2017-02-01</comienzo>
+ <fin>2017-06-30</fin>
+ <profesor>p3</profesor>
+ <sala>2</sala>
+</baile>
+
+<baile id="6">
+ <nombre>Pasodoble </nombre>
+ <precio cuota="anual" moneda="euro">3200</precio>
+ <plazas>8</plazas>
+ <comienzo>2016-01-06</comienzo>
+ <fin>2016-08-31</fin>
+ <profesor>p1</profesor>
+ <sala>2</sala>
+</baile>
+</bailes>

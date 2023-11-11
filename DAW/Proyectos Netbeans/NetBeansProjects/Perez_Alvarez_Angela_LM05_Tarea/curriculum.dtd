@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- elemento raiz-->
+<!ELEMENT curriculum (datos_personales, objetivo, formacion, experiencias?, habilidades?)>
+
+<!-- datos personales -->
+<!ELEMENT datos_personales (nombre, apellido , apellido?, fechaNacimiento, direccion,
+email+, telefono+, web?, profesion?, titulo?, imagen)>
+
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT apellido (#PCDATA) >
+<!ELEMENT fechaNacimiento (#PCDATA) >
+<!ELEMENT direccion (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT telefono (#PCDATA) >
+<!ELEMENT web (#PCDATA) >
+<!ELEMENT profesion (#PCDATA) >
+<!ELEMENT titulo (#PCDATA) >
+<!ELEMENT imagen (#PCDATA)>
+
+<!-- objetivo -->
+<!ELEMENT objetivo (#PCDATA) >
+
+<!--formacion-->
+<!ELEMENT formacion (estudios*)>
+<!ELEMENT estudios (entidad, titulo, fechaInicio, fechaFin)>
+
+<!ELEMENT entidad (#PCDATA) >
+<!ELEMENT fechaInicio (#PCDATA) >
+<!ELEMENT fechaFin (#PCDATA) >
+
+<!-- experiencias -->
+<!ELEMENT experiencias (experiencia*)>
+<!ELEMENT experiencia (entidad, titulo, fechaInicio, fechaFin, descripcion?)>
+<!ELEMENT descripcion (item+)>
+
+<!-- <!ELEMENT entidad (#PCDATA) > ya declarado anteriormente -->
+<!-- <!ELEMENT titulo (#PCDATA) > ya declarado anteriormente --> 
+<!-- <!ELEMENT fechaInicio (#PCDATA) > ya declarado anteriormente -->
+<!-- <!ELEMENT fechaFin (#PCDATA) > ya declarado anteriormente -->
+<!ELEMENT item (#PCDATA) >  
+
+<!-- habilidades -->
+<!ELEMENT habilidades (habilidad*)>
+<!ELEMENT habilidad (nombre, valor+)>
+<!-- <!ELEMENT nombre (#PCDATA) > ya declarado anteriormente -->
+<!ELEMENT valor (#PCDATA) >
+<!ATTLIST valor nivel (alto|medio|básico) "básico" >

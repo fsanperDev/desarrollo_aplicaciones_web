@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* declaracion de variables para la paleta */
+:root {
+    --MiAmarillo: #ffcc00;
+    --MiNaranja: #cc3300;
+    --MiAzul: #6699cc;
+    --MiAzulOscuro: #000066;
+}
+
+/* valores por defecto para todos los elementos */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/* 	    =======================================================================
+		Estilos y posicion para la caja principal "body" que contiene las cajas
+		header (cabecera), aside (barra lateral), article (caja) y footer (pie)
+*/
+/* -- BODY -- */
+/* Asignacion de estilos e imagen de fondo a la etiqueta body */
+body {
+	background: url(img/fondo.jpg) center center / cover no-repeat fixed;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Clase contenedor principal que alinea verticalm el header+conten.central+footer */
+.flexbody {
+	display: flex;
+
+  	justify-content: center;
+
+	flex-direction: column;
+}
+
+/* -- HEADER -- */
+/* posicion y dimensiones para la imagen de cabecera */
+header > img {
+	width: 100%;
+	display: flex;
+  	justify-content: center;
+}
+
+/* menu superior (primary menu) */
+/* contenedor para el menu superior */
+div.menuNav {
+	width:100%;
+	border-top: 1px solid #222;
+}
+/* eliminamos los marcadores de listas */
+div.menuNav ul, div.menuNav li {
+	list-style:none;
+}
+/* para 4 opciones de menu ponemos un ancho del 25% */
+nav li.menu {
+	position:relative;
+	float:left;
+	width:25%;
+}
+/* definimos el estilo de cualquier enlace dentro de nav y dentro de li (en cualquier posicion, no solo adyacente) */
+.nav li a {
+	background-color: rgb(34, 75, 154);		 	/* original */
+	text-transform: uppercase;  				/* original */
+    box-shadow: rgb(51, 51, 51) 2px 2px 1px;	/* original */
+    line-height: 2em;							/* original */
+    text-align: center;							/* original */
+    color: var(--MiAmarillo);
+    text-shadow: 1px 1px 1px #000;
+	text-decoration:none;
+	padding:10px 0px 10px 0px;
+	display:block;
+	transition: transform .2s;
+
+}
+/* definimos el estilo de cualquier enlace dentro de nav y dentro de li al pasar el raton */
+.nav > li a:hover {
+	background-color: var(--MiAzulOscuro);
+	transform: scaleY(1.1);
+	text-shadow: 1px 1px 1px #000;
+	letter-spacing: 5px;
+	}
+/* definimos el estilo de los enlaces activos, por defecto pag. inicio (home) */
+.nav li a:active {
+	background-color: var(--MiAzulOscuro);
+}
+
+/* ocultamos cualquier ul anidado con display: none */
+.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:100%;
+}
+/* mostramos cualquier ul anidado al pasar el ratón con display: block
+ y añadiendo al selector la pseudo-clase dinámica :hover */
+.nav li:hover > ul {
+	display:block;
+}
+
+.nav li ul li {
+	position:relative;
+}
+
+.nav li ul li ul {
+	right:100%;
+	top:0px;
+}
+
+/* clase para centrar el contenedor central */
+.centralpos {
+	display: inline-flex;
+	justify-content: center;
+
+}
+
+/* Seccion central entre header y footer, contiene dos cajas: aside y article */
+.centralcontainer {
+	width: 90%;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	min-height: 100vh;
+}
+
+/* -- ASIDE -- */
+/* Barra lateral derecha (aside) */
+.cajaIzquierda {
+	display: inline-flex;
+	flex-grow: 1;
+	background-color: var(--MiNaranja);
+}
+div.asidebox {
+	margin: 2em;
+}
+/* -- ARTICLE -- */
+/* Posiciomamiento y estilo del cuerpo central (article) */
+.cajaDerecha {
+	display: inline-flex;
+
+	order: 1;		/* aseguramos q aparezca siempre en 2º lugar */
+	flex-grow: 4;	/* escalamos el tamaño 4 veces respecto a la barra lateral */
+	background-color: var(--MiAzul);
+}
+div.articlebox {
+	margin: 2em;
+}
+
+/* -- FOOTER -- */
+/* Estilo del pie de pagina (footer) */
+footer {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	background-color: var(--MiAmarillo);
+}
+div.footerbox {
+	margin: 2em;
+}
+
+
+
+/*
+img {
+    -webkit-filter: grayscale(100%);  Safari 6.0 - 9.0 */
+   /* filter: grayscale(100%);
+}*/
+
+
+
+/*body {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-content: stretch;
+}*/
+/* Estilo de la sección
+section{
+  display: flex;
+  flex-flow: row wrap;
+}*/
+/* Estilo del articulo
+article{
+  display: flex;
+  flex-flow: column wrap;
+}	*/
+/* barra lateral
+aside{
+  display: flex;
+  flex-flow: row wrap;
+}*/
+
+
+/* -- MEDIA QUERIES -- */
+/* =============================
+    Mobile Styles: 0px to 480px
+   =============================
+*/
+@media only screen and (max-width: 480px) {
+  
+}
+/* ================================
+   Tablet Styles: 481px and greater
+   ================================
+*/
+@media only screen and (min-width: 481px) {
+  /*
+}*/
+/* =================================
+   Desktop Styles: 769px and greater
+   =================================
+*/
+@media only screen and (min-width: 769px) {
+
+}

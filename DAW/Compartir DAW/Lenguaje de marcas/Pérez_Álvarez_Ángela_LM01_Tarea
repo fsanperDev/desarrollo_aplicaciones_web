@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plantilla>
+<plantilla>
+  <posicion>
+    <jefeproyecto>
+      <nombre>Hugo</nombre>
+      <apellido1>Brown</apellido1>
+      <apellido2>Garcia</apellido2>
+      <direccion></direccion>
+      <contacto>
+        <movil>655165584</movil>
+        <tfijo>995654321</tfijo>
+        <email>hbrown@gmail.com</email>
+      </contacto>
+      <identificacion id="001">hb</identificacion>
+    </jefeproyecto>
+    <gerente>
+      <nombre></nombre>
+      <apellido1></apellido1>
+      <apellido2></apellido2>
+      <direccion></direccion>
+      <contacto>
+      <movil></movil>
+      <tfijo>995654321</tfijo>
+      <email></email>
+      </contacto>
+      <identificacion id="002"></identificacion>
+    </gerente>
+    <programador>
+      <nombre></nombre>
+      <apellido1></apellido1>
+      <apellido2></apellido2>
+      <direccion></direccion>
+      <contacto>
+      <movil></movil>
+      <tfijo>995654321</tfijo>
+      <email1></email1>
+      </contacto>
+      <identificacion id="003"></identificacion>
+    </programador>
+    <analista>
+      <nombre></nombre>
+      <apellido1></apellido1>
+      <apellido2></apellido2>
+      <direccion></direccion>
+      <contacto>
+      <movil></movil>
+      <tfijo>995654321</tfijo>
+      <email1></email1>
+      </contacto>
+      <identificacion id="003"></identificacion>
+    </analista>
+    <trabajador>
+        <nombre></nombre>
+      <apellido1></apellido1>
+      <apellido2></apellido2>
+      <direccion></direccion>
+      <contacto>
+      <movil></movil>
+      <tfijo>995654321</tfijo>
+      <email1></email1>
+      </contacto>
+    <identificacion id="003"></identificacion>
+    </trabajador>
+    </posicion>
+  </plantilla>

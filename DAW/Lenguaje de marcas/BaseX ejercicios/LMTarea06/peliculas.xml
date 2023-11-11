@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+    <pelicula cod='BGH'>
+        <titulo>Big Hero 6</titulo>
+        <duracion>108</duracion>
+        <anyo>2014</anyo>
+        <genero>Animación</genero>
+        <precio_alquiler>3.00</precio_alquiler>
+    </pelicula>
+    <pelicula cod='CRS'>
+        <titulo>Cars2: Una aventura de espías</titulo>
+        <duracion>106</duracion>
+        <anyo>2011</anyo>
+        <genero>Animación</genero>
+        <precio_alquiler>2.50</precio_alquiler>
+    </pelicula>
+    <pelicula cod='FRZ'>
+        <titulo>Frozen: El reino del hielo</titulo>
+        <duracion>102</duracion>
+        <anyo>2013</anyo>
+        <genero>Animación</genero>
+        <precio_alquiler>2.50</precio_alquiler>
+    </pelicula>
+    <pelicula cod='HBB'>
+        <titulo>El Hobbit: La batalla de los cinco ejércitos</titulo>
+        <duracion>160</duracion>
+        <anyo>2014</anyo>
+        <genero>Aventura</genero>
+        <precio_alquiler>3.00</precio_alquiler>
+    </pelicula>
+    <pelicula cod='HRL'>
+        <titulo>Ahora los padres son ellos</titulo>
+        <duracion>98</duracion>
+        <anyo>2010</anyo>
+        <genero>Comedia</genero>
+        <precio_alquiler>3.00</precio_alquiler>
+    </pelicula>
+    <pelicula cod='LRF'>
+        <titulo>El Orfanato</titulo>
+        <duracion>100</duracion>
+        <anyo>2007</anyo>
+        <genero>Terror</genero>
+        <precio_alquiler>1.50</precio_alquiler>
+    </pelicula>
+    <pelicula cod='MPS'>
+        <titulo>Lo imposible</titulo>
+        <duracion>107</duracion>
+        <anyo>2012</anyo>
+        <genero>Drama</genero>
+        <precio_alquiler>2.00</precio_alquiler>
+    </pelicula>
+    <pelicula cod='NCH'>
+        <titulo>Noche en el museo: El secreto del Faraón</titulo>
+        <duracion>97</duracion>
+        <anyo>2014</anyo>
+        <genero>Aventura</genero>
+        <precio_alquiler>3.00</precio_alquiler>
+    </pelicula>
+    <copias>
+        <copia_pelicula id_copia='101'>
+            <estado>funciona</estado>
+            <cod_pelicula>CRS</cod_pelicula>
+        </copia_pelicula>
+        <copia_pelicula id_copia='102'>
+            <estado>funciona</estado>
+            <cod_pelicula>CRS</cod_pelicula>
+        </copia_pelicula>
+        <copia_pelicula id_copia='103'>
+            <estado>funciona</estado>
+            <cod_pelicula>FRZ</cod_pelicula>
+        </copia_pelicula>
+        <copia_pelicula id_copia='104'>
+            <estado>estropeada</estado>
+            <cod_pelicula>FRZ</cod_pelicula>
+            <observaciones>Rayado</observaciones>
+        </copia_pelicula>
+        <copia_pelicula id_copia='105'>
+            <estado>funciona</estado>
+            <cod_pelicula>MPS</cod_pelicula>
+        </copia_pelicula>
+        <copia_pelicula id_copia='106'>
+            <estado>funciona</estado>
+            <cod_pelicula>HBB</cod_pelicula>
+        </copia_pelicula>
+        <copia_pelicula id_copia='107'>
+            <estado>funciona</estado>
+            <cod_pelicula>HBB</cod_pelicula>
+        </copia_pelicula>
+        <copia_pelicula id_copia='108'>
+            <estado>funciona</estado>
+            <cod_pelicula>BGH</cod_pelicula>
+        </copia_pelicula>
+        <copia_pelicula id_copia='109'>
+            <estado>funciona</estado>
+            <cod_pelicula>BGH</cod_pelicula>
+        </copia_pelicula>
+        <copia_pelicula id_copia='110'>
+            <estado>funciona</estado>
+            <cod_pelicula>NCH</cod_pelicula>
+        </copia_pelicula>
+        <copia_pelicula id_copia='111'>
+            <estado>estropeada</estado>
+            <cod_pelicula>NCH</cod_pelicula>
+            <observaciones>Disco sucio</observaciones>
+        </copia_pelicula>
+        <copia_pelicula id_copia='112'>
+            <estado>funciona</estado>
+            <cod_pelicula>HRL</cod_pelicula>
+        </copia_pelicula>
+        <copia_pelicula id_copia='113'>
+            <estado>perdida</estado>
+            <cod_pelicula>LRF</cod_pelicula>
+            <observaciones>No devuelta</observaciones>
+        </copia_pelicula>
+   </copias>
+</peliculas>
+    

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>UD4 tarea ejercicio C</title>
+  </head>
+  <body>
+    <!-----
+      PARTE 1
+      ---->
+    <article>
+      <picture>
+        <img src="./images/imagen1.webp" alt="imagen1"/>
+      </picture>
+    </article>
+
+    <!-----
+      PARTE 2
+      ---->
+    <article>
+      <picture>
+        <source srcset="./images/imagen2.webp"/>
+        <img src="./images/imagen2.png" alt="imagen2"/>
+      </picture>
+      <!--  Utilizamos la etiqueta <source/> para que, en caso de que cumpla los requisitos cargue la imagen,
+            en este apartado, si se cumplen las condiciones se cargará la imagen de la etiqueta <source/>, en
+            caso de que no se cumpliera pasaría a la siguiente línea, en este caso la etiqueta <img> que esta
+            como última opción. Se pueden colocar varias etiquetas <source/> seguidas hasta que llegue a la etiqueta <img/> como opcion final.
+            Para que esto funcione deben de estar dentro de la etiqueta contenedora <picture>.
+          -->
+    </article>
+  </body>
+</html>

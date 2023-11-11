@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<project name="TareaOnline2" default="compilar">
+<!-- Cree un directorio llamado "compilado" --> 
+	<target name="init">
+	  <mkdir dir="compilado"/>
+	</target>
+<!-- Deba de compilar todos los archivos del directorio "origen" y almacenarlos en el directorio "compilado" -->
+	<target name="compile" depends="init">
+	  <javac srcdir="origen" destdir="compilado"/>
+	</target>	
+<!-- Cree un directorio en "distribucion/lib" -->
+	<target name="init">
+	  <mkdir dir="distribucion/lib"/>
+	</target>
+<!-- En este directorio se debe de crear un fichero "jar" de forma que contenga todas las clases compiladas del directorio "compilado" -->
+<!--  El archivo jar se nombrará "daw_nombre_apellidos_yyyyMMdd.jar", donde yyyyMMdd corresponde a la fecha 
+actual -->
+	<target name="build" depends="compile">
+	  <jar destfile="distribucion/lib/daw_angela_perez_alvarez_20190202.jar" basedir="compilado"/>
+	</target>
+<!-- Borre posteriormente el directorio "compilado" y todo su contenido -->
+	<target name="clean">
+	  <delete dir="compilado"/>
+	</target>
+</project>

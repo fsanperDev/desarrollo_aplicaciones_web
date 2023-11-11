@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE socios SYSTEM "Act2.1.dtd">
+
+  <socios>
+        <socio>
+            <datos_personales>
+                <cod_socio>AB-123</cod_socio>
+                <nombre>Alberto</nombre>
+                <apellidos>Gomez</apellidos>
+                <localidad>Alcala de Henares</localidad>
+                <provincia>Madrid</provincia>
+                <email>AG@gmail.com</email>
+                <email>AGmez@gmail.com</email>
+                <fecha_de_socio>14/4/2017</fecha_de_socio>
+            </datos_personales>
+            <juego>
+                <nombre_juego>The elder Scrol V: Skyrim</nombre_juego>
+                <cod_juego>PC05</cod_juego>
+                <plataforma plat='PC'>PC</plataforma>
+                <estreno>2011</estreno>
+                <adquisicion>16/4/2017</adquisicion>
+                <estado>bueno</estado>
+            </juego>
+            <juego>
+                <nombre_juego>Blodborn</nombre_juego>
+                <cod_juego>PS466</cod_juego>
+                <plataforma plat='PS4'>PS4</plataforma>
+                <estreno>21/9/2015</estreno>
+                <adquisicion>23/6/2017</adquisicion>
+                <estado>bueno</estado>
+                <online></online>
+                <multijugador></multijugador>
+            </juego>
+            <juego>
+                <nombre_juego>Halo Guardians</nombre_juego>
+                <cod_juego>XBOX05</cod_juego>
+                <plataforma plat='XBOX'>XBOX</plataforma>
+                <estreno>27/10/2015</estreno>
+                <adquisicion>06/12/2017</adquisicion>
+                <estado>bueno</estado>
+                <online></online>
+                <multijugador></multijugador>
+            </juego>
+        </socio>
+ </socios>

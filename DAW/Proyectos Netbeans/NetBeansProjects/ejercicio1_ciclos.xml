@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ejercicio1_ciclos.xsl"?>
+<ies nombre="IES Cristóbal de Monroy" web="http://www.iescristobaldemonroy.es" >
+  <ciclos>
+    <ciclo id="ASIR">
+      <nombre>Administración de Sistemas Informáticos en Red</nombre>
+      <grado>Superior</grado>
+      <decretoTitulo año="2009" />
+    </ciclo>
+    <ciclo id="DAW">
+      <nombre>Desarrollo de Aplicaciones Web</nombre>
+      <grado>Superior</grado>
+      <decretoTitulo año="2010" />
+    </ciclo>
+    <ciclo id="DAM">
+      <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+      <grado>Superior</grado>
+      <decretoTitulo año="2010" />
+    </ciclo>
+    <ciclo id="SMR">
+      <nombre>Sistemas Microinformáticos y Redes</nombre>
+      <grado>Medio</grado>
+      <decretoTitulo año="2008" />
+    </ciclo>
+  </ciclos>
+</ies>
+<!--
+ejercicio 1:
+    Mostrar los nombres de los ciclos sin etiquetas.
+    Mostrar en párrafos cada uno de los nombres de los ciclos.
+    Mostrar en una lista sin numerar los nombres de los ciclos y entre paréntesis su grado.
+    Mostrar en una lista numerada los nombres de los ciclos ordenados alfabéticamente de manera descendente y entre paréntesis su grado.
+    Mostrar en una etiqueta H1 el nombre del instituto y luego en una tabla con su fila encabezado las siguientes columnas, nombre del ciclo y año. Si el año es mayor al 2009 la letra será de color verde, si es igual al 2009 de color azul y si es menor al 2009 de color rojo.
+-->

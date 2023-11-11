@@ -1,0 +1,27 @@
+#tablero {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#tablero td {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+#div_botones {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.resalte {
+  background-color: red;
+  color: white;
+}

@@ -1,0 +1,82 @@
+ETIQUETAS DE LA UD5
+
++++++   Animación CSS3  +++++++
+- Para que una imagen o texto se le aplique la animación, hay que aplicarle en su ID el tag 'transition' ej:
+
+nav#topLinks a {
+ color: rgb(255, 255, 255);
+ font-size: 1em;
+ letter-spacing: 0em;
+ text-shadow: rgba(0, 0, 0, 1) 1px -1px 1px;
+ transition: color 1.5s ease-in 0.5s,
+           font-size 2s ease,
+           letter-spacing 2s ease-out,
+           text-shadow 2s cubic-bezier(0.6, 0, 0.8, 0.5);
+}
+
+- Para que la animación se produzca no debe de colocarse en el tag con a:hover, lo correcto es así para que se produzca una transicion:
+
+nav#topLinks a {
+ color: rgb(255, 255, 255);
+ font-size: 1em;
+ letter-spacing: 0em;
+ text-shadow: rgba(0, 0, 0, 1) 1px -1px 1px;
+ transition: color 1.5s ease-in 0.5s,
+           font-size 2s ease,
+           letter-spacing 2s ease-out,
+           text-shadow 2s cubic-bezier(0.6, 0, 0.8, 0.5);
+}
+
+nav#topLinks a:hover {
+ color: rgb(255, 183, 25);
+ font-size: 3em;
+ letter-spacing: 0.1em;
+ text-shadow: rgba(0, 0, 0, 0.5) 15px -3px 8px;
+}
+
+TAG --> transicion: property duration timing-function; EJ: transition: background 4s linear;
+<< timing-function >>
+  	ease: (the default)
+    ease-in: La transicion empieza lento.
+    ease-out: La transicion termina lento.
+    ease-in-out: La transicion empieza normal, a la mitad baja la velocidad y alfinal vuelve normal.
+    linear: La transicion es constante.
+
+- Otra forma de animar en CSS es por keyframes, como en el siguiente ejemplo.
+Creamos lo que queremos que haga, (spin es el nombre).
+  @keyframes spin {
+   0% {transform: rotate(0deg);}
+   100% {transform: rotate(360deg);}
+  }
+Y lo aplicamos al Tag correspondiente.
+  video {
+   animation: spin 4s linear infinite;
+  }
+
++++++++   CANVAS  ++++++++
+- Empezando en el HTML, utilizamos la etiqueta <canvas> en el <body>, como el código de canvas se escribe como un scripts debemos de poner tambien la etiqueta <script> abajo del todo. Quedaria de la siguiente manera:
+    <canvas id="canvas" width="300" height="400"></canvas>
+    <script type="text/javascript" src="scripts.js"> </script>
+
+- Ahora sigamos con lo que se pondría en el script. En la etiqueta <canvas> pusimos un acho y alto ya que canvas es como un lienzo y se trabaja con coordenadas.
+- Resumen de lineas utilizadas en canvas:
+
+   let --> Para definir una variable.
+   ctx.font --> Para la tipografia (ej: ctx.font = "bold 60px sans-serif";).
+   function 'Nombre de la funcion'() {} --> Para crear una funcion.
+   ---  Lineas  ----
+    strokeStyle --> Color.
+     lineWidth --> Grosor de la linea (ej: ctx.lineWidth = 3;).
+     beginPath --> Marca el comienzo de la ruta.
+     moveTo --> Coordenada de inicio.
+     lineTo --> siguiente coordenada.
+     closePath  --> Fin de la ruta.
+     stroke () --> ???
+     lineCap --> Indica como finaliza la línea, tiene 3 valores "square", "butt" y "round"
+     (ej: ctx.lineCap = "round";)
+     fillStyle --> Selecciona color.
+     fill --> Aplica el color seleccionado con fillStyle.
+     rect --> Para hacer un rectangulo o cuadrado (ej: ctx.rect(20, 20, 150, 100);).
+     strokeRect --> Dibuja el rectangulo sin relleno(sin color en el trazo).
+     strokeStyle --> Aplica color a las líneas del trazado.
+     fillrect --> Dibuja el rectangulo relleno(ej: ctx.fillRect(20, 20, 150, 100);).

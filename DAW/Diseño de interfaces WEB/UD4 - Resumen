@@ -1,0 +1,72 @@
+ETIQUETAS DE LA UD4
+
++++ Etiquetas para las imagenes:  +++
+
+- La etiqueta <figure> se utiliza para agregar contenido variado a una imagen, como una descripción debajo de
+la imagen. La etiqueta <figcaption> es la qeu incluye la descripción, <figure> actua como un contenedor.
+
+    <figure>
+      <img src="tb_komatsu.png" alt="family portrait" usemap="#family_map"/>
+        <figcaption>(L-R): Ikko, Mika, Hiroji, Genta, Suzuko </figcaption>
+    </figure>
+
+- Background styles:
+background-repeat: repeat;  --> La imagen está en mosaico tanto horizontal y verticalmente.
+background-repeat: repeat-x;  --> La imagen esta en mosaico horizontal.
+background-repeat: repeat-y;  --> La imagen esta en mosaico verticalmente.
+background-repeat: no-repeat;  --> La imagen no esta en mosaico.
+background-repeat: round;  --> La imagen de fondo está en mosaico y redimensionado para caber en el contenedor a
+número infinito de veces.
+background-repeat: space;  --> La imagen de fondo es en mosaico con espacios para caber un numero infinito de veces.
+
+También podemos aplicarles varias opciones a varias imagenes de un mismo fondo, poniendoles las opciones antes de acabar la sentencia.
+    article {
+     background: url(tb_back2.png) bottom right / 15% no-repeat content-box,
+     url(tb_back3.png) bottom left / 15% no-repeat content-box,
+     url(tb_back4.png) 100%/cover no-repeat,
+     rgb(211, 211, 211);
+    }
+
+- La etiqueta <map> se utiliza para definir un mapa de imagen (imagen con areas seleccionables).
+    <map name=”text”>
+      hotspots
+    </map>
+El atributo 'name' el el nombre por el que se conocera todo lo que contiene la etiqueta map, cuando queramos aplicar la confuguración de map pondremos el atributo usemap="#NombreQueHemosDadoEnElAtributoDeMap" dentro de la etiqueta <img>.
+
+  <map name=”family_map”>
+   <area shape=”rect” coords=”74,74,123,141” href=”tb_ikko.html” alt=”Ikko Komatsu” />
+   <area shape=”rect” coords=”126,109,177,172” href=”tb_mika.html” alt=”Mika Komatsu” />
+  </map>
+
+  shape: Atributo que define como se introduciran las coordenadas, si es "rect" entonces coords=”left,top,right,bottom” si es "circle" entonces  coords=”x,y,radius”, shape=”poly” coords=”x1,y1,x2,y2,…”
+  y shape=”default” coords=”0,0,width,height”.
+
+
+  +++ Etiquetas para el audio:  +++
+
+- Para implementar audio en una pagina web utilizamos la etiqueta <audio>.
+    <audio src=”url” attributes />
+  Atributos:
+      - autoplay  --> Empieza a sonar en cuanto carga la pagina.
+      - controls  --> El usuario tiene contrl sobre la pista.
+      - loop  --> Reinicia la pista automaticamente en cuanto acaba.
+      - muted  --> Especifica que la salida de audio debe estar silenciada.
+      - preload=”auto|metadata|none”  --> Especifica si el clip multimedia debe ser precargado por el navegador, donde el tipo es auto (para cargar todo el clip), metadata (para precargar solo datos descriptivos sobre el clip), o none (no para precargar el clip multimedia).
+
+  Ej: <audio src=”cp_overture.mp3” autoplay loop />
+Para controlar que si un navegador no puede reproducir un tipo de audio seria así:
+    <audio controls>
+      <source src="cp_overture.mp3" type="audio/mp3" />
+      <source src="cp_overture.ogg" type="audio/ogg" />
+      <embed src=”cp_overture.mp3” width=”250” height=”50” controller=”yes” autoplay=”no” showcontrols=”yes” autostart=”no”/>
+    </audio>
+
+  +++ Etiquetas para el video:  +++
+
+- Para implementar videos utilizamos la etiqueta <video> Ej:
+    <video controls>
+      <source src="cp_dance.mp4" type="video/mp4" />
+      <source src="cp_dance.webm" type="video/webm" />
+      <p><em>To play this video clip, your browser needs to support HTML5.</em></p>
+    </video>
+  Utilizamos la etiqueta <source> para controlas que el navegador pueda reproducir el video, y si además le agregamos el atributo poster="" a <video> se pondra la imagen indicada de portada en el video.

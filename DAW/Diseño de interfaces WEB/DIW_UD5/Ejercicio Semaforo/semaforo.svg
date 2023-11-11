@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"
+ height="320px" width="140px" >
+ <title>Primary Color Stoplight</title>
+ <!-- El codigo para dibujar empieza aquí -->
+<!--  <rect x="20" y="20" width="100" height="280" fill="blue" stroke="black" stroke-width="3" /> -->
+  <!-- fill = interiro de la imagene
+       stroke = borde -->
+  <!--                          Antes
+  <circle cx="70" cy="80" r="30" fill="red" stroke="black" stroke-width="2" />
+  <circle cx="70" cy="160" r="30" fill="yellow" stroke="black" stroke-width="2" />
+  <circle cx="70" cy="240" r="30" fill="#40CC40" stroke="black" stroke-width="2" />
+                               Despues                                           -->
+<!-- Agrupar un conjunto de elementos
+  <g stroke="black" stroke-width="2">
+    <circle cx="70" cy="80" r="30" fill="red" />
+    <circle cx="70" cy="160" r="30" fill="yellow" />
+    <circle cx="70" cy="240" r="30" fill="#40CC40"/>
+  </g> -->
+</svg>

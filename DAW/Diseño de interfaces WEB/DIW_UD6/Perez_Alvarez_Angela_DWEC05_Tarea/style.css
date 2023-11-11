@@ -1,0 +1,38 @@
+#tablero {
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 35px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+body{
+  text-align: center;
+}
+
+#tablero td {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+
+#zonaTitulo, #zonaTablero, #zonaBotones {
+  text-align: center;
+}
+
+.fondoAzul{
+  background-color: blue;
+  color: white;
+}
+
+.fondoVerde{
+  background-color: green;
+  color: white;
+}
+
+.fondoBlanco{
+  background-color: white;
+  color: black;
+}

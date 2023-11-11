@@ -1,0 +1,11 @@
+table{
+    align-self: auto;
+    border: 3px;
+    border-color: black;
+    padding: 5%;
+    margin: auto;
+}
+tr{
+    margin: auto;
+    padding: 20px;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Micanal</title>
+  <subtitle>Estandar Atom</subtitle>
+  <link href="http://www.lenguajedemarcas.local/micanal.atom" rel="self"/>
+  <updated>2017-03-12T10:00:00-05:00</updated>
+  <author><name>Angela Perez</name></author>
+  <id>http://www.lenguajedemarcas.local</id>
+  
+  <entry>
+    <title>Ejemplo HTML+CSS</title>
+    <link href="https://librosweb.es/libro/css/capitulo_1/como_incluir_css_en_un_documento_xhtml.html" />
+    <id>https://librosweb.es/libro/css/capitulo_1/como_incluir_css_en_un_documento_xhtml.html</id>
+    <updated>2017-03-12T10:00:00-05:00</updated>
+    <summary>Ejemplo de elaboracion de Plantillas HTML+CSS</summary>
+    <author><name>Angela</name></author>
+  </entry>
+
+  <entry>
+    <title>Manual HTML</title>
+    <link href="https://www.hazunaweb.com/curso-de-html/estructura-basica-una-pagina-web/" />
+    <id>https://www.hazunaweb.com/curso-de-html/estructura-basica-una-pagina-web/</id>
+    <updated>2017-03-12T10:00:00-05:00</updated>
+    <summary>Manual para aprender desde cero html</summary>
+    <author><name>Angela</name></author>
+  </entry>
+
+  <entry>
+    <title>Noticias</title>
+    <link href="http://www.lenguajedemarcas.local/noticias.html" />
+    <id>http://www.lenguajedemarcas.local/noticias.html</id>
+    <updated>2017-03-12T10:00:00-05:00</updated>
+    <summary>Mantente informado</summary>
+    <author><name>Angela</name></author>
+  </entry>
+
+  <entry>
+    <title>Logo</title>
+    <link href="http://icons.iconarchive.com/icons/sicons/basic-round-social/512/rss-icon.png" />
+    <id>http://icons.iconarchive.com/icons/sicons/basic-round-social/512/rss-icon.png</id>
+    <updated>2017-03-12T10:00:00-05:00</updated>
+    <summary>Imagen del logo</summary>
+    <author><name>Angela</name></author>
+  </entry>
+</feed>
+

@@ -1,0 +1,57 @@
+body {
+    margin: 0 auto;
+    width: 800px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    width: 3px;
+    height: 30px;
+}
+
+#icon {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+}
+
+img {
+    width: 35px;
+    height: 35px;
+}
+
+#volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 1.5em;
+    width: 40px;
+}
+
+.verde {
+    background-color: darkgreen;
+}

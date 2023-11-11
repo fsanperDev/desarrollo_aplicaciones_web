@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario de registro en lso cursos online</title>
+  </head>
+  <body>
+    <h1>Formulario de registro</h1>
+    <form class="" action="index.html" method="post">
+      <label for="nombre">Nombre: </label>
+      <input type="text" name="nombre" id="nombre"/>
+
+      <label for="email">Correo electronico: </label>
+      <input type="text" name="email" id="email">
+
+      <fieldset>
+        <legend>Fecha de nacimiento: Formato dd/mm/aaaa</legend>
+        <input type="text" title="Introduzca el dia (dos digitos)">/
+        <input type="text" title="Introduzca el dia (dos digitos)">/
+        <input type="text" title="Introduzca el dia (dos digitos)">
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Como nos conociste?</legend>
+          <input type="checkbox" id="amigo"><label for="amigo">A traves de un amigo.</label>
+          <input type="checkbox" id="buscador"><label for="buscador">A traves de un buscador.</label>
+          <input type="checkbox" id="internet"><label for="internet">Navegando en Internet.</label>
+      </fieldset>
+
+      <label for="usuario">Nombre de usuario (Obligatorio): </label>
+      <input type="text" name="usuario" id="usuario"/>
+
+      <label for="contraseña">Contraseña (Obligatorio): </label>
+      <input type="text" name="contraseña" id="contraseña">
+
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>

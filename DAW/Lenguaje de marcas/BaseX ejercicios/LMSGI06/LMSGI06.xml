@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+ <tienda>
+	<empleados>
+		<empleado cod="B">
+			<nombre>Juan</nombre>
+			<direccion>Plaza Mayor, 1</direccion>
+			<localidad>Jaén</localidad>
+			<provincia>Jaén</provincia>
+			<salario unidad="Euros">1800</salario>
+		</empleado>
+		<empleado cod="B">
+			<nombre>Pepe</nombre>
+			<direccion>Calle Nápoles, 1</direccion>
+			<localidad>Algeciras</localidad>
+			<provincia>Cádiz</provincia>
+			<salario unidad="Euros">1100</salario>
+		</empleado>
+		<empleado cod="A">
+			<nombre>Víctor</nombre>
+			<direccion>Calle Ancha, 34</direccion>
+			<localidad>Linares</localidad>
+			<provincia>Jaén</provincia>
+			<salario unidad="Euros">500</salario>
+		</empleado>
+		<empleado cod="B">
+			<nombre>Luisa</nombre>
+			<direccion>Calle Cerezo, 24</direccion>
+			<localidad>Martos</localidad>
+			<provincia>Jaén</provincia>
+			<salario unidad="Euros">1350</salario>
+		</empleado>
+		<empleado cod="B">
+			<nombre>Pedro</nombre>
+			<direccion>Calle Alerce, 2</direccion>
+			<localidad>Bailén</localidad>
+			<provincia>Jaén</provincia>
+			<salario unidad="Euros">1050</salario>
+		</empleado>
+		<empleado cod="A">
+			<nombre>Andrés</nombre>
+			<direccion>Calle Giralda, s/n</direccion>
+			<localidad>Sevilla</localidad>
+			<provincia>Sevilla</provincia>
+			<salario unidad="Euros">700</salario>
+		</empleado>
+		<empleado cod="C">
+			<nombre>María</nombre>
+			<direccion>Calle Mayor, 3</direccion>
+			<localidad>Alcalá de Guadaira</localidad>
+			<provincia>Sevilla</provincia>
+			<salario unidad="Euros">1600</salario>
+		</empleado>
+	</empleados>
+
+	<departamentos>
+		<departamento id="EXO">
+		 <denominacion>Exóticos</denominacion>
+		 <normativa>
+			<nacional>Normativa Nacional de Exóticos</nacional>
+			<internacional>Normativa Internacional de Exóticos</internacional>
+		  </normativa>
+		  <nivel>Medio</nivel>
+		  <descubrimiento>1845</descubrimiento>
+		  <categorias>
+			<categoria>
+				<nombre tipo="Individual">Diamante mandarín en Gris</nombre>
+				<cod>DMG</cod>
+				<origen>Europa</origen>
+			</categoria>
+			<categoria>
+				<nombre tipo="Individual">Padda Blanco</nombre>
+				<cod>PB</cod>
+				<origen>América</origen>
+			</categoria>
+				<categoria>
+				<nombre tipo="Equipo">Pico de Plata Clásico</nombre>
+				<cod>PPC</cod>
+				<origen>Europa</origen>
+			</categoria>
+		  </categorias>
+		</departamento>
+		<departamento id="PSI">
+		 <denominacion>Psitácidos</denominacion>
+		 <normativa>
+			<nacional>Normativa Nacional de Psitácidos</nacional>
+			<internacional>Normativa Internacional de Psitácidos</internacional>
+		  </normativa>
+		  <nivel>Alto</nivel>
+		  <descubrimiento>1903</descubrimiento>
+		  <categorias>
+			<categoria>
+				<nombre tipo="Individual">General</nombre>
+				<cod>GEN</cod>
+				<origen>Europa</origen>
+			</categoria>
+			<categoria>
+				<nombre tipo="Equipo">Pyrrhuras Mutadas</nombre>
+				<cod>PYM</cod>
+				<origen>América</origen>
+			</categoria>
+				<categoria>
+				<nombre tipo="Equipo">Pico Amazonas</nombre>
+				<cod>AMA</cod>
+				<origen>América</origen>
+			</categoria>
+		  </categorias>
+		</departamento>
+		<departamento id="FEU">
+		 <denominacion>Fauna Europea</denominacion>
+		 <normativa>
+			<nacional>Normativa Nacional de Fauna Europea</nacional>
+			<internacional>Normativa Internacional de Fauna Europea</internacional>
+		  </normativa>
+		  <nivel>Alto</nivel>
+		  <descubrimiento>1833</descubrimiento>
+		  <categorias>
+			<categoria>
+				<nombre tipo="Individual">General</nombre>
+				<cod>GEN</cod>
+				<origen>Europa</origen>
+			</categoria>
+			<categoria>
+				<nombre tipo="Individual">Verderones</nombre>
+				<cod>VER</cod>
+				<origen>Europa</origen>
+			</categoria>
+				<categoria>
+				<nombre tipo="Equipo">Jilguero Major</nombre>
+				<cod>JIM</cod>
+				<origen>Europa</origen>
+			</categoria>
+		  </categorias>
+		</departamento>
+	</departamentos>
+	
+	<productos>
+		<producto cod="P02">
+			<nombre>Amanecer electrónico</nombre>
+			<precio unidad="Euros">120</precio>
+		</producto>
+		<producto cod="P05">
+			<nombre>Humidificador</nombre>
+			<precio unidad="Euros">30</precio>
+		</producto>
+		<producto cod="P06">
+			<nombre>Control Remoto</nombre>
+			<precio unidad="Euros">400</precio>
+		</producto>
+		<producto cod="P10">
+			<nombre>Autolavado</nombre>
+			<precio unidad="Euros">550</precio>
+		</producto>
+		<producto cod="P11">
+			<nombre>Base Jaula</nombre>
+			<precio unidad="Euros">10</precio>
+		</producto>
+	</productos>	
+	
+	<clientes>
+		<cliente cod="U300111">
+            <nombre>Manuel Moreno</nombre>
+            <telefono>607234125</telefono>
+        </cliente>
+        <cliente cod="U120711">
+			<nombre>Pedro Rojas</nombre>
+            <telefono>607234125</telefono>
+		</cliente>
+		 <cliente cod="U030512">
+			<nombre>Jesús Rodríguez</nombre>
+            <telefono>608822173</telefono>
+		</cliente>
+		 <cliente cod="U120712">
+			<nombre>Nitta Layo</nombre>
+            <telefono>666588045</telefono>
+		</cliente>
+    </clientes>
+    
+	<compras>
+        <cantidad producto="P02" cliente="U300111" fechacompra="12/01/2014">5</cantidad>
+        <cantidad producto="P05" cliente="U300111" fechacompra="25/12/2014">3</cantidad>
+        <cantidad producto="P02" cliente="U120711" fechacompra="05/07/2014">7</cantidad>
+        <cantidad producto="P10" cliente="U120711" fechacompra="03/11/2014">2</cantidad>
+        <cantidad producto="P06" cliente="U030512" fechacompra="30/04/2014">1</cantidad>
+        <cantidad producto="P06" cliente="U120712" fechacompra="20/04/2014">3</cantidad>
+    </compras>
+</tienda>

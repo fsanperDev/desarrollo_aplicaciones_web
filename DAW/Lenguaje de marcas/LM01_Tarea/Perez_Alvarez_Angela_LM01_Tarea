@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<plantilla>
+      <empleado>
+          <nombre>Hugo</nombre>
+          <apellido1>Brown</apellido1>
+          <apellido2>Garcia</apellido2>
+          <direccion>Carrer Cristianitzàveu, 108 2ºA</direccion>
+          <contacto>
+              <movil>655165584</movil>
+              <tfijo>995654321</tfijo>
+             <email1>hbrown@gmail.com</email1>
+          </contacto>
+          <posicion>jefe de proyecto</posicion>
+          <identificacion id="001">HB-001</identificacion>
+     </empleado>
+     <empleado>
+               <nombre>Adrian</nombre>
+          <apellido1>Gonzales</apellido1>
+          <apellido2>Gomez</apellido2>
+          <direccion>Camino Espellissàveu, 256A 1ºG</direccion>
+          <contacto>
+              <movil>655325888</movil>
+              <tfijo>995682224</tfijo>
+             <email1>agonzalez@gmail.com</email1>
+          </contacto>
+          <posicion>gerente</posicion>
+          <identificacion id="002">AG-002</identificacion>
+     </empleado>
+     <empleado>
+          <nombre>Chloe</nombre>
+          <apellido1>Prize</apellido1>
+          <apellido2>Vazques</apellido2>
+          <direccion>Avenida Dessoterraràs preuéssiu, 210 20ºF</direccion>
+          <contacto>
+              <movil>655775186</movil>
+              <tfijo>995321654</tfijo>
+             <email1>cprize@gmail.com</email1>
+          </contacto>
+          <posicion>analista</posicion>
+          <identificacion id="003">CP-003</identificacion>
+     </empleado>
+     <empleado>
+          <nombre>Oscar</nombre>
+          <apellido1>Mendez</apellido1>
+          <apellido2>Guerrero</apellido2>
+          <direccion>Travesía Arpetes replegaràs tòniques defalliràs, 191</direccion>
+          <contacto>
+              <movil>656164784</movil>
+              <tfijo>995654321</tfijo>
+             <email1>omendez@gmail.com</email1>
+          </contacto>
+          <posicion>analista</posicion>
+          <identificacion id="004">OM-004</identificacion>
+     </empleado>
+     <empleado>
+          <nombre>Ismael</nombre>
+          <apellido1>Hermnandez</apellido1>
+          <apellido2>Lopez</apellido2>
+          <direccion>Acceso Xaloquejats hemaglutinació, 279A</direccion>
+          <contacto>
+              <movil>655788814</movil>
+              <tfijo>995654321</tfijo>
+             <email1>ihernandez@gmail.com</email1>
+          </contacto>
+          <posicion>programador</posicion>
+          <identificacion id="005">IH-005</identificacion>
+     </empleado>
+     <empleado>
+          <nombre>Julio</nombre>
+          <apellido1>Morales</apellido1>
+          <apellido2>Garcia</apellido2>
+          <direccion>Cañada Espremia cotxe bromerejaríeu, 264B 15ºH</direccion>
+          <contacto>
+              <movil>655165904</movil>
+              <tfijo>995654900</tfijo>
+             <email1>jmorales@gmail.com</email1>
+          </contacto>
+          <posicion>programador</posicion>
+          <identificacion id="006">JM-006</identificacion>
+      </empleado>
+      <empleado>
+          <nombre>Juan Mannuel</nombre>
+          <apellido1>Soares</apellido1>
+          <apellido2>Lasheras</apellido2>
+          <direccion>Travesía Buscaran colltorçaves ferruginosa destrenés, 263A 20ºH</direccion>
+          <contacto>
+              <movil>655950664</movil>
+              <tfijo>9956852321</tfijo>
+             <email1>jmsoaeras@gmail.com</email1>
+          </contacto>
+          <posicion>trabajador</posicion>
+          <identificacion id="007">JS-007</identificacion>
+      </empleado>
+      <empleado>
+          <nombre>Guillermo</nombre>
+          <apellido1>Mugica</apellido1>
+          <apellido2>Gasco</apellido2>
+          <direccion>Ronda Desempesassis reestructurava, 144 13ºG</direccion>
+          <contacto>
+              <movil>655900546</movil>
+              <tfijo>995333321</tfijo>
+             <email1>gmugica@gmail.com</email1>
+          </contacto>
+          <posicion>trabajador</posicion>
+          <identificacion id="008">GM-008</identificacion>
+      </empleado>
+      <empleado>
+          <nombre>Antonio</nombre>
+          <apellido1>Chueca</apellido1>
+          <apellido2>Humanes</apellido2>
+          <direccion>Carrer Enorgullíssim agarbia, 169 16ºH</direccion>
+          <contacto>
+              <movil>655165334</movil>
+              <tfijo>995656321</tfijo>
+             <email1>achueca@gmail.com</email1>
+          </contacto>
+          <posicion>trabajador</posicion>
+          <identificacion id="009">AC-009</identificacion>
+      </empleado>
+      <empleado>
+          <nombre>Miriam</nombre>
+          <apellido1>Limon</apellido1>
+          <apellido2>Motos</apellido2>
+          <direccion>Avenida Recol·lectis abacallanessis desadherirà, 154 14ºD</direccion>
+          <contacto>
+              <movil>655945564</movil>
+              <tfijo>995112061</tfijo>
+             <email1>mlimon@gmail.com</email1>
+          </contacto>
+          <posicion>trabajador</posicion>
+          <identificacion id="010">ML-010</identificacion>
+      </empleado>
+      <empleado>
+          <nombre>Sebastian</nombre>
+          <apellido1>Iriarte</apellido1>
+          <apellido2>Orgaz</apellido2>
+          <direccion>Calle Assagetaves epiloguéssem, 77B 13ºB</direccion>
+          <contacto>
+              <movil>655165884</movil>
+              <tfijo>995654375</tfijo>
+             <email1>siriarte@gmail.com</email1>
+          </contacto>
+          <posicion>trabajador</posicion>
+          <identificacion id="011">SI-011</identificacion>
+      </empleado>
+      <empleado>
+          <nombre>Lucia</nombre>
+          <apellido1>Jones</apellido1>
+          <apellido2>Herrera</apellido2>
+          <direccion>Acceso Encavallo desencadellaràs desamuressis realçant, 10 4ºE</direccion>
+          <contacto>
+              <movil>655168460</movil>
+              <tfijo>995656581</tfijo>
+             <email1>ljones@gmail.com</email1>
+          </contacto>
+          <posicion>trabajador</posicion>
+          <identificacion id="012">LJ-012</identificacion>
+      </empleado>
+      <empleado>
+          <nombre>Jaime</nombre>
+          <apellido1>Ponce</apellido1>
+          <apellido2>Lanister</apellido2>
+          <direccion>Avenida Emmenagoga confraternitzin, 73</direccion>
+          <contacto>
+              <movil>655165584</movil>
+              <tfijo>995654321</tfijo>
+             <email1>jponce@gmail.com</email1>
+          </contacto>
+          <posicion>trabajador</posicion>
+          <identificacion id="013">JP-013</identificacion>
+      </empleado>
+      <empleado>
+          <nombre>Joan</nombre>
+          <apellido1>Rios</apellido1>
+          <apellido2>Ferreiro</apellido2>
+          <direccion>Paseo Cecal sobreabunde desfanatitzés, 186 3ºD</direccion>
+          <contacto>
+              <movil>6556589584</movil>
+              <tfijo>995665009</tfijo>
+             <email1>jrios@gmail.com</email1>
+          </contacto>
+          <posicion>trabajador</posicion>
+          <identificacion id="014">JR-014</identificacion>
+      </empleado>
+</plantilla>

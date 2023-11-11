@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<restaurante>
+      <carta>
+          <entrantes>
+              <ent1>
+                <papas>Papas</papas>
+                <precio>1.5</precio>
+              </ent1>
+              <ent2>
+                <ensa>Ensalade de atun</ensa>
+                <precio>2</precio>
+              </ent2>
+              <ent3>
+                <queso>Plato de queso</queso>
+                <precio>3</precio>
+              </ent3>
+          </entrantes>
+          <carnes>
+              <car1>
+                <filtern>Filete de Ternera</filtern>
+                <precio peso="gramos">2.8</precio>
+              </car1>
+              <car2>
+                <fpollo>Filete de pollo</fpollo>
+                <precio>4</precio>
+              </car2>
+              <car3>
+                <pincho>Pincho de Pollo</pincho>
+                <precio peso="gramos">2.6</precio>
+              </car3>
+          </carnes>
+          <pescados>
+              <pes1></pes1>
+              <pes1></pes1>
+              <pes1></pes1>
+          </pescados>
+          <postres>
+              <pos1t></post1>
+              <post2></post2>
+              <post3></post3>
+          </postres>
+          <bebidas>
+            <refresco>
+              <precio tipo="lata">1</precio>
+              <precio tipo="vaso">1.10</precio>
+            </refresco>
+            <agua>
+              <precio tipo="vaso">0.6</precio>
+              <precio tipo="botella">0.8</precio>
+            </agua>
+            <vino>
+              <precio tipo="copa">5</precio>
+              <precio tipo="botella">28</precio>
+            </vino>
+          </bebidas>
+      </carta>
+</restaurante>

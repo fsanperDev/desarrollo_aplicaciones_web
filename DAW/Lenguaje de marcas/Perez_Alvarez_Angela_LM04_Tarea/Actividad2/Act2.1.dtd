@@ -1,0 +1,24 @@
+<!ELEMENT socios (socio)>
+    <!ELEMENT socio (datos_personales|juego)*>
+
+        <!ELEMENT datos_personales (cod_socio, nombre, apellidos, localidad, provincia, ((email)*| fecha_de_socio)*, (socio_vip)*)>
+            <!ELEMENT cod_socio (#PCDATA)>
+            <!ELEMENT nombre (#PCDATA)>
+            <!ELEMENT apellidos (#PCDATA)>
+            <!ELEMENT localidad (#PCDATA)>
+            <!ELEMENT provincia (#PCDATA)>
+            <!ELEMENT email (#PCDATA)>
+            <!ELEMENT fecha_de_socio (#PCDATA)>
+            <!ELEMENT socio_vip EMPTY>
+
+        <!ELEMENT juego (nombre_juego, cod_juego, plataforma, estreno, adquisicion, estado, (online|multijugador)*)>
+            <!ELEMENT nombre_juego (#PCDATA)>
+            <!ELEMENT cod_juego (#PCDATA)>
+            <!ELEMENT plataforma (#PCDATA)>
+                <!ATTLIST plataforma plat (PC | XBOX | PS4 | WII ) "PC">
+            <!ELEMENT estreno (#PCDATA)>
+            <!ELEMENT adquisicion (#PCDATA)>
+            <!ELEMENT estado (#PCDATA)>
+            <!ELEMENT online EMPTY>
+            <!ELEMENT multijugador EMPTY>
+

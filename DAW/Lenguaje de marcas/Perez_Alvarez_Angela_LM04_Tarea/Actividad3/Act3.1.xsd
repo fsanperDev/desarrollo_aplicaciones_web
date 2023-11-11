@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+<!-- elementos simples -->
+    <xs:element name="nombre" type="xs:string"/>
+    <xs:element name="apellidos" type="xs:string"/>
+    <xs:element name="localidad" type="xs:string"/>
+    <xs:element name="provincia" type="xs:string"/>
+    <xs:element name="email" type="xs:string"/>
+    <xs:element name="fecha_de_socio" type="xs:date"/>
+    <xs:element name="socio_vip"/>
+    <xs:element name="nombre_juego" type="xs:string"/>
+    <xs:element name="estreno" type="xs:gYear"/>
+    <xs:element name="adquisicion" type="xs:date"/>
+    <xs:element name="estado" type="xs:string" default="bueno"/>
+    <xs:element name="online"/>
+    <xs:element name="multijugador"/>
+    
+<!--atributos -->
+    <xs:element name="cod_socio">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]{2}-[0-9]{3}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="cod_juego">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[WII-XBOX-PS4-PC]\d{2}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="plataforma">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[WII-XBOX-PS4-PC]"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+<!-- elementos complejos -->    
+    <xs:element name="datos_personales">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="cod_socio"/>
+                <xs:element ref="nombre"/>
+                <xs:element ref="apellidos"/>
+                <xs:element ref="localidad"/>
+                <xs:element ref="provincia"/>
+                <xs:choice>
+                    <xs:sequence>
+                        <xs:element ref="email" maxOccurs="2"/>
+                        <xs:element ref="fecha_de_socio"/>
+                    </xs:sequence>
+                    <xs:sequence>
+                        <xs:element ref="fecha_de_socio"/>
+                        <xs:element ref="email" maxOccurs="2"/>
+                    </xs:sequence>
+                </xs:choice>
+                <xs:element ref="socio_vip" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>  
+    </xs:element>
+    
+    <xs:element name="juego">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre_juego"/>
+                <xs:element ref="cod_juego"/>
+                <xs:element ref="plataforma"/>
+                <xs:element ref="estreno"/>
+                <xs:element ref="adquisicion"/>
+                <xs:element ref="estado"/>
+                <xs:choice>
+                    <xs:sequence>
+                        <xs:element ref="online" minOccurs="0" maxOccurs="1"/>
+                        <xs:element ref="multijugador" minOccurs="0" maxOccurs="1"/>
+                    </xs:sequence>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element> 
+
+    <xs:element name="socio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="datos_personales"/>
+                <xs:element ref="juego"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="socios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="socio"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- elementos raiz -->
+    <xs:element name="info">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="socios"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>

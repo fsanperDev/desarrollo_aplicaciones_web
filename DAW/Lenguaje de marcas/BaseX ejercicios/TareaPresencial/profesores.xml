@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE profesores SYSTEM "bailes-profesores.dtd" [
+    <!ENTITY % datos_bailes "IGNORE">
+    <!ENTITY % datos_profesores "INCLUDE">
+]>
+<profesores>
+    <profesor codigo="p1">
+        <nombre>Antonio</nombre>
+        <apellidos>García Pérez</apellidos>
+        <fecha_nacimiento>1980-01-15</fecha_nacimiento>
+        <antiguedad>5</antiguedad>
+    </profesor>
+    <profesor codigo="p2">
+        <nombre>Juan Luis</nombre>
+        <apellidos>Suso Rodríguez</apellidos>
+        <fecha_nacimiento>1980-01-15</fecha_nacimiento>
+        <antiguedad>2</antiguedad>
+    </profesor>
+    <profesor codigo="p3">
+        <nombre>Ana</nombre>
+        <apellidos>Palmero Niño</apellidos>
+        <fecha_nacimiento>1980-01-15</fecha_nacimiento>
+        <antiguedad>3</antiguedad>
+    </profesor>
+    <profesor codigo="p4">
+        <nombre>Ernesto</nombre>
+        <apellidos>Laynez Millán</apellidos>
+        <fecha_nacimiento>1980-01-15</fecha_nacimiento>
+        <antiguedad>8</antiguedad>
+    </profesor>
+</profesores>

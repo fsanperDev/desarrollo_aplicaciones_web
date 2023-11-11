@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<empresa>
+      <tienda>
+            <datos>
+                <nombre>MiHogar SA.</nombre>
+                <direccion>Av. del Electrón Maldito, nº 25. Local 110101</direccion>
+                <ciudad>Alcalá de Guadaira - Sevilla</ciudad>
+                <codpostal>41500</codpostal>
+               <telefono>999000000</telefono>
+                <telefono>666000000</telefono>
+                <email>email:contacto@mihogar.es</email>
+            </datos>
+            <productos>
+                <articulo>
+                    <nombre>Frigorífico MiHelado</nombre>
+                    <cod>FM-1234</cod>
+                    <precio>235€</precio>
+                    <promocion descuento="5%">223.95€</promocion>
+                    <color>Gris Plata</color>
+                    <color> Blanco</color>
+                </articulo>
+            </productos>
+            <productos>
+                <articulo>
+                    <nombre>Cafetera MiCafé</nombre>
+                    <cod>CM-5678</cod>
+                    <precio>50€</precio>
+                    <promocion unidades="3*2">33.3€</promocion>
+                    <color>Rojo</color>
+                    <color>Negro</color>
+                    <color>Blanco</color>
+                    <color>Azul</color>
+                </articulo>
+            </productos>
+            <productos>
+                <articulo>
+                    <nombre>Televisor Noseve</nombre>
+                    <cod>TN-9012</cod>
+                    <precio>120€</precio>
+                </articulo>
+            </productos>
+      </tienda>
+      
+        <tienda>
+            <datos>
+                <nombre>Caracactus Vivero</nombre>
+                <direccion>C/. Laurel s/n</direccion>
+                <ciudad>Sevilla</ciudad>
+                <codpostal>41001</codpostal>
+               <telefono>999000001</telefono>
+                <email></email>
+            </datos>
+            <productos>
+                <articulo>
+                    <nombre>Cactus Sureño</nombre>
+                    <cod>CS01</cod>
+                    <precio>4€</precio>
+                    <tipo>Sureño Púas</tipo>
+                    <tipo>Sureño estrecho</tipo>
+                </articulo>
+                <articulo>
+                    <nombre>Ortensia</nombre>
+                    <cod>0R01</cod>
+                    <precio>2,5€</precio>
+                </articulo>
+                <articulo>
+                    <nombre>Maceta Redonda</nombre>
+                    <cod>MR01</cod>
+                    <precio unidades="5">15€</precio>
+                </articulo>
+            </productos>
+      </tienda>
+</empresa>

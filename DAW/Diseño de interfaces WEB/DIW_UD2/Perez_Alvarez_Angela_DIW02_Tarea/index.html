@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tarea UD2 Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+  <section>
+    <h1>Formulario Web</h1>
+    <form class="formulario" action="index.html" method="post">
+      <h2>Datos de acceso</h2>
+        <label for="usuario">Nombre de usuario (Obligatorio): </label>
+        <input type="text" name="usuario" id="usuario" aria-required="true"/>
+
+        <label for="contraseña"> Contraseña (Obligatorio): </label>
+        <input type="text" name="contraseña" id="contraseña" aria-required="true">
+
+      <h2>Perfil de usuario</h2>
+      <fieldset>
+        <legend>Edad (Obligatorio):</legend>
+          <input type="radio" name="age" id="menor35" value="menos35" checked aria-required="true">
+            <label for="menor35">Menor de 35</label><br>
+          <input type="radio" name="age" id="mayor35" value="mas35" aria-required="true">
+            <label for="mayor35">35 o más</label>
+      </fieldset>
+
+        <label for="grupoTrabajo" class="puestoTrabajo">Puesto de trabajo (Obligatorio):</label>
+        <select id="grupoTrabajo" aria-required="true">
+          <optgroup label="Desarrollador web">
+            <option value="php">Desarrollador PHP</option>
+            <option value="javascript">Desarrollador JavaScript</option>
+          </optgroup>
+          <optgroup label="Desarrollador móvil">
+            <option value="android">Desarrollador Android</option>
+            <option value="ios">Desarrollador iOS</option>
+          </optgroup>
+        </select>
+
+      <fieldset>
+        <legend>Intereses :</legend>
+          <input type="checkbox" id="tecnologia"><label for="tecnologia">Tecnologia</label>
+          <input type="checkbox" id="videojuegos"><label for="videojuegos">Videojuegos</label>
+          <input type="checkbox" id="television"><label for="television">Televisión</label>
+          <input type="checkbox" id="musica"><label for="musica">Música</label>
+          <input type="checkbox" id="cine"><label for="cine">Cine</label>
+      </fieldset>
+
+      <input type="submit" class="boton" value="Enviar">
+      <input type="reset" class="boton" value="Limpiar">
+    </form>
+  </section>
+  </body>
+</html>

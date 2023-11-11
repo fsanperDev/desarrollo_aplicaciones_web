@@ -1,0 +1,1916 @@
+
+<!-- saved from url=(0091)https://educacionadistancia.juntadeandalucia.es/cursos/blocks/recopila/recopila.php?id=6195 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script src="./PROG_T4_files/common.js.descarga" type="text/javascript"></script>
+<script src="./PROG_T4_files/APIWrapper.js.descarga" type="text/javascript"></script>
+<script src="./PROG_T4_files/SCOFunctions.js.descarga" type="text/javascript"></script>
+<link href="./PROG_T4_files/base.css" type="text/css" rel="stylesheet">
+<link href="./PROG_T4_files/content.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+Cadenas de caracteres y arrays.</h1></div>
+<div class="CasopracticofpdIdevice" id="id0">
+<div class="iDevice emphasis_casopracticofpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_casopracticofpd.gif">
+<span class="iDeviceTitle"><strong>Caso práctico</strong></span>
+<div class="iDevice_inner">
+<div id="ta0_66" class="block" style="display:block;position:relative"><p><img alt="Fotografía de María." class="elemento_izquierda" src="./PROG_T4_files/CASO_PERSONAJES_03.jpg" title="María." height="160" width="172"></p>
+<p align="justify"><strong>Ana</strong> ha recibido un pequeño encargo de parte de su tutora, <strong>María</strong>. Se trata de que realice un pequeño programita, muy sencillo pero fundamental.</p>
+<p align="justify">-Hola <strong>Ana</strong> -dice <strong>María</strong>-, hoy tengo una tarea especial para ti.</p>
+<p align="justify">-¿Sí? -responde <strong>Ana</strong>-. Estoy deseando, últimamente no hay nada que se me resista, llevo dos semanas en racha.</p>
+<p align="justify">-Bueno, quizás esto se te resista un poco más. Es fácil, pero tiene cierta complicación. Un cliente para el que hicimos una aplicación, nos ha preguntado si podemos ayudarle. El cliente tiene una aplicación para gestionar sus clientes. Ahora está pensando en que se le añada el correo electrónico de cada cliente, para en un futuro poderle enviar publicidad y otras cosas. Además, también quiere que la aplicación busque cadenas de caracteres, por ejemplo, para cuando le interese ver los clientes cuyo apellido contenga "Garc" o la cadena que sea..</p>
+<p align="justify">-¿Qué? -dice <strong>Ana</strong> con cierta perplejidad.</p>
+<p align="justify">-Me alegra que te guste -dice <strong>María</strong> esbozando una sonrisa picara-, sé que te gustan los retos.</p>
+<p align="justify">-Pero, ¿eso cómo se hace? ¿Cómo compruebo yo si un correo electrónico es válido? -pregunta <strong>Ana</strong>.</p>
+<p align="justify">-Bueno, tranquila, que es más fácil de lo que parece, lo del correo electrónico lo puedes hacer con expresiones regulares. Y respecto a lo de ver las cadenas de caracteres que contienen o empiezan por tal o cual otra cadena, recuerda que Java tiene un montón de operadores para trabajar con cadenas de caracteres.</p>
+<p align="justify">-Bueno -dice <strong>María</strong> justo después de resoplar tres veces seguidas-, parece que no será tan difícil después de todo.</p></div></div>
+</div>
+</div>
+<div class="FreeTextfpdIdevice" id="id1">
+<div class="iDevice emphasis0">
+<div id="ta1_73" class="block" style="display:block;position:relative"><p><img alt="magen de las manos de una persona insertando datos en el ordenador a través del teclado." class="elemento_derecha" src="./PROG_T4_files/PROG05_CONT_R001_teclado.jpg" title="Tecleando datos en el ordenador." height="140" width="196"></p>
+<p align="justify">Cuando el volumen de datos a manejar por una aplicación es elevado, no basta con utilizar variables. Manejar los datos de un único cliente en una aplicación puede ser relativamente sencillo, pues un cliente está compuesto por una serie de datos y eso simplemente se traduce en varias variables. Pero, ¿qué ocurre cuando en una aplicación tenemos que gestionar varios clientes a la vez?</p>
+<p align="justify">Lo mismo ocurre en otros casos. Para poder realizar ciertas aplicaciones se necesita poder manejar datos que van más allá de meros <strong>datos simples</strong> (números y letras). A veces, los datos que tiene que manejar la aplicación son <strong>datos compuestos</strong>, es decir, datos que están compuestos a su vez de varios datos más simples. Por ejemplo, una persona está compuesto por varios datos, los datos podrían ser el nombre del cliente, la dirección donde vive, la fecha de nacimiento, <abbr title="Etcétera.">etc</abbr>.</p>
+<p align="justify">Los datos compuestos son un tipo de estructura de datos, y en realidad ya los has manejado. <strong>Las clases son un ejemplo de estructuras de datos que permiten almacenar datos compuestos</strong>, y el objeto en sí, la instancia de una clase, sería el dato compuesto. Pero, a veces, los datos tienen estructuras aún más complejas, y son necesarias soluciones adicionales.</p>
+<p align="justify">Más adelante veremos esas soluciones adicionales. En este tema nos centraremos en las cadenas de caracteres y en los vectores o arrays.</p></div></div>
+</div>
+<div class="DestacadofpdIdevice" id="id124">
+<div class="iDevice emphasis0">
+<div class="iDevice_destacadofpd">
+<div id="ta124_70" class="block" style="display:block;position:relative"><div align="center">
+<div align="center"><img src="./PROG_T4_files/Junta_Andalucia3.jpg" alt="Logotipo de la Junta de Andalucía" title="Logotipo de la Junta de Andalucía" height="111" width="160"></div>
+</div>
+<p style="text-align: center;"><span style="font-size: large;"><strong>Materiales desarrollados y actualizados por el profesorado de la Junta de Andalucía</strong></span></p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;"><span style="font-size: large;"><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="./PROG_T4_files/by-nc-sa.eu_petit.png" alt="Licencia Atribución-No Comercial (CC BY-NC - SA) " title="Licencia Atribución-No Comercial (CC BY-NC - SA) " height="41" width="118"><span style="font-size: x-small;"><a title="Términos de la licencia" href="http://es.creativecommons.org/blog/licencias/" target="_blank">Aviso legal</a></span></strong></span></p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+1.- Introducción a las estructuras de almacenamiento.</h1></div>
+<div class="FreeTextfpdIdevice" id="id2">
+<div class="iDevice emphasis0">
+<div id="ta2_73" class="block" style="display:block;position:relative"><div class="elemento_derecha">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_R002_calcularmayor.jpg"><img alt="Lista de números de la que hay que calcular el mayor." class="imagen_ampliable" src="./PROG_T4_files/PROG05_CONT_R002_calcularmayor_miniatura.jpg" title="Lista de números."></a></div>
+</div>
+<p align="justify">¿Cómo almacenarías en memoria un listado de números del que tienes que extraer el valor máximo? Seguro que te resultaría fácil. Pero, ¿y si el listado de números no tiene un tamaño fijo, sino que puede variar en tamaño de forma dinámica? Entonces la cosa se complica.</p>
+<p align="justify">Un listado de números que aumenta o decrece en tamaño es una de las cosas que aprenderás a utilizar en este módulo, utilizando estructuras de datos. Pasaremos por alto las clases y los objetos, pues ya los has visto con anterioridad, pero debes saber que las clases en sí mismas son la evolución de un tipo de estructuras de datos conocidas como datos compuestos (también llamadas <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">registros<span><em>Registro</em>Estructura de datos que almacena uno o varios datos de diferente tipo (números enteros, cadenas de texto, números flotantes, ...) de forma conjunta, porque dichos datos están íntimamente relacionados entre sí. Por ejemplo, una dirección está compuesta de varios datos: calle (cadena de texto), número (número entero), código postal (cadena de texto), etc.</span></a>). Las clases, además de aportar la ventaja de agrupar datos relacionados entre sí en una misma estructura (característica aportada por los datos compuestos), permiten agregar métodos que manejen dichos datos, ofreciendo una herramienta de programación sin igual. Pero todo esto ya lo sabías.</p>
+<p align="justify">Las estructuras de almacenamiento, en general, se pueden clasificar de varias formas. Por ejemplo, atendiendo a si pueden almacenar datos de diferente tipo, o si solo pueden almacenar datos de un solo tipo, se pueden distinguir:</p>
+<ul class="lista_verificacion">
+<li>Estructuras con capacidad de <strong>almacenar varios datos del mismo tipo: </strong>varios números, varios caracteres, <abbr title="Etcétera.">etc</abbr>. Ejemplos de estas estructuras son los <span lang="en">arrays</span>, las cadenas de caracteres, las listas y los conjuntos.</li>
+<li>Estructuras con capacidad de <strong>almacenar varios datos de distinto tipo:</strong> números, fechas, cadenas de caracteres, <abbr title="Etcétera.">etc</abbr>., todo junto dentro de una misma estructura. Ejemplos de este tipo de estructuras son las clases.</li>
+</ul>
+<p align="justify">Otra forma de clasificar las estructuras de almacenamiento va en función de si pueden o no cambiar de tamaño de forma dinámica:</p>
+<ul class="lista_verificacion">
+<li><strong>Estructuras cuyo tamaño se establece en el momento de la creación o definición</strong> y su tamaño no puede variar después. Ejemplos de estas estructuras son los <strong><span lang="en">arrays</span></strong> y las matrices (<span lang="en">arrays</span> multimensionales).</li>
+<li><strong>Estructuras cuyo tamaño es variable (conocidas como estructuras dinámicas)</strong>. Su tamaño crece o decrece según las necesidades de forma dinámica. Es el caso de las listas, árboles, conjuntos y, como veremos también, el caso de algunos tipos de cadenas de caracteres.</li>
+</ul>
+<p align="justify">Por último, atendiendo a la forma en la que los datos se ordenan dentro de la estructura, podemos diferenciar varios tipos de estructuras:</p>
+<ul class="lista_verificacion">
+<li><strong>Estructuras que no se ordenan de por sí</strong>, y debe ser el programador el encargado de ordenar los datos si fuera necesario. Un ejemplo de estas estructuras son los <span lang="en">arrays</span>.</li>
+<li><strong>Estructuras ordenadas</strong>. Se trata de estructuras que al incorporar un dato nuevo a todos los datos existentes, éste se almacena en una posición concreta que irá en función del orden. El orden establecido en la estructura puede variar dependiendo de las necesidades del programa: alfabético, orden numérico de mayor a menor, momento de inserción, <abbr title="Etcétera.">etc</abbr>.</li>
+</ul>
+<p align="justify">Todavía no conoces mucho de las estructuras, y probablemente todo te suena raro y extraño. No te preocupes, poco a poco irás descubriéndolas. Verás que son sencillas de utilizar y muy cómodas.</p></div></div>
+</div>
+<div class="EleccionmultiplefpdIdevice" id="id3">
+<script type="text/javascript" src="./PROG_T4_files/common.js.descarga"></script>
+<script type="text/javascript" src="./PROG_T4_files/libot_drag.js.descarga"></script>
+<div class="iDevice emphasis_autoevaluacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_autoevaluacionfpd.gif">
+<span class="iDeviceTitle"><strong>Autoevaluación</strong></span>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion3_60" class="block" style="display:block;position:relative"><p>
+<strong>El tamaño de las estructuras de almacenamiento
+siempre se determina en el momento de la creación. ¿Verdadero o
+falso?</strong>
+</p>
+</div><div style="display: table; overflow: auto; width: 100%;">
+<div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option3_60" id="i3_63" onclick="getFeedback(0,2,&#39;3_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans3_63" class="block" style="display:block;position:relative">Verdadero.
+</div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option3_60" id="i3_79" onclick="getFeedback(1,2,&#39;3_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans3_79" class="block" style="display:block;position:relative">Falso.
+</div></div>
+</div></div>
+<div id="sa0b3_60" class="feedback" style="display: none;"><div id="taf3_63" class="" style="display:block;position:relative"><p>
+Incorrecto, en algunos casos sí, y en otros no.
+Existen estructuras dinámicas que cambian de tamaño al insertar o
+eliminar datos.
+</p>
+</div></div>
+<div id="sa1b3_60" class="feedback" style="display: none;"><div id="taf3_79" class="" style="display:block;position:relative"><p>
+Efectivamente, lo has entendido a la perfección.
+</p>
+</div></div>
+<noscript><br /><div class="feedback">
+<p><strong>Solution: </strong></p>
+<ol><li><strong>Incorrecto</strong> <p>
+Incorrecto, en algunos casos sí, y en otros no.
+Existen estructuras dinámicas que cambian de tamaño al insertar o
+eliminar datos.
+</p>
+</li><li><strong>Opción correcta</strong> <p>
+Efectivamente, lo has entendido a la perfección.
+</p>
+</li></ol>
+</div></noscript></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+2.-  Cadenas de caracteres.</h1></div>
+<div class="CasopracticofpdIdevice" id="id4">
+<div class="iDevice emphasis_casopracticofpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_casopracticofpd.gif">
+<span class="iDeviceTitle"><strong>Caso práctico</strong></span>
+<div class="iDevice_inner">
+<div id="ta4_66" class="block" style="display:block;position:relative"><p><strong>Ana</strong> está asustada, le acaban de asignar una nueva tarea y está pensando qué métodos le ayudarían a buscar cadenas de caracteres que empiecen por unos caracteres determinados. Por ejemplo, la lista de más abajo presenta apellidos de personas que empiezan por "Garc":</p>
+<p><img style="float: left;" alt="Persona utilizando un ordenador de mano." class="elemento_derecha" src="./PROG_T4_files/PROG05_CONT_R003_pedido_pda_160222.jpg" title="Ordenador de mano." height="144" width="192"></p>
+<p>Por tanto, <strong>Ana</strong> podrá obtener las personas que necesite la aplicación del cliente, según los caracteres que le interese buscar al usuario de la aplicación:</p>
+<p>"Garcés Pérez"&lt;br /&gt; "García López"&lt;br /&gt; "García Pineda"&lt;br /&gt; "García Piquillo"&lt;br /&gt;</p>
+<p>Como puedes observar, también podría interesar buscar sólo aquellas personas en cuyos apellidos aparezcan los caracteres "Pi", para apellidos como Pineda o Piquillo.</p></div></div>
+</div>
+</div>
+<div class="FreeTextfpdIdevice" id="id5">
+<div class="iDevice emphasis0">
+<div id="ta5_73" class="block" style="display:block;position:relative"><p><img alt="Fotografía que muestra la imagen de una cadena." class="elemento_derecha" src="./PROG_T4_files/PROG05_CONT_R005_cadena_196925.JPG" title="Cadena."></p>
+<p>Probablemente, una de las herramientas que mas utilizarás cuando estés trabajando con cualquier lenguaje de programación son las cadenas de caracteres. Las cadenas de caracteres son estructuras de almacenamiento que permiten guardar una secuencia de caracteres de casi cualquier longitud. Y la pregunta ahora es, ¿qué es un carácter?</p>
+<p>En Java y en todo lenguaje de programación, y por ende, en todo sistema informático, los caracteres se <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">codifican<span><em>codificar</em>La codificación es la representación interna de cada carácter dentro de un ordenador. Cada símbolo usado en la comunicación humana tiene que traducirse en una serie de unos y ceros que puedan almacenarse en el ordenador, dado que un símbolo, como tal, no puede almacenarse. Después será el software del ordenador el encargado de transformar el código binario en una representación gráfica reconocible por el ser humano. Las codificaciones más extendidas son ASCII, ISO 885915, y la más usada hoy día, UTF-8, recogida dentro las codificaciones del estándar Unicode (UTF8, UTF-16 y UTF-32).</span></a> mediante secuencias de bits que representan a los símbolos usados en la comunicación humana. Estos símbolos pueden ser letras, números, símbolos matemáticos e incluso <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">ideogramas<span><em>Ideograma</em>Imagen, ilustración o dibujo que en algunos idiomas puede tener un significado y que pueden ser leídos, como por ejemplo los ideogramas del egipcio antiguo, del chino o del japonés.</span></a> y <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">pictogramas<span><em>Pictograma</em>Signo, generalmente a modo de dibujo, que representa una idea, un símbolo común o una figura real. Un ejemplo de pictograma son los emoticonos, con ellos se expresan emociones.</span></a>.</p></div></div>
+</div>
+<div class="ParasabermasfpdIdevice" id="id6">
+<div class="iDevice emphasis_parasabermasfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_parasabermasfpd.gif">
+<span class="iDeviceTitle"><strong>Para saber más</strong></span>
+<div class="iDevice_inner">
+<div id="ta6_47" class="block" style="display:block;position:relative"><p>Si quieres, puedes profundizar en la codificación de caracteres leyendo el siguiente artículo de la Wikipedia.</p>
+<p class="enlace_centrado"><a class="html" title="Acceder a artículo de la wikipedia sobre la codificación de caracteres." href="http://es.wikipedia.org/wiki/Codificaci%C3%B3n_de_caracteres">Codificación de caracteres.</a></p></div></div>
+</div>
+</div>
+<div class="FreeTextfpdIdevice" id="id7">
+<div class="iDevice emphasis0">
+<div id="ta7_73" class="block" style="display:block;position:relative"><p>La forma más habitual de ver escrita una cadena de caracteres es como un literal de cadena. Consiste simplemente en una secuencia de caracteres entre comillas dobles, por ejemplo: "Ejemplo de cadena de caracteres".</p>
+<p align="left">En Java, los literales de cadena son en realidad instancias de la clase String, lo cual quiere decir que, por el mero hecho de escribir un literal, se creará una instancia de dicha clase. Esto da mucha flexibilidad, puesto que permite crear cadenas de muchas formas diferentes, pero obviamente consume mucha memoria. La forma más habitual es crear una cadena partiendo de un literal:</p>
+<p align="center"><code class="codigo">String cad="Ejemplo de cadena";</code></p>
+<p align="left">En este caso, el literal de cadena situado a la derecha del igual es en realidad una instancia de la clase String. Al realizar esta asignación hacemos que la variable cad se convierta en una referencia al objeto ya creado. Otra forma de crear una cadena es usando el operador new y un constructor, como por ejemplo:</p>
+<p align="center"><code class="codigo">String cad=new String ("Ejemplo de cadena");</code></p>
+<p align="left">Cuando se crean las cadenas de esta forma, se realiza una copia en memoria de la cadena pasada por parámetro. La nueva instancia de la clase String hará referencia por tanto a la copia de la cadena, y no al original.</p></div></div>
+</div>
+<div class="ReflectionfpdIdevice" id="id8">
+<div class="iDevice emphasis_reflexionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_reflexionfpd.gif">
+<span class="iDeviceTitle"><strong>Reflexiona</strong></span>
+<script type="text/javascript" src="./PROG_T4_files/common.js.descarga"></script>
+<div class="iDevice_inner">
+<div id="ta8_38" class="block" style="display:block;position:relative"><p>Fijate en el siguiente línea de código, ¿cuántas instancias de la clase String ves?</p>
+<div class="codigo elemento_centrado" style="width: 60.45em;">
+<div class="texto_izquierda">
+<pre>String cad="Ejemplo de cadena 1"; cad="Ejemplo de cadena 2"; cad=new String("Ejemplo de cadena 3");</pre>
+</div>
+</div></div><div id="view8" style="display:block;"><input type="button" name="btnshow8" value="Pulse aquí" class="feedbackbutton" onclick="showAnswer(&#39;8&#39;,1)">
+</div>
+<div id="hide8" style="display:none;"><input type="button" name="btnshow8" value="Ocultar" class="feedbackbutton" onclick="showAnswer(&#39;8&#39;,0)">
+</div>
+<div id="s8" class="feedback" style=" display: none;"><div id="ta8_39" class="block" style="display:block;position:relative"><p align="left">Pues en realidad hay 4 instancias. La primera instancia es la que se crea con el literal de cadena "Ejemplo de cadena 1". El segundo literal, "Ejemplo de cadena 2", da lugar a otra instancia diferente a la anterior. El tercer literal, "Ejemplo de cadena 3", es también nuevamente otra instancia de String diferente. Y por último, al crear una nueva instancia de la clase String a través del operador new, se crea un nuevo objeto String copiando para ello el contenido de la cadena que se le pasa por parámetro, con lo que aquí tenemos la cuarta instancia del objeto String en solo una línea.</p></div></div>
+<noscript><br /><div class="feedback">
+<p><strong>Retroalimentación: </strong></p>
+<p align="left">Pues en realidad hay 4 instancias. La primera instancia es la que se crea con el literal de cadena "Ejemplo de cadena 1</code>". El segundo literal, "Ejemplo de cadena 2</code>", da lugar a otra instancia diferente a la anterior. El tercer literal, "Ejemplo de cadena 3</code>", es también nuevamente otra instancia de String</code> diferente. Y por último, al crear una nueva instancia de la clase String</code> a través del operador new</code>, se crea un nuevo objeto String</code> copiando para ello el contenido de la cadena que se le pasa por parámetro, con lo que aquí tenemos la cuarta instancia del objeto String</code> en solo una línea.</p></div></noscript>
+</div>
+</div>
+</div>
+<div class="RecomendacionfpdIdevice" id="id128">
+<div class="iDevice emphasis_recomendacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_recomendacionfpd.gif">
+<span class="iDeviceTitle"><strong>Recomendación</strong></span>
+<div class="iDevice_inner">
+<div id="ta128_46" class="block" style="display:block;position:relative"><p><span class="resaltado_inline">Nota de rendimiento:</span></p>
+<p>Para conservar memoria, Java trata a todas las literales de cadena con el mismo contenido como un solo objeto String que tiene muchas referencias.</p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+2.1.- Operaciones avanzadas con cadenas de caracteres (I).</h1></div>
+<div class="FreeTextfpdIdevice" id="id9">
+<div class="iDevice emphasis0">
+<div id="ta9_73" class="block" style="display:block;position:relative"><div class="elemento_derecha"> </div>
+<div class="elemento_derecha">
+<div class="elemento_centrado"><a href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_R006_salida_estandar.png"><img src="./PROG_T4_files/PROG05_CONT_R006_salida_estandar_miniatura.PNG" alt="Ejemplo de salida estándar en modo texto." title="Salida estándar en modo texto." class="imagen_ampliable" height="172" width="160"></a></div>
+<div class="elemento_centrado credenciales"><a class="cc0" title="Dominio público" href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" target="_blank"><span class="transparente">Dominio público</span></a> <a title="Chealer" href="http://commons.wikimedia.org/wiki/File:Bash_demo.png" target="_blank">Chealer</a></div>
+</div>
+<p>¿Qué operaciones puedes hacer con una cadena? Muchas más de las que te imaginas. Empezaremos con la operación mas sencilla: la <strong>concatenación</strong>. <strong>La concatenación es la unión de dos cadenas, para formar una sola</strong>. En Java es muy sencillo, pues sólo tienes que utilizar el <strong>operador de concatenación</strong> (signo de suma):</p>
+<div class="codigo elemento_centrado" style="width: 23.05em;">
+<div class="texto_izquierda">
+<pre>String cad = "¡Bien"+"venido!";
+</pre>
+<pre>System.out.println(cad);
+</pre>
+</div>
+</div>
+<p align="left">En la operación anterior se está creando una nueva cadena, resultado de unir dos cadenas: una cadena con el texto "¡Bien", y otra cadena con el texto "venido!". La segunda línea de código muestra por la <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">salida estándar<span><em>Salida estándar</em>La salida estándar refiere al lugar donde por defecto se muestra la información en un programa. Generalmente es la pantalla, aunque se puede configurar que la salida estándar sea otra, como por ejemplo una impresora.</span></a> el resultado de la concatenación. El resultado de su ejecución será que aparecerá el texto "¡Bienvenido!" por la pantalla.</p>
+<p align="left">Otra forma de usar la concatenación, que ilustra que cada literal de cadena es a su vez una instancia de la clase String, es usando el método concat del objeto String:</p>
+<div class="codigo elemento_centrado" style="width: 26.35em;">
+<div class="texto_izquierda">
+<pre>String cad="¡Bien".concat("venido!");
+</pre>
+<pre>System.out.printf(cad);
+</pre>
+</div>
+</div>
+<p align="left">Fíjate bien en la expresión anterior, pues genera el mismo resultado que la primera opción y en ambas participan tres instancias de la clase String. Una instancia que contiene el texto "¡Bien", otra instancia que contiene el texto "venido!", y otra que contiene el texto "¡Bienvenido!". La tercera cadena se crea nueva al realizar la operación de concatenación, sin que las otras dos hayan desaparecido. Pero no te preocupes por las otras dos cadenas, pues se borrarán de la memoria cuando el <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">recolector de basura<span><em>Recolector de basura</em>Es una pieza clave de Java. Se trata de un mecanismo para ir eliminando de memoria aquellas instancias de clases u objetos que ya no están siendo utilizados.</span></a> detecte que ya no se usan.</p>
+<p align="left">Fíjate además, que se puede invocar directamente un método de la clase String, posponiendo el método al literal de cadena. Esto es una señal de que al escribir un literal de cadena, se crea una instancia del <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">objeto inmutable<span><em>Objeto inmutable</em>Los objetos inmutables son aquellos que no se pueden modificar una vez creados. Es el caso de los String de Java, así como las clases envoltorio Integer, Float, Double, etc.</span></a> String.</p>
+<p align="left">Pero no solo podemos concatenar una cadena a otra cadena. Gracias al método toString() podemos concatenar cadenas con literales numéricos e instancias de otros objetos sin problemas.</p></div></div>
+</div>
+<div class="DestacadofpdIdevice" id="id10">
+<div class="iDevice emphasis0">
+<div class="iDevice_destacadofpd">
+<div id="ta10_70" class="block" style="display:block;position:relative"><p align="left">
+El
+método toString() es un método
+disponible en todas las clases de Java. Su objetivo es simple,
+permitir la conversión de una instancia de clase en cadena de texto,
+de forma que se pueda convertir a texto el contenido de la instancia.
+Lo de convertir, no siempre es posible, hay clases fácilmente
+convertibles a texto, como es la clase Integer,
+por ejemplo, y otras que no se pueden convertir, y que el resultado
+de invocar el método toString() es
+información relativa a la instancia.
+</p>
+</div></div>
+</div>
+</div>
+<div class="FreeTextfpdIdevice" id="id11">
+<div class="iDevice emphasis0">
+<div id="ta11_73" class="block" style="display:block;position:relative"><p>La gran ventaja de la concatenación es que el método toString() se invocará automáticamente, sin que tengamos que especificarlo, por ejemplo:</p>
+<div class="codigo elemento_centrado" style="width: 57.7em;">
+<div class="texto_izquierda">
+<pre>Integer i1=new Integer (1223); // La instancia i1 de la clase Integer contiene el número 1223.
+</pre>
+<pre>System.out.println("Número: " + i1); // Se mostrará por pantalla el texto "Número: 1223"
+</pre>
+</div>
+</div>
+<p>En el ejemplo anterior, se ha invocado automáticamente i1.toString(), para convertir el número a cadena. Esto se realizará para cualquier instancia de clase concatenada. Pero cuidado, como se ha dicho antes, no todas las clases se pueden convertir a cadenas.</p></div></div>
+</div>
+<div class="EleccionmultiplefpdIdevice" id="id12">
+<script type="text/javascript" src="./PROG_T4_files/common.js.descarga"></script>
+<script type="text/javascript" src="./PROG_T4_files/libot_drag.js.descarga"></script>
+<div class="iDevice emphasis_autoevaluacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_autoevaluacionfpd.gif">
+<span class="iDeviceTitle"><strong>Autoevaluación</strong></span>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion12_60" class="block" style="display:block;position:relative"><p><strong>¿Qué se mostrará como resultado de ejecutar el siguiente código?:</strong></p>
+<div class="codigo elemento_centrado" style="width: 23.6em;">
+<div class="texto_izquierda">
+<pre>System.out.println(4+1+"-"+4+1);</pre>
+</div>
+</div></div><div style="display: table; overflow: auto; width: 100%;">
+<div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option12_60" id="i12_63" onclick="getFeedback(0,3,&#39;12_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans12_63" class="block" style="display:block;position:relative"><p>Mostrará la cadena "5-41".</p></div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option12_60" id="i12_86" onclick="getFeedback(1,3,&#39;12_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans12_86" class="block" style="display:block;position:relative"><p>Mostrará la cadena "41-14".</p></div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option12_60" id="i12_89" onclick="getFeedback(2,3,&#39;12_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans12_89" class="block" style="display:block;position:relative"><p>Esa operación dará error.</p></div></div>
+</div></div>
+<div id="sa0b12_60" class="feedback" style="display: none;"><div id="taf12_63" class="" style="display:block;position:relative"><p>Efectivamente, primero se realiza la suma numérica de 4 y 1, dando 5. Después se concatena 5 a "-" creando una nueva cadena: "5-". Después se concatena la cadena "5-" al número 4, dando lugar a "5-4" y por último se concatena la cadena "5-4" al número 1, dando lugar a la cadena "5-41". Las operaciones se aplican de izquierda a derecha.</p></div></div>
+<div id="sa1b12_60" class="feedback" style="display: none;"><div id="taf12_86" class="" style="display:block;position:relative"><p>Incorrecto. El símbolo es el mismo, la suma, pero se aplican de forma diferente según el contexto, en unos casos significa sumar y en otros concatenación, siempre de izquierda a derecha.</p></div></div>
+<div id="sa2b12_60" class="feedback" style="display: none;"><div id="taf12_89" class="" style="display:block;position:relative"><p>Incorrecto. Los literales enteros se encapsularán en la clase Integer cuando sea necesario.</p></div></div>
+<noscript><br /><div class="feedback">
+<p><strong>Solution: </strong></p>
+<ol><li><strong>Opción correcta</strong> <p>Efectivamente, primero se realiza la suma numérica de 4 y 1, dando 5. Después se concatena 5 a "-</code>" creando una nueva cadena: "5-</code>". Después se concatena la cadena "5-</code>" al número 4, dando lugar a "5-4</code>" y por último se concatena la cadena "5-4</code>" al número 1, dando lugar a la cadena "5-41</code>". Las operaciones se aplican de izquierda a derecha.</p></li><li><strong>Incorrecto</strong> <p>Incorrecto. El símbolo es el mismo, la suma, pero se aplican de forma diferente según el contexto, en unos casos significa sumar y en otros concatenación, siempre de izquierda a derecha.</p></li><li><strong>Incorrecto</strong> <p>Incorrecto. Los literales enteros se encapsularán en la clase Integer</code> cuando sea necesario.</p></li></ol>
+</div></noscript></div>
+</div>
+</div>
+</div>
+<div class="RecomendacionfpdIdevice" id="id129">
+<div class="iDevice emphasis_recomendacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_recomendacionfpd.gif">
+<span class="iDeviceTitle"><strong>Recomendación</strong></span>
+<div class="iDevice_inner">
+<div id="ta129_46" class="block" style="display:block;position:relative"><p><span class="destacado_inline resaltado_inline">Observación de ingeniería de software</span></p>
+<p style="text-align: justify;">No es necesario copiar un objeto String existente. Los objetos String son inmutables:<br>su contenido de caracteres no puede modificarse una vez que son creados, ya que la clase String no proporciona métodos que permitan modificar el contenido de un objeto String.</p>
+<p style="text-align: justify;"><span class="resaltado_inline">Error común de programación</span></p>
+<p style="text-align: justify;">Intentar acceder a un carácter que se encuentra fuera de los límites de un objeto String (es decir, un índice menor que 0 o un índice mayor o igual a la longitud del objeto String), se produce una excepción StringIndexOutOfBoundsException.</p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+2.1.1.- Operaciones avanzadas con cadenas de caracteres (II).</h1></div>
+<div class="FreeTextfpdIdevice" id="id13">
+<div class="iDevice emphasis0">
+<div id="ta13_73" class="block" style="display:block;position:relative"><p align="left">Vamos a continuar revisando las operaciones que se pueden realizar con cadenas. Como verás las operaciones a realizar se complican un poco a partir de ahora. En todos los ejemplos la variable cad contiene la cadena "¡Bienvenido!", como se muestra en las imágenes.</p>
+<ul class="lista_verificacion">
+<li>&lt;strong&gt;&lt;span style="font-size: medium;"&gt;int length(&lt;/span&gt;&lt;/strong&gt;). Retorna un número entero que contiene la longitud de una cadena, resultado de contar el número de caracteres por la que esta compuesta. Recuerda que un espacio es también un carácter.
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_R007_LongitudDeUnaCadena.png"><img alt="Imagen que ilustra como cada carácter de una cadena ocupa una única posición, y que el número de posiciones de la cadena es en definitiva la longitud de la cadena." class="imagen_ampliable" src="./PROG_T4_files/PROG05_CONT_R007_LongitudDeUnaCadena_miniatura.PNG" style="width: 188px; height: 28px;" title="Longitud de una cadena." height="28" width="188"></a></div>
+</div>
+</li>
+<li>
+<div class="elemento_derecha">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_R008_ExtraccionDeCaracteres.png"><img alt="Imagen que ilustra la posición de cada carácter en una cadena de 12 caracteres, la cadena es “¡Bienvenido!”. Los caracteres empiezan a numerarse en cero, hasta la longitud total de la cadena menos uno. El primero carácter, el carácter cero, será el carácter más a la izquierda de la cadena. El último carácter será el símbolo de cerrar admiración (!). Los caracteres se pueden obtener individualmente con el método charAt de la clase String." class="imagen_ampliable" src="./PROG_T4_files/PROG08_CONT_R009_Subcadenas_miniatura.png" title="Extracción de caracteres de una cadena."></a></div>
+</div>
+<strong><span style="font-size: medium;">char charAt(int pos)</span></strong>. Retorna el carácter ubicado en la posición pasada por parámetro. El carácter obtenido de dicha posición será almacenado en un tipo de dato <strong><span style="font-size: medium;">char</span></strong>. Las posiciones se empiezan a contar desde el 0 (y no desde el 1), y van desde 0 hasta <span title="Longitud menos uno.">longitud - 1</span>. Por ejemplo, el código siguiente mostraría por pantalla el carácter "<strong><span style="font-size: medium;">v</span></strong>": <br>
+<div class="codigo elemento_centrado" style="width: 18.65em;">
+<div class="texto_izquierda">
+<pre>char t = cad.charAt(5);
+</pre>
+<pre>System.out.println(t);
+</pre>
+</div>
+</div>
+</li>
+<li><strong><span style="font-size: medium;">String substring(int beginIndex, int endIndex)</span></strong>. Este método permite extraer una subcadena de otra de mayor tamaño. Una cadena compuesta por todos los caracteres existentes entre la posición <strong><span style="font-size: medium;">beginIndex</span></strong> y la posición <strong><span style="font-size: medium;">&lt;span title="endIndex o índice final menos uno."&gt;endIndex - 1&lt;/span&gt;</span></strong>. Por ejemplo, si pusiéramos <strong><span style="font-size: medium;">cad.substring(0,5)</span></strong> en nuestro programa, sobre la variable <strong><span style="font-size: medium;">cad</span></strong> anterior, dicho método devolvería la subcadena "<strong><span style="font-size: medium;">¡Bien</span></strong>" tal y como se muestra en la imagen.
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_R009_Subcadenas.png"><img alt="Imagen que ilustra el conjunto de caracteres a los que corresponderían dos extracciones de caracteres usando el método substring, sobre la cadena “¡Bienvenido!”. La primera extracción va desde el carácter 0 al 5, y correspondería con la subcadena “¡Bien”. La segunda extracción va desde el carácter 5 al 11 y correspondería con la subcadena “venido!”. La tercera extracción extrae los caracteres desde la posición 2 en adelante, y extraería la cadena “ienvenido!”." class="imagen_ampliable" src="./PROG_T4_files/PROG08_CONT_R009_Subcadenas_miniatura.png" style="width: 192px; height: 76px;" title="Extracción de subcadenas."></a></div>
+</div>
+</li>
+<li><strong><span style="font-size: medium;">String substring (int beginIndex)</span></strong>. Cuando al método <strong><span style="font-size: medium;">substring</span></strong> solo le proporcionamos un parámetro, extraerá una cadena que comenzará en el carácter con posición <strong><span style="font-size: medium;">beginIndex</span></strong> e irá hasta el final de la cadena. En el siguiente ejemplo se mostraría por pantalla la cadena "<strong><span style="font-size: medium;">ienvenido!</span></strong>": <br>
+<div class="codigo elemento_centrado" style="width: 24.15em;">
+<div class="texto_izquierda">
+<pre>String subcad = cad.substring(2);
+</pre>
+<pre>System.out.println(subcad);
+</pre>
+</div>
+</div>
+</li>
+</ul>
+<p align="left">Otra operación muy habitual es la conversión de número a cadena y de cadena a número. Imagínate que un usuario introduce su edad. Al recoger la edad desde la interfaz de usuario, capturarás generalmente una cadena, pero, ¿cómo compruebas que la edad es mayor que 0? Para poder realizar esa comprobación tienes que pasar la cadena a número. Empezaremos por ver cómo se convierte un número a cadena.</p></div></div>
+</div>
+<div class="DestacadofpdIdevice" id="id14">
+<div class="iDevice emphasis0">
+<div class="iDevice_destacadofpd">
+<div id="ta14_70" class="block" style="display:block;position:relative"><p>
+Los números generalmente se almacenan en memoria
+como números binarios, es decir, secuencias de unos y ceros con los
+que se puede operar (sumar, restar, etc.). No debes confundir los
+tipos de datos que contienen números (int, <code>short</code>, long, <code>float</code>
+y double)
+con las secuencias de caracteres que representan un número. No es lo
+mismo 123 que "123",
+el primero es un número y el segundo es una cadena formada por tres
+caracteres:
+'1', '<code>2</code>'
+y '3'.
+</p>
+</div></div>
+</div>
+</div>
+<div class="FreeTextfpdIdevice" id="id15">
+<div class="iDevice emphasis0">
+<div id="ta15_73" class="block" style="display:block;position:relative"><p align="left">Convertir un número a cadena es fácil desde que existe, para todas las clases <span lang="en">Java</span>, el método toString(). Gracias a ese método podemos hacer cosas como las siguientes:</p>
+<div class="codigo elemento_centrado" style="width: 24.15em;">
+<div class="texto_izquierda">
+<pre>String cad2="Número cinco: " + 5;
+</pre>
+<pre>System.out.println(cad2);
+</pre>
+</div>
+</div>
+<p> </p>
+<p align="left">El resultado del código anterior es que se mostrará por pantalla "Número cinco: 5", y no dará ningún error. Esto es posible gracias a que Java convierte el número 5 a su <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">clase envoltorio<span><em>Clase envoltorio</em>Las clases envoltorio son clases que encapsulan tipos de datos básicos, tales como tales como int, short, double, etc. Sirven básicamente para poder usar los tipos básicos como si fueran objetos. Las clases envoltorio son generalmente inmutables.</span></a> (<span lang="en">wrapper class</span>) correspondiente (Integer, <code>Float</code>, Double, etc.), y después ejecuta automáticamente el método toString() de dicha clase.</p></div></div>
+</div>
+<div class="ReflectionfpdmodifIdevice" id="id16">
+<div class="iDevice emphasis_reflexionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_reflexionfpd.gif">
+<span class="iDeviceTitle"><strong>Reflexiona</strong></span>
+<script type="text/javascript" src="./PROG_T4_files/common.js.descarga"></script>
+<div class="iDevice_inner">
+<div id="ta16_40" class="block" style="display:block;position:relative"><p>¿Cuál crees que será el resultado de poner System.out.println("A"+5f)?</p>
+<p>Pruébalo y recuerda: no olvides indicar el tipo de literal (f para los literales de tipo float, y d para los literales de tipo double), así obtendrás el resultado esperado y no algo diferente.</p></div></div>
+</div>
+</div>
+<div class="RecomendacionfpdIdevice" id="id130">
+<div class="iDevice emphasis_recomendacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_recomendacionfpd.gif">
+<span class="iDeviceTitle"><strong>Recomendación</strong></span>
+<div class="iDevice_inner">
+<div id="ta130_46" class="block" style="display:block;position:relative"><p><span class="resaltado_inline">Error común de programación</span></p>
+<p style="text-align: justify;">Al comparar referencias con == se pueden producir errores lógicos, ya que == compara las referencias para determinar si se refieren al mismo objeto, no si dos objetos tienen el mismo contenido. Si se comparan dos objetos idénticos (pero separados) con ==, el resultado será false. Si va a comparar objetos para determinar si tienen el mismo contenido, utilice el método equals.</p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+2.1.2.- Operaciones avanzadas con cadenas de caracteres (III).</h1></div>
+<div class="FreeTextfpdIdevice" id="id17">
+<div class="iDevice emphasis0">
+<div id="ta17_73" class="block" style="display:block;position:relative"><p><img alt="Imagen que muestra un muñeco, junto con una cinta de medir que mide su estatura, ilustrando que la comparación de objetos es sencilla para nosotros, pero no tan fácil para un ordenador." class="elemento_derecha" src="./PROG_T4_files/PROG05_CONT_R010_comparacion_de_cosas_diferentes_109534.JPG" title="La comparación de cosas diferentes no es fácil para un ordenador, aunque sea muy sencillo para nosotros."></p>
+<p>¿Cómo comprobarías que la cadena "3" es mayor que 0? No puedes comparar directamente una cadena con un número, así que necesitarás aprender cómo <strong>convertir cadenas que contienen números a tipos de datos numéricos</strong> (int, <code>short</code>, long, <code>float</code> o double). Esta es una operación habitual en todos los lenguajes de programación, y Java, para este propósito, ofrece los métodos valueOf, existentes en todas las clases envoltorio descendientes de la clase Number: Integer, Long, Short, Float y <code>Double</code>.</p>
+<p align="left">Veamos un ejemplo de su uso para un número de doble precisión. Para el resto de las clases es similar:</p>
+<div class="codigo elemento_centrado" style="width: 35.7em;">
+<div class="texto_izquierda">
+<pre>String c="1234.5678";
+</pre>
+<pre>double n;
+</pre>
+<pre>try {  
+</pre>
+<pre>     n=Double.valueOf(c).doubleValue();
+</pre>
+<pre>} catch (NumberFormatException e)
+</pre>
+<pre>{  /* Código a ejecutar si no se puede convertir */  }
+</pre>
+</div>
+</div>
+<p align="left">Fíjate en el código anterior. Puedes comprobar cómo la cadena <strong>c</strong> contiene en su interior un número, pero escrito con dígitos numéricos (caracteres). El código escrito está destinado a transformar la cadena en número, usando el método valueOf. Este método lanzará la excepción NumberFormatException si no consigue convertir el texto a número. En el siguiente archivo, tienes un ejemplo más completo, donde aparecen también ejemplos para las otros tipos numéricos:</p>
+<p class="enlace_centrado"><a class="paquete" title="Descargar ejemplo de conversión de cadena de texto a número de doble precisión. [.zip – 1,21 KB]" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_R011_EjemplosConversionStringANumero.zip">Ejemplo de conversión de cadena de texto a número.</a><span class="credenciales"> (1,21 KB)</span></p>
+<p align="left">Seguro que ya te vas familiarizando con este embrollo y encontrarás interesantes todas estas operaciones. Ahora te planteamos otro reto: imagina que tienes que mostrar el precio de un producto por pantalla. Generalmente si un producto vale, por ejemplo, 3,3 euros, el precio se debe mostrar como "3,30 &lt;span title="Simbolo del Euro"&gt;€&lt;/span&gt;", es decir, se le añade un cero extra al final para mostrar las centésimas. Con lo que sabemos hasta ahora, usando la concatenación en Java, podemos conseguir que una cadena se concatene a un número flotante, pero el resultado no será el esperado. Prueba el siguiente código:</p>
+<div class="codigo elemento_centrado" style="width: 32.4em;">
+<div class="texto_izquierda">
+<pre>float precio=3.3f;
+</pre>
+<pre>System.out.println("El precio es: "+precio+"€");
+</pre>
+</div>
+</div>
+<p align="left">Si has probado el código anterior, habrás comprobado que el resultado no muestra "3,30 €" sino que muestra "3,3 €". ¿Cómo lo solucionamos? Podríamos dedicar bastantes líneas de código hasta conseguir algo que realmente funcione, pero no es necesario, dado que Java y otros lenguajes de programación (como C), disponen de lo que se denomina <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">formateado de cadenas<span><em>Formateado de cadenas</em>Operación consistente en especificar cómo queremos que se transforme un dato, generalmente numérico, en cadena. Dicha conversión permite especificar de forma precisa cosas como el número de decimales que queremos que tenga el resultado.</span></a>. En Java podemos "formatear" cadenas a través del método estático format disponible en el objeto String. Este método permite crear una cadena proyectando los argumentos en un formato específico de salida. Lo mejor es verlo con un ejemplo. Observemos cuál sería la solución al problema planteado antes:</p>
+<div class="codigo elemento_centrado" style="width: 40.1em;">
+<div class="texto_izquierda">
+<pre>float precio = 3.3f;
+</pre>
+<pre>String salida = String.format ("El precio es: %.2f €", precio);
+</pre>
+<pre>System.out.println(salida);
+</pre>
+</div>
+</div>
+<p> </p>
+<p>El formato de salida, también denominado "cadena de formato", es el primer argumento del método format. La variable precio, situada como segundo argumento, es la variable que se proyectará en la salida siguiendo un formato concreto. Seguro que te preguntarás, ¿qué es "&lt;span title="Especificador de formato que formado por una secuencia de escape “%”, y una serie de símbolos que indican que se deben mostrar dos decimales (“.2”) del número flotante pasado como argumento (“f”)."&gt;%.2f&lt;/span&gt;<strong>"</strong>? Pues es un <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">especificador de formato<span><em>Especificador de formato</em>Es una subcadena dentro de una cadena que especifica cómo se debe formatear un dato concreto que se pasa como argumento al método format. El especificador de formato está formado por un carácter de escape "%" seguido de varios símbolos, destinados a describir cómo será el formato de salida.</span></a> e indica cómo se deben formatear o proyectar los argumentos que hay después de la cadena de formato en el método format.</p></div></div>
+</div>
+<div class="DebesconocerfpdIdevice" id="id18">
+<div class="iDevice emphasis_debesconocerfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_debesconocerfpd.gif">
+<span class="iDeviceTitle"><strong>Debes conocer</strong></span>
+<div class="iDevice_inner">
+<div id="ta18_48" class="block" style="display:block;position:relative"><p class="enlace_centrado" style="text-align: left;">Es necesario que conozcas bien el método format y los especificadores de formato. Por ese motivo, te pedimos que leas atentamente el <em>Anexo I: Formateado de cadenas en Java</em>, de la unidad.</p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+2.1.3.- Operaciones avanzadas con cadenas de caracteres (IV).</h1></div>
+<div class="FreeTextfpdIdevice" id="id21">
+<div class="iDevice emphasis0">
+<div id="ta21_73" class="block" style="display:block;position:relative"><div class="elemento_derecha">
+<div class="elemento_centrado"><img src="./PROG_T4_files/PROG05_CONT_R013_operacion.jpg" alt="Varias personas operando en un quirófano." title="Las operaciones sobre cadenas son complicadas, pero no tanto." height="148" width="192"></div>
+<div class="elemento_centrado credenciales"><a class="cc0" title="Dominio público" href="http://creativecommons.org/publicdomain/zero/1.0/deed.es" target="_blank"><span class="transparente">Dominio público</span></a> <a title="Mass Communication Specialist 3rd Class Matthew Jackson" href="http://commons.wikimedia.org/wiki/File:Orif_surgery.jpg" target="_blank">Mass Communication Specialist 3rd Class Matthew Jackson</a></div>
+</div>
+<p>¿Cómo puedo comprobar si dos cadenas son iguales? ¿Qué más operaciones ofrece Java sobre las cadenas? Como podrás observar, Java ofrece una gran variedad de operaciones sobre cadenas. En la siguiente tabla puedes ver las operaciones más importantes. En todos los ejemplos expuestos, las variables cad1, <code>cad2</code> y cad3 son cadenas ya existentes, y la variable num es un número entero mayor o igual a cero.</p>
+<table class="tabla" summary="Tabla que expone alguno de los métodos más importantes de la clase String. En la primera columna aparece un ejemplo en el que se usa el método, en la segunda columna una descripción que explica para que sirve dicho método."><caption>Métodos importantes de la clase String.</caption>
+<thead>
+<tr><th scope="col">Método.</th><th scope="col">Descripción</th></tr>
+</thead>
+<tbody>
+<tr>
+<td scope="row"><span style="font-size: medium;"><strong>cad1.compareTo(cad2)</strong></span></td>
+<td>Permite comparar dos cadenas entre sí lexicográficamente. Retornará 0 si son iguales, un número menor que cero si la cadena (<strong><span style="font-size: medium;">cad1</span></strong>) es anterior en orden alfabético a la que se pasa por argumento (<strong><span style="font-size: medium;">cad2</span></strong>), y un número mayor que cero si la cadena es posterior en orden alfabético.</td>
+</tr>
+<tr>
+<td scope="row"><span style="font-size: medium;"><strong>cad1.equals(cad2)</strong></span></td>
+<td>Cuando se compara si dos cadenas son iguales, no se debe usar el operador de comparación "<strong><span style="font-size: medium;">==</span></strong>", sino el método <span style="font-size: medium;"><strong>equals()</strong></span>. Retornará <strong><span style="font-size: medium;">true</span></strong> si son iguales, y <strong><span style="font-size: medium;">false</span></strong> si no lo son.</td>
+</tr>
+<tr>
+<td scope="row"><span style="font-size: medium;"><strong>cad1.compareToIgnoreCase(cad2)&lt;br /&gt; cad1.equalsIgnoreCase(cad2)</strong></span></td>
+<td>El método <strong><span style="font-size: medium;">compareToIgnoreCase()</span></strong> funciona igual que el método <strong><span style="font-size: medium;">compareTo()</span></strong>, pero ignora las mayúsculas y las minúsculas a la hora de hacer la comparación. Las mayúsculas van antes en orden alfabético que las minúsculas, por lo que hay que tenerlo en cuenta. El método <span style="font-size: medium;"><strong>equalsIgnoresCase()</strong></span> es igual que el método <strong><span style="font-size: medium;">equals()</span></strong> pero sin tener en cuenta las minúsculas.</td>
+</tr>
+<tr>
+<td scope="row"><span style="font-size: medium;"><strong>cad1.trim()</strong></span></td>
+<td>Genera una copia de la cadena eliminando los espacios en blanco anteriores y posteriores de la cadena.</td>
+</tr>
+<tr>
+<td scope="row"><span style="font-size: medium;"><strong>cad1.toLowerCase()</strong></span></td>
+<td>Genera una copia de la cadena con todos los caracteres a minúscula.</td>
+</tr>
+<tr>
+<td scope="row"><span style="font-size: medium;"><strong>cad1.toUpperCase()</strong></span></td>
+<td>Genera una copia de la cadena con todos los caracteres a mayúsculas.</td>
+</tr>
+<tr>
+<td scope="row"><span style="font-size: medium;"><strong>cad1.indexOf(cad2)&lt;br /&gt; cad1.indexOf(cad2,num)</strong></span></td>
+<td>Si la cadena o carácter pasado por argumento está contenida en la cadena invocante, retorna su posición, en caso contrario retornará -1. Opcionalmente se le puede indicar la posición a partir de la cual buscar, lo cual es útil para buscar varias apariciones de una cadena dentro de otra.</td>
+</tr>
+<tr>
+<td scope="row"><span style="font-size: medium;"><strong>cad1.contains(cad2)</strong></span></td>
+<td>Retornará <strong><span style="font-size: medium;">true</span></strong> si la cadena pasada por argumento está contenida dentro de la cadena. En caso contrario retornará <strong><span style="font-size: medium;">false</span></strong>.</td>
+</tr>
+<tr>
+<td scope="row"><span style="font-size: medium;"><strong>cad1.startsWith(cad2)</strong></span></td>
+<td>Retornará <strong><span style="font-size: medium;">true</span></strong> si la cadena comienza por la cadena pasada como argumento. En caso contrario retornará <strong><span style="font-size: medium;">false</span></strong>.</td>
+</tr>
+<tr>
+<td scope="row"><span style="font-size: medium;"><strong>cad1.endsWith(cad2)</strong></span></td>
+<td>Retornará <strong><span style="font-size: medium;">true</span></strong> si la cadena acaba por la cadena pasada como argumento. En caso contrario retornará <strong><span style="font-size: medium;">false</span></strong>.</td>
+</tr>
+<tr>
+<td scope="row"><span style="font-size: medium;"><strong>cad1.replace(cad2,cad3)</strong></span></td>
+<td>Generará una copia de la cadena <strong><span style="font-size: medium;">cad1</span></strong>, en la que se sustituirán todas las apariciones de <strong><span style="font-size: medium;">cad2</span></strong> por <strong><span style="font-size: medium;">cad3</span></strong>. El reemplazo se hará de izquierda a derecha, por ejemplo: reemplazar "<strong><span style="font-size: medium;">zzz</span></strong>" por "<strong><span style="font-size: medium;">xx</span></strong>" en la cadena "<strong><span style="font-size: medium;">zzzzz</span></strong>" generará "<strong><span style="font-size: medium;">xxzz</span></strong>" y no "<strong><span style="font-size: medium;">zzxx</span></strong>".</td>
+</tr>
+</tbody>
+</table></div></div>
+</div>
+<div class="EleccionmultiplefpdIdevice" id="id22">
+<script type="text/javascript" src="./PROG_T4_files/common.js.descarga"></script>
+<script type="text/javascript" src="./PROG_T4_files/libot_drag.js.descarga"></script>
+<div class="iDevice emphasis_autoevaluacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_autoevaluacionfpd.gif">
+<span class="iDeviceTitle"><strong>Autoevaluación</strong></span>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion22_60" class="block" style="display:block;position:relative"><p><strong>¿Cuál será el resultado de ejecutar</strong> cad1.replace("l","j").indexOf("ja") <strong>si cad1 contiene la cadena "hojalata"?</strong></p></div><div style="display: table; overflow: auto; width: 100%;">
+<div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option22_60" id="i22_63" onclick="getFeedback(0,4,&#39;22_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans22_63" class="block" style="display:block;position:relative"><p>2.</p></div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option22_60" id="i22_101" onclick="getFeedback(1,4,&#39;22_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans22_101" class="block" style="display:block;position:relative"><p>3.</p></div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option22_60" id="i22_104" onclick="getFeedback(2,4,&#39;22_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans22_104" class="block" style="display:block;position:relative"><p>4.</p></div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option22_60" id="i22_107" onclick="getFeedback(3,4,&#39;22_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans22_107" class="block" style="display:block;position:relative"><p>-1.</p></div></div>
+</div></div>
+<div id="sa0b22_60" class="feedback" style="display: none;"><div id="taf22_63" class="" style="display:block;position:relative"><p>Acertaste, esta no era fácil. Enhorabuena.</p></div></div>
+<div id="sa1b22_60" class="feedback" style="display: none;"><div id="taf22_101" class="" style="display:block;position:relative"><p>Incorrecto. Una recomendación, empieza a contar por cero.</p></div></div>
+<div id="sa2b22_60" class="feedback" style="display: none;"><div id="taf22_104" class="" style="display:block;position:relative"><p>No es correcto. Revisa el funcionamiento del método indexOf.</p></div></div>
+<div id="sa3b22_60" class="feedback" style="display: none;"><div id="taf22_107" class="" style="display:block;position:relative"><p>Deberías revisar los métodos anteriores. No es correcto.</p></div></div>
+<noscript><br /><div class="feedback">
+<p><strong>Solution: </strong></p>
+<ol><li><strong>Opción correcta</strong> <p>Acertaste, esta no era fácil. Enhorabuena.</p></li><li><strong>Incorrecto</strong> <p>Incorrecto. Una recomendación, empieza a contar por cero.</p></li><li><strong>Incorrecto</strong> <p>No es correcto. Revisa el funcionamiento del método indexOf</code>.</p></li><li><strong>Incorrecto</strong> <p>Deberías revisar los métodos anteriores. No es correcto.</p></li></ol>
+</div></noscript></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+2.1.4.- Operaciones avanzadas con cadenas de caracteres (V).</h1></div>
+<div class="FreeTextfpdIdevice" id="id23">
+<div class="iDevice emphasis0">
+<div id="ta23_73" class="block" style="display:block;position:relative"><p><img alt="Imagen que muestra varios módulos de memoria, donde se almacenan los datos que va manejando nuestro programa." class="elemento_derecha" src="./PROG_T4_files/PROG05_CONT_R014_memoria_ram.png" title="Módulos de memoria, necesarios para almacenar los datos de nuestro programa."></p>
+<p align="left">¿Sabes cuál es el principal problema de las cadenas de caracteres? Su alto consumo de memoria. Cuando realizamos un programa que realiza muchísimas operaciones con cadenas, es necesario optimizar el uso de memoria.</p>
+<p>En Java, String es un objeto inmutable, lo cual significa, entre otras cosas, que cada vez que creamos un String, o un literal de String, se crea un nuevo objeto que no es modificable. Java proporciona la clase StringBuilder, la cual es un <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">mutable<span><em>Objeto mutable</em>Es lo contrario a un objeto inmutable. Son objetos que una vez creados se pueden modificar sin problemas.</span></a>, y permite una mayor optimización de la memoria. También existe la clase StringBuffer, pero consume mayores recursos al estar pensada para aplicaciones <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">multi-hilo<span><em>Multihilo</em>Se trata de aplicaciones que ejecutan varias líneas de ejecución simultáneamente y que necesitan acceder a datos compartidos. Cuando varias líneas de ejecución, cada una a su ritmo, necesitan acceder a datos compartidos, hay que tener mucho cuidado para que los datos que manejan no sean incoherentes.</span></a>, por lo que en nuestro caso nos centraremos en la primera.</p>
+<p align="left">Pero, ¿en qué se diferencia StringBuilder de la clase String? Pues básicamente en que la clase StringBuilder permite modificar la cadena que contiene, mientras que la clase String no. Como ya se dijo antes, al realizar operaciones complejas se crea una nueva instancia de la clase String.</p>
+<p align="left">Veamos un pequeño ejemplo de uso de esta clase. En el ejemplo que vas a ver, se parte de una cadena con errores que modificaremos para ir haciéndola legible. Lo primero que tenemos que hacer es crear la instancia de esta clase. Se puede inicializar de muchas formas, por ejemplo, partiendo de un literal de cadena:</p>
+<div class="codigo elemento_centrado" style="width: 35.7em;">
+<div class="texto_izquierda">
+<pre>StringBuilder strb=new StringBuilder ("Hoal Muuundo");
+</pre>
+</div>
+</div>
+<p align="left">Y ahora, usando los métodos append (insertar al final), insert (insertar una cadena o carácter en una posición específica), delete (eliminar los caracteres que hay entre dos posiciones) y replace (reemplazar los caracteres que hay entre dos posiciones por otros diferentes), rectificaremos la cadena anterior y la haremos correcta:</p>
+<ol>
+<li><strong><span style="font-size: medium;">strb.delete(6,8);</span></strong> Eliminamos las <strong><span style="font-size: medium;">'uu'</span></strong> que sobran en la cadena. La primera <strong><span style="font-size: medium;">'u'</span></strong> que sobra está en la posición 6 (no olvides contar el espacio), y la última <strong><span style="font-size: medium;">'u'</span></strong> a eliminar está en la posición 7. Para eliminar dichos caracteres de forma correcta hay que pasar como primer argumento la posición 6 (posición inicial) y como segundo argumento la posición 8 (posición contigua al último carácter a eliminar), dado que la posición final no indica el último carácter a eliminar, sino el carácter justo posterior al último que hay que eliminar (igual que ocurría con el método <strong><span style="font-size: medium;">substring()</span></strong>).</li>
+<li><span style="font-size: medium;"><strong>strb.append ("!");</strong></span> Añadimos al final de la cadena el símbolo de cierre de exclamación.</li>
+<li><strong><span style="font-size: medium;">strb.insert (0,"¡"); </span></strong>Insertamos en la posición 0, el símbolo de apertura de exclamación.</li>
+<li><strong><span style="font-size: medium;">strb.replace (3,5,"la");</span></strong> Reemplazamos los caracteres 'al' situados entre la posición inicial 3 y la posición final 4, por la cadena <strong><span style="font-size: medium;">'la'</span></strong>. En este método ocurre igual que en los métodos <strong><span style="font-size: medium;">delete()</span></strong> y <strong><span style="font-size: medium;">substring()</span></strong>, en vez de indicar como posición final la posición 4, se debe indicar justo la posición contigua, es decir 5.</li>
+</ol>
+<p align="left">StringBuilder contiene muchos métodos de la clase String (<code>charAt(), indexOf(), lenght(), substring(), replace(),</code> <abbr title="etcétera.">etc.</abbr>), pero no todos, pues son clases diferentes con funcionalidades realmente diferentes.</p></div></div>
+</div>
+<div class="DebesconocerfpdIdevice" id="id24">
+<div class="iDevice emphasis_debesconocerfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_debesconocerfpd.gif">
+<span class="iDeviceTitle"><strong>Debes conocer</strong></span>
+<div class="iDevice_inner">
+<div id="ta24_48" class="block" style="display:block;position:relative"><p>En la siguiente página puedes encontrar más información (en inglés) sobre como utilizar la clase StringBuilder.</p>
+<p class="enlace_centrado"><a class="html" title="Acceder a página web en inglés sobre la clase StringBuilder." href="http://download.oracle.com/javase/tutorial/java/data/buffers.html">Uso de la clase StringBuilder.</a></p></div></div>
+</div>
+</div>
+<div class="EleccionmultiplefpdIdevice" id="id25">
+<script type="text/javascript" src="./PROG_T4_files/common.js.descarga"></script>
+<script type="text/javascript" src="./PROG_T4_files/libot_drag.js.descarga"></script>
+<div class="iDevice emphasis_autoevaluacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_autoevaluacionfpd.gif">
+<span class="iDeviceTitle"><strong>Autoevaluación</strong></span>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion25_60" class="block" style="display:block;position:relative"><p><strong>Rotar una cadena hacia la izquierda es poner simplemente el primer carácter al final, y retroceder el resto una posición. Después de unas cuantas rotaciones hacia la izquierda la cadena queda igual. ¿Cuál de las siguientes expresiones serviría para hacer una rotación hacia la izquierda (rotar solo una posición)?</strong></p></div><div style="display: table; overflow: auto; width: 100%;">
+<div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option25_60" id="i25_63" onclick="getFeedback(0,4,&#39;25_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans25_63" class="block" style="display:block;position:relative"><p>strb.delete (0,1); strb.append(strb.charAt(0));</p></div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option25_60" id="i25_111" onclick="getFeedback(1,4,&#39;25_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans25_111" class="block" style="display:block;position:relative"><p>strb.append(strb.charAt(0));strb.delete(0, 1);</p></div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option25_60" id="i25_114" onclick="getFeedback(2,4,&#39;25_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans25_114" class="block" style="display:block;position:relative"><p>strb.append(strb.charAt(0));strb.delete(0);</p></div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option25_60" id="i25_117" onclick="getFeedback(3,4,&#39;25_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans25_117" class="block" style="display:block;position:relative"><p>strb.append(strb.charAt(1));strb.delete(1,2);</p></div></div>
+</div></div>
+<div id="sa0b25_60" class="feedback" style="display: none;"><div id="taf25_63" class="" style="display:block;position:relative"><p>No es correcto. No puedes eliminar el primer carácter y luego intentar insertarlo al final (ya lo has borrado y no existe, estarías insertando el "nuevo" primero, que sería el "antiguo" segundo).</p></div></div>
+<div id="sa1b25_60" class="feedback" style="display: none;"><div id="taf25_111" class="" style="display:block;position:relative"><p>Correcto, muy bien.</p></div></div>
+<div id="sa2b25_60" class="feedback" style="display: none;"><div id="taf25_114" class="" style="display:block;position:relative"><p>Incorrecto. El método delete necesita dos parámetros.</p></div></div>
+<div id="sa3b25_60" class="feedback" style="display: none;"><div id="taf25_117" class="" style="display:block;position:relative"><p>Incorrecto. La primera posición no es la 1, sino la 0.</p></div></div>
+<noscript><br /><div class="feedback">
+<p><strong>Solution: </strong></p>
+<ol><li><strong>Incorrecto</strong> <p>No es correcto. No puedes eliminar el primer carácter y luego intentar insertarlo al final (ya lo has borrado y no existe, estarías insertando el "nuevo" primero, que sería el "antiguo" segundo).</p></li><li><strong>Opción correcta</strong> <p>Correcto, muy bien.</p></li><li><strong>Incorrecto</strong> <p>Incorrecto. El método delete</code> necesita dos parámetros.</p></li><li><strong>Incorrecto</strong> <p>Incorrecto. La primera posición no es la 1, sino la 0.</p></li></ol>
+</div></noscript></div>
+</div>
+</div>
+</div>
+<div class="RecomendacionfpdIdevice" id="id131">
+<div class="iDevice emphasis_recomendacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_recomendacionfpd.gif">
+<span class="iDeviceTitle"><strong>Recomendación</strong></span>
+<div class="iDevice_inner">
+<div id="ta131_46" class="block" style="display:block;position:relative"><p><span class="resaltado_inline">Observaciones de rendimiento</span></p>
+<p style="text-align: justify;">Java puede realizar ciertas optimizaciones en las que se involucran objetos String (como hacer referencia a un objeto<br>String desde múltiples variables), ya que sabe que estos objetos no cambiarán. Si los datos no van a cambiar, debemos usar objetos String (y no StringBuilder).</p>
+<p style="text-align: justify;">En los programas que realizan la concatenación de cadenas con frecuencia, o en otras modificaciones de cadenas, a menudo es más eficiente implementar las modificaciones con la clase StringBuilder.</p>
+<p style="text-align: justify;">El proceso de incrementar en forma dinámica la capacidad de un objeto StringBuilder puede requerir una cantidad considerable de tiempo. La ejecución de un gran número de estas operaciones puede degradar el rendimiento de una aplicación. Si un objeto StringBuilder va a aumentar su tamaño en forma considerable, tal vez varias veces, al establecer su capacidad a un nivel alto en un principio se incrementará el rendimiento.</p>
+<p style="text-align: justify;"><span class="resaltado_inline">Error común de programación</span></p>
+<p style="text-align: justify;">Al tratar de acceder a un carácter que se encuentra fuera de los límites de un objeto StringBuilder (es decir, con un índice menor que 0, o mayor o igual que la longitud del objeto StringBuilder) se produce una excepción StringIndexOutOfBoundsException.</p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+2.2.- Expresiones regulares (I).</h1></div>
+<div class="FreeTextfpdIdevice" id="id26">
+<div class="iDevice emphasis0">
+<div id="ta26_73" class="block" style="display:block;position:relative"><p><img alt="Fotografía en la que se ve un DNI y otros documentos de una cartera." class="elemento_derecha" src="./PROG_T4_files/PROG05_CONT_R015_documentacion_personal.jpg" title="Documentación personal."></p>
+<p>¿Tienen algo en común todos los números de <acronym title="Documento Nacional de Identidad.">DNI</acronym> y de <acronym title="Número de Identificación de Extranjeros. ">NIE</acronym>? ¿Podrías hacer un programa que verificara si un <acronym title="Documento Nacional de Identidad.">DNI</acronym> o un <acronym title="Número de Identificación de Extranjeros. ">NIE</acronym> es correcto? Seguro que sí. Si te fijas, los números de <acronym title="Documento Nacional de Identidad.">DNI </acronym>y los de NIE tienen una estructura fija: X1234567Z (en el caso del <acronym title="Número de Identificación de Extranjeros. ">NIE</acronym>) y 1234567Z (en el caso del <acronym title="Documento Nacional de Identidad.">DNI</acronym>). Ambos siguen un <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">patrón<span><em>Patrón</em>Modelo con el que encaja la información que estamos analizando o que simplemente se ha utilizado para construir dicha información. Un patrón, en el caso de la informática, está constituido por una serie de reglas fijas que deben cumplirse o ser seguidas para formar la información. Las direcciones de correo electrónico, por ejemplo, todas tienen la misma forma, y eso es porque todas siguen el mismo patrón para ser construidas.</span></a> que podría describirse como: una letra inicial opcional (solo presente en los <acronym title="Número de Identificación de Extranjeros. ">NIE</acronym>), seguida de una secuencia numérica y finalizando con otra letra. ¿Fácil no?</p>
+<p>Pues esta es la función de las expresiones regulares: <strong>permitir comprobar si una cadena sigue o no un patrón preestablecido</strong>. Las expresiones regulares son un mecanismo para describir esos patrones, y se construyen de una forma relativamente sencilla. Existen muchas librerías diferentes para trabajar con expresiones regulares, y casi todas siguen, más o menos, una sintaxis similar, con ligeras variaciones. Dicha sintaxis nos permite indicar el patrón de forma cómoda, como si de una cadena de texto se tratase, en la que determinados símbolos tienen un significado especial. Por ejemplo "[01]+" es una expresión regular que permite comprobar si una cadena conforma un número binario. Veamos cuáles son las reglas generales para construir una expresión regular:</p>
+<ul class="lista_verificacion">
+<li>Podemos indicar que una cadena contiene un conjunto de símbolos fijo, simplemente poniendo dichos símbolos en el patrón, excepto para algunos símbolos especiales que necesitarán un carácter de escape como veremos más adelante. Por ejemplo, el patrón <strong><span style="font-size: medium;">"aaa"</span> </strong>admitirá cadenas que contengan tres aes.</li>
+<li><span style="font-size: medium;"><strong>"[xyz]"</strong></span>. Entre corchetes podemos indicar opcionalidad. Solo uno de los símbolos que hay entre los corchetes podrá aparecer en el lugar donde están los corchetes. Por ejemplo, la expresión regular <strong><span style="font-size: medium;">"aaa[xy]"</span></strong> admitirá como válidas las cadenas <strong><span style="font-size: medium;">"aaax"</span></strong> y la cadena<strong><span style="font-size: medium;"> "aaay"</span></strong>. <strong>Los corchetes representan una posición de la cadena que puede tomar uno de varios valores posibles.</strong></li>
+<li><strong><span style="font-size: medium;">"[a-z]" "<code>[A-Z]</code>" "[a-zA-Z]"</span></strong>. Usando el guión y los corchetes podemos indicar que el patrón admite cualquier carácter entre la letra inicial y la final. Es importante que sepas que se diferencia entre letras mayúsculas y minúsculas, no son iguales de cara a las expresiones regulares.</li>
+<li><strong><span style="font-size: medium;">"[0-9]"</span></strong>. Y nuevamente, usando un guión, podemos indicar que se permite la presencia de un dígito numérico entre 0 y 9, cualquiera de ellos, pero solo uno.</li>
+</ul>
+<p>Con las reglas anteriores podemos indicar el conjunto de símbolos que admite el patrón y el orden que deben tener. Si una cadena no contiene los símbolos especificados en el patrón, en el mismo orden, entonces la cadena no encajará con el patrón. Veamos ahora cómo indicar repeticiones. Se llevan a cabo mediante los <strong>operadores de cuantificación</strong> (o <strong>cuantificadores</strong>). Los más habituales son la <strong>interrogación</strong> (símbolo "<strong>?</strong>"), la <strong>estrella</strong> (símbolo "<strong>*</strong>"), el <strong>más</strong> (símbolo "<strong>+</strong>") y las <strong>llaves</strong> (símbolos "<strong>{</strong>" y "<strong>}</strong>"):</p>
+<ul class="lista_verificacion">
+<li><strong><span style="font-size: medium;">"a?"</span></strong>. Usaremos el interrogante para indicar que un símbolo puede aparecer <strong>una vez o ninguna</strong>. De esta forma la letra "a" podrá aparecer una vez o simplemente no aparecer.</li>
+<li><strong><span style="font-size: medium;">"a*"</span></strong>. Usaremos el asterisco para indicar que un símbolo puede aparecer <strong>una vez o muchas veces, pero también ninguna</strong>. Cadenas válidas para esta expresión regular serían <strong><span style="font-size: medium;">"aa", "<code>aaa</code>"</span></strong> o <strong><span style="font-size: medium;">"aaaaaaaa"</span></strong>.</li>
+<li><strong><span style="font-size: medium;">"a+"</span></strong>. Usaremos el símbolo de suma para indicar que otro símbolo debe aparecer <strong>al menos una vez</strong>, pudiendo repetirse cuantas veces quiera.</li>
+<li><span style="font-size: medium;"><strong>"a{1,4}"</strong></span> . Usando las llaves, podemos indicar el <strong>número mínimo y máximo de veces</strong> que un símbolo podrá repetirse. El primer número del ejemplo es el número 1, y quiere decir que la letra<strong><span style="font-size: medium;"> "a"</span></strong> debe aparecer al menos una vez. El segundo número, 4, indica que como máximo puede repetirse cuatro veces.</li>
+<li><strong><span style="font-size: medium;">"a{2,}"</span></strong>. También es posible indicar solo el <strong>número mínimo de veces</strong> que un carácter debe aparecer (sin determinar el máximo), haciendo uso de las llaves, indicando el primer número y poniendo la coma (no la olvides).</li>
+<li><strong><span style="font-size: medium;">"a{5}"</span></strong>. A diferencia de la forma anterior, si solo escribimos un número entre llaves, sin poner la coma detrás, significará que el símbolo debe aparecer un <strong>número exacto de veces</strong>. En este caso, la<strong><span style="font-size: medium;"> "a"</span></strong> debe aparecer exactamente 5 veces.</li>
+<li><strong><span style="font-size: medium;">"[a-z]{1,4}[0-9]+"</span></strong>. Los indicadores de repetición se pueden usar también con corchetes, dado que los corchetes representan, básicamente, un símbolo. En el ejemplo anterior se permitiría de una a cuatro letras minúsculas, seguidas de al menos un dígito numérico.</li>
+</ul>
+<p>Otro operador importante en las expresiones regulares es la barra (símbolo "<strong>|</strong>") para indicar una entre varias opciones. Por ejemplo, la expresión regular <strong>"o|u"</strong> encontrará cualquier "<strong>o</strong>" o "<strong>u</strong>" dentro del texto y la expresión regular <strong>"este|oeste|norte|sur"</strong> puede servir para encontrar el nombre de cualquiera de los puntos cardinales (en minúscula).</p></div></div>
+</div>
+<div class="EjercicioresueltofpdIdevice" id="id27">
+<div class="iDevice emphasis_ejercicioresueltofpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_ejercicioresueltofpd.gif">
+<span class="iDeviceTitle"><strong>Ejercicio resuelto</strong></span>
+<div class="iDevice_inner">
+<div id="ta27_67" class="block" style="display:block;position:relative"></div><div class="question">
+<div id="taquesQuestion0b27" class="block" style="display:block;position:relative"><p>Con lo visto hasta ahora ya es posible construir una expresión regular capaz de verificar si una cadena contiene un <acronym title="Documento Nacional de Identidad.">DNI</acronym> o un <acronym title="Número de Identificación de Extranjeros.">NIE</acronym>, ¿serías capaz de averiguar cuál es dicha expresión regular?</p></div><div id="viewq0b27" style="display:block;"><input type="button" name="btnshowq0b27" value="Mostrar retroalimentación" class="feedbackbutton" onclick="showAnswer(&#39;q0b27&#39;,1)">
+</div><div id="hideq0b27" style="display:none;"><input type="button" name="btnhideq0b27" value="Ocultar retroalimentación" class="feedbackbutton" onclick="showAnswer(&#39;q0b27&#39;,0)">
+<p></p></div><div id="sq0b27" class="feedback" style=" display: none;"><div id="taquesFeedback0b27" class="block" style="display:block;position:relative"><p>Una expresión regular que permite verificar si una cadena contiene un <acronym title="Documento Nacional de Identidad.">DNI</acronym> o un NIE es la siguiente:</p>
+<p style="text-align: center;">"([0-9]{8}[a-zA-Z])|([XxYyZz][0-9]{7}[a-zA-Z])";</p></div></div>
+<noscript><div class="feedback">
+<p><strong>Solution: </strong></p>
+<p>Una expresión regular que permite verificar si una cadena contiene un <acronym title="Documento Nacional de Identidad.">DNI</acronym> o un NIE es la siguiente:</p>
+<p style="text-align: center;">&quot;([0-9]{8}[a-zA-Z])|([XxYyZz][0-9]{7}[a-zA-Z])&quot;;</code></p></div></noscript>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+2.2.1.- Expresiones regulares (II).</h1></div>
+<div class="FreeTextfpdIdevice" id="id28">
+<div class="iDevice emphasis0">
+<div id="ta28_73" class="block" style="display:block;position:relative"><p><img alt="Imagen en la que se ven varias piezas de un puzzle sueltas encima de una mesa." class="elemento_derecha" src="./PROG_T4_files/PROG05_CONT_R016_puzzle.jpg" title="Un puzzle es el mejor ejemplo de un patrón."></p>
+<p>¿Y cómo uso las expresiones regulares en un programa? Pues de una forma sencilla. Para su uso, Java ofrece las clases Pattern y <code>Matcher</code> contenidas en el paquete java.util.regex.*. La clase Pattern se utiliza para procesar la expresión regular y "compilarla", lo cual significa verificar que es correcta y dejarla lista para su utilización. La clase Matcher sirve para comprobar si una cadena cualquiera sigue o no un patrón. Veámoslo con un ejemplo:</p>
+<div class="codigo elemento_centrado" style="width: 40.1em;">
+<div class="texto_izquierda">
+<pre>Pattern p=Pattern.compile("[01]+");
+</pre>
+<pre>Matcher m=p.matcher("00001010");
+</pre>
+<pre>if (m.matches()) System.out.println("Si, contiene el patrón");
+</pre>
+<pre>else System.out.println("No, no contiene el patrón");
+</pre>
+</div>
+</div>
+<p> </p>
+<p>En el ejemplo, el método estático compile de la clase Pattern permite crear un patrón, dicho método compila la expresión regular pasada por parámetro y genera una instancia de Pattern (<code>p</code> en el ejemplo). El patrón p podrá ser usado múltiples veces para verificar si una cadena coincide o no con el patrón, dicha comprobación se hace invocando el método matcher, el cual combina el patrón con la cadena de entrada y genera una instancia de la clase Matcher (<code>m</code> en el ejemplo). La clase Matcher contiene el resultado de la comprobación y ofrece varios métodos para analizar la forma en la que la cadena ha encajado con un patrón:</p>
+<ul class="lista_verificacion">
+<li><strong><span style="font-size: medium;">m.matches()</span></strong>. Devolverá <strong><span style="font-size: medium;">true</span></strong> si toda la cadena (de principio a fin) encaja con el patrón o <strong><span style="font-size: medium;">false</span></strong> en caso contrario.</li>
+<li><strong><span style="font-size: medium;">m.lookingAt()</span></strong>. Devolverá <strong><span style="font-size: medium;">true</span></strong> si el patrón se ha encontrado al principio de la cadena. A diferencia del método <strong><span style="font-size: medium;">matches()</span></strong>, la cadena podrá contener al final caracteres adicionales a los indicados por el patrón, sin que ello suponga un problema.</li>
+<li><strong><span style="font-size: medium;">m.find()</span></strong>. Devolverá <strong><span style="font-size: medium;">true</span></strong> si el patrón existe en algún lugar la cadena (no necesariamente toda la cadena debe coincidir con el patrón) y <strong><span style="font-size: medium;">false</span></strong> en caso contrario, pudiendo tener más de una coincidencia. Para obtener la posición exacta donde se ha producido la coincidencia con el patrón podemos usar los métodos <strong><span style="font-size: medium;">m.start()</span></strong> y <strong><span style="font-size: medium;">m.end()</span></strong>, para saber la posición inicial y final donde se ha encontrado. Una segunda invocación del método <strong><span style="font-size: medium;">find()</span></strong> irá a la segunda coincidencia (si existe), y así sucesivamente. Podemos reiniciar el método <strong><span style="font-size: medium;">find()</span></strong>, para que vuelva a comenzar por la primera coincidencia, invocando el método <strong><span style="font-size: medium;">m.reset()</span></strong>.</li>
+</ul>
+<p>Veamos algunas construcciones adicionales que pueden ayudarnos a especificar expresiones regulares más complejas:</p>
+<ul class="lista_verificacion">
+<li><strong><span style="font-size: medium;">"[^abc]"</span></strong>. El símbolo <strong><span style="font-size: medium;">"^"</span></strong>, cuando se pone justo detrás del corchete de apertura, significa "negación". La expresión regular admitirá cualquier símbolo diferente a los puestos entre corchetes. En este caso, cualquier símbolo diferente de <strong><span style="font-size: medium;">"a"</span></strong>, <strong><span style="font-size: medium;">"b"</span></strong> o <strong><span style="font-size: medium;">"c"</span></strong>.</li>
+<li><strong><span style="font-size: medium;">"^[01]+$"</span></strong>. Cuando el símbolo <strong><span style="font-size: medium;">"^"</span></strong> aparece al comienzo de la expresión regular, permite indicar comienzo de línea o de entrada. El símbolo <strong><span style="font-size: medium;">"$"</span></strong> permite indicar fin de línea o fin de entrada. Usándolos podemos verificar que una línea completa (de principio a fin) encaje con la expresión regular, es muy útil cuando se trabaja en <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">modo multilínea<span><em>Modo multilínea</em>Las cadenas que contienen en su interior más de un salto de línea, a veces no se procesan bien con las expresiones regulares, dado que éstas, se limitan a verificar generalmente solo la primera línea. El modo multilínea permite buscar líneas completas, que encajan con un patrón dentro de una cadena que contiene varias líneas.</span></a> y con el método <strong><span style="font-size: medium;">find()</span></strong>.</li>
+<li><strong><span style="font-size: medium;">"."</span></strong>. El punto simboliza cualquier carácter.</li>
+<li><strong><span style="font-size: medium;">"\\d"</span></strong>. Un dígito numérico. Equivale a <strong><span style="font-size: medium;">"[0-9]"</span></strong>.</li>
+<li><strong><span style="font-size: medium;">"\\D"</span></strong>. Cualquier cosa excepto un dígito numérico. Equivale a<strong><span style="font-size: medium;"> "[^0-9]"</span></strong>.</li>
+<li><strong><span style="font-size: medium;">"\\s"</span></strong>. Un espacio en blanco (incluye tabulaciones, saltos de línea y otras formas de espacio).</li>
+<li><strong><span style="font-size: medium;">"\\S"</span></strong>. Cualquier cosa excepto un espacio en blanco.</li>
+<li><strong><span style="font-size: medium;">"\\w"</span></strong>. Cualquier carácter que podrías encontrar en una palabra. Equivale a <strong><span style="font-size: medium;">"[a-zA-Z_0-9]"</span></strong>.</li>
+</ul></div></div>
+</div>
+<div class="SeleccionmultiplefpdIdevice" id="id29">
+<div class="iDevice emphasis_autoevaluacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_autoevaluacionfpd.gif">
+<span class="iDeviceTitle"><strong>Autoevaluación</strong></span>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion29_55" class="block" style="display:block;position:relative"><p><strong>¿En cuáles de las siguientes opciones se cumple el patrón "</strong>A.\\d+<strong>"?</strong></p></div><div style="display: table; overflow: auto; width:100%;"><div style="display: table-row; clear: both;">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="checkbox" id="op29_550" value="True">
+</div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="ans29_550">
+<div id="taans29_58" class="block" style="display:block;position:relative"><p>"GA-99" si utilizamos el método find().</p></div></div></div>
+</div>
+<div style="display: table-row; clear: both;"><div style="float: left; display: table-cell; margin-left: 2em;">
+<div id="op29_550_1" style="display:none;">
+<strong>Correcto</strong></div><div id="op29_550_0" style="display:none;">
+Incorrecto</div></div>
+</div>
+<div style="display: table-row; clear: both;">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="checkbox" id="op29_551" value="False">
+</div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="ans29_551">
+<div id="taans29_122" class="block" style="display:block;position:relative"><p>"GAX99" si utilizamos el método lookingAt().</p></div></div></div>
+</div>
+<div style="display: table-row; clear: both;"><div style="float: left; display: table-cell; margin-left: 2em;">
+<div id="op29_551_1" style="display:none;">
+<strong>Correcto</strong></div><div id="op29_551_0" style="display:none;">
+Incorrecto</div></div>
+</div>
+<div style="display: table-row; clear: both;">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="checkbox" id="op29_552" value="False">
+</div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="ans29_552">
+<div id="taans29_124" class="block" style="display:block;position:relative"><p>"AX99-" si utilizamos el método matches().</p></div></div></div>
+</div>
+<div style="display: table-row; clear: both;"><div style="float: left; display: table-cell; margin-left: 2em;">
+<div id="op29_552_1" style="display:none;">
+<strong>Correcto</strong></div><div id="op29_552_0" style="display:none;">
+Incorrecto</div></div>
+</div>
+<div style="display: table-row; clear: both;">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="checkbox" id="op29_553" value="True">
+</div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="ans29_553">
+<div id="taans29_126" class="block" style="display:block;position:relative"><p>"A99" si utilizamos el método matches().</p></div></div></div>
+</div>
+<div style="display: table-row; clear: both;"><div style="float: left; display: table-cell; margin-left: 2em;">
+<div id="op29_553_1" style="display:none;">
+<strong>Correcto</strong></div><div id="op29_553_0" style="display:none;">
+Incorrecto</div></div>
+</div>
+</div><input type="button" name="submitSelect" value="Mostrar retroalimentación" onclick="showFeedback(4,&#39;29_55&#39;)"> <br>
+<div id="f29_55" style="display:none"><div id="tafeedback29_55" class="feedback" style="display:block;position:relative"><p>Recuerda que el método find() busca el patrón en cualquier lugar de la cadena, el método matches() busca el patrón en toda la cadena, y el método lookingAt() al principio de la cadena.</p></div></div><noscript><br /><div class="feedback">
+<p><strong>Solution: </strong></p><ol>
+<li><em>Correcto</em></li><li><em>Incorrecto</em></li><li><em>Incorrecto</em></li><li><em>Correcto</em></li></ol><p><strong>Retroalimentación: </strong></p>
+<p>Recuerda que el método find()</code> busca el patrón en cualquier lugar de la cadena, el método matches()</code> busca el patrón en toda la cadena, y el método lookingAt()</code> al principio de la cadena.</p></div></noscript></div>
+</div></div>
+</div>
+<div class="RecomendacionfpdIdevice" id="id132">
+<div class="iDevice emphasis_recomendacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_recomendacionfpd.gif">
+<span class="iDeviceTitle"><strong>Recomendación</strong></span>
+<div class="iDevice_inner">
+<div id="ta132_46" class="block" style="display:block;position:relative"><p><span class="resaltado_inline">Error común de programación</span></p>
+<p>Una expresión regular puede compararse con un objeto de cualquier clase que implemente a la interfaz CharSequence, pero la expresión regular debe ser un objeto String. Si se intenta crear una expresión regular como un objeto StringBuilder se produce un error.</p>
+<p>El método matches (de las clases String, Pattern o Matcher) devuelve true sólo si todo el objeto de búsqueda concuerda con la expresión regular. Los métodos find y lookingAt (de la clase Matcher) devuelven true si una parte del objeto de búsqueda concuerda con la expresión regular.</p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+2.2.2.- Expresiones regulares (III).</h1></div>
+<div class="FreeTextfpdIdevice" id="id31">
+<div class="iDevice emphasis0">
+<div id="ta31_73" class="block" style="display:block;position:relative"><p><img alt="Imagen que muestra los símbolos de paréntesis impresos en un teclado." class="elemento_derecha" src="./PROG_T4_files/PROG05_CONT_R017_parentesis.jpg" title="Paréntesis." height="128" width="192"></p>
+<p>¿Te resultan difíciles las expresiones regulares? Al principio siempre lo son, pero no te preocupes. Hasta ahora has visto como las expresiones regulares permiten verificar datos de entrada, permitiendo comprobar si un dato indicado sigue el formato esperado: que un DNI tenga el formato esperado, que un <span lang="en">email</span> sea un <span lang="en">email</span> y no otra cosa, etc. Pero ahora vamos a dar una vuelta de tuerca adicional.</p>
+<p>Los paréntesis, de los cuales no hemos hablado hasta ahora, tienen un significado especial: permiten indicar repeticiones para un conjunto de símbolos, por ejemplo: "(#[01]){2,3}". En el ejemplo anterior, la expresión "#[01]" admitiría cadenas como "#0" o "#1", pero al ponerlo entre paréntesis e indicar los contadores de repetición, lo que estamos diciendo es que la misma secuencia se tiene que repetir entre dos y tres veces, con lo que las cadenas que admitiría serían del estilo a: "#0#1" o "#0#1#0".</p>
+<p>Pero los paréntesis tienen una función adicional, y es la de permitir definir grupos. Un grupo comienza cuando se abre un paréntesis y termina cuando se cierra el paréntesis. Los grupos permiten acceder de forma cómoda a las diferentes partes de una cadena cuando esta coincide con una expresión regular. Lo mejor es verlo con un ejemplo (seguro que te resultará familiar):</p>
+<div class="codigo elemento_centrado" style="width: 38.45em;">
+<div class="texto_izquierda">
+<pre>Pattern p=Pattern.compile("([XY]?)([0-9]{1,9})([A-Za-z])");
+</pre>
+<pre>Matcher m=p.matcher("X123456789Z Y00110011M 999999T");
+</pre>
+<pre>while (m.find())
+</pre>
+<pre>{
+</pre>
+<pre>   System.out.println("Letra inicial (opcional):" + m.group(1));
+</pre>
+<pre>   System.out.println("Número:" + m.group(2));
+</pre>
+<pre>   System.out.println("Letra NIF:" + m.group(3));
+</pre>
+<pre>}
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Usando los grupos, podemos obtener por separado el texto contenido en cada uno de los grupos. En el ejemplo anterior, en el patrón hay tres grupos: uno para la letra inicial (grupo 1), otro para el número del <acronym title="Documento Nacional de Identidad.">DNI </acronym>o <acronym title="Número de Identificación de Extranjeros.">NIE</acronym> (grupo 2), y otro para la letra final o letra <acronym title="Número de Identificación Fiscal.">NIF</acronym> (grupo 3). Al ponerlo en grupos, usando el método group(), podemos extraer la información de cada grupo y usarla a nuestra conveniencia.</p></div></div>
+</div>
+<div class="DestacadofpdIdevice" id="id32">
+<div class="iDevice emphasis0">
+<div class="iDevice_destacadofpd">
+<div id="ta32_70" class="block" style="display:block;position:relative"><p>
+Ten en cuenta que el
+primer grupo es el 1, y no el 0. Si pones m.group(0)
+obtendrás una cadena con toda la ocurrencia o coincidencia del
+patrón en la cadena, es decir, obtendrás la secuencia entera de
+símbolos que coincide con el patrón.
+</p>
+</div></div>
+</div>
+</div>
+<div class="FreeTextfpdIdevice" id="id34">
+<div class="iDevice emphasis0">
+<div id="ta34_73" class="block" style="display:block;position:relative"><p>En el ejemplo anterior se usa el método find(), éste buscará una a una, cada una de las ocurrencias del patrón en la cadena. Cada vez que se invoca, busca la siguiente ocurrencia del patrón y devolverá true si ha encontrado una ocurrencia. Si no encuentra en una iteración ninguna ocurrencia es porque no existen más, y retornará false, saliendo del bucle. Esta construcción while es muy típica para este tipo de métodos y para las iteraciones, que veremos más adelante.</p>
+<p>Lo último importante de las expresiones regulares que debes conocer son las secuencias de escape. Cuando en una expresión regular necesitamos especificar que lo que tiene que haber en la cadena es un paréntesis, una llave, o un corchete, tenemos que usar una secuencia de escape, dado que esos símbolos tienen un significado especial en los patrones. Para ello, simplemente antepondremos "\\" al símbolo. Por ejemplo, "\\(" significará que debe haber un paréntesis en la cadena y se omitirá el significado especial del paréntesis. Lo mismo ocurre con "\\[", "<code>\\]</code>", "\\)", <abbr title="etcétera.">etc</abbr>. Lo mismo para el significado especial del punto. Éste, tiene un significado especial (¿lo recuerdas del apartado anterior?) salvo que se ponga "\\.", que pasará a significar "un punto" en vez de "cualquier carácter". <strong>La excepción son las comillas, que se pondrían con una sola barra: </strong><strong>"</strong>\"<strong>".</strong></p></div></div>
+</div>
+<div class="ParasabermasfpdIdevice" id="id35">
+<div class="iDevice emphasis_parasabermasfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_parasabermasfpd.gif">
+<span class="iDeviceTitle"><strong>Para saber más</strong></span>
+<div class="iDevice_inner">
+<div id="ta35_47" class="block" style="display:block;position:relative"><p>Con lo estudiado hasta ahora, ya puedes utilizar las expresiones regulares y sacarles partido casi que al máximo. Pero las expresiones regulares son un campo muy amplio, por lo que es muy aconsejable que amplíes tus conocimientos con el siguiente enlace:</p>
+<p class="enlace_centrado"><a class="html" title="Acceder a tutorial de expresiones regulares en Java." href="http://download.oracle.com/javase/tutorial/essential/regex/">Tutorial de expresiones regulares en Java (en inglés).</a></p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+3.-  Creación de arrays.</h1></div>
+<div class="CasopracticofpdIdevice" id="id36">
+<div class="iDevice emphasis_casopracticofpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_casopracticofpd.gif">
+<span class="iDeviceTitle"><strong>Caso práctico</strong></span>
+<div class="iDevice_inner">
+<div id="ta36_66" class="block" style="display:block;position:relative"><p><img alt="Fotografía de una mujer pensando." class="elemento_izquierda" src="./PROG_T4_files/PROG05_CONT_R019_pensando.jpg" title="Mujer pensando." height="192" width="128"></p>
+<p><strong>Ana</strong> se ha puesto a pensar en que cuando hay que trabajar con muchos elementos: números, o cadenas de caracteres, <abbr title="etcétera.">etc</abbr>., lo más adecuado es utilizar algún tipo de variable que nos permita usar el mismo nombre, donde almacenar varios elementos. Es decir, si tenemos 100 elementos sobre los que hacer determinada operación, una solución sería utilizar cien variables, y entonces en el programa ir usando cada una de esas cien variables, digamos var1, var2,..., y así hasta var100. Pero esto es muy incómodo para el programador, puesto que entre otras cosas tendrá que usar cien nombres distintos para referirse a las variables. Además, ¿y si luego en vez de 100 elementos, necesita que sean 200? Pues el programador tendrá que declarar otras cien variables más en el programa. Por tanto, hay que buscar otra solución más adecuada, y esa solución son los <strong>arrays</strong>, como vamos a ver.</p></div></div>
+</div>
+</div>
+<div class="FreeTextfpdIdevice" id="id37">
+<div class="iDevice emphasis0">
+<div id="ta37_73" class="block" style="display:block;position:relative"><div class="elemento_derecha">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_R020_Posicionesdelarray.jpg"><img alt="Ilustración que describe la numeración de las diferentes posiciones de un array de números enteros. En la imagen aparece los datos de un array de 10 posiciones, y una etiqueta en la que cada elemento está numerado, empezando por el cero como posición del primer elemento, hasta el 9, como posición del último elemento del array." class="imagen_ampliable" src="./PROG_T4_files/PROG05_CONT_R020_Posicionesdelarray_miniatura.jpg" title="Posiciones del array."></a></div>
+</div>
+<p>¿Dónde almacenarías tú una lista de nombres de personas? Una de las soluciones es usar <span title="en">arrays</span>, puede que sea justo lo que necesita Ana, pero puede que no. Todos los lenguajes de programación permiten el uso de <span title="en">arrays</span>, veamos como son en Java.</p>
+<p><strong>Los </strong><strong><span title="en">arrays</span></strong><strong> permiten almacenar una colección de objetos o datos del mismo tipo</strong>. Son muy útiles y su utilización es muy simple:</p>
+<ul class="lista_verificacion">
+<li><strong>Declaración del </strong><strong><span title="en">array</span></strong>. La declaración de un <span title="en">array</span> consiste en decir "esto es un <span title="en">array</span>" y sigue la siguiente estructura: "<strong><span style="font-size: medium;">tipo[] nombre;</span></strong>". El tipo será un tipo de variable o una clase ya existente, de la cual se quieran almacenar varias unidades.</li>
+<li><strong>Creación del </strong><strong><span title="en">array</span></strong>. La creación de un <span title="en">array</span> consiste en decir el tamaño que tendrá el <span title="en">array</span>, es decir, el número de elementos que contendrá, y se pone de la siguiente forma: "<strong><span style="font-size: medium;">nombre=new tipo[dimension]</span></strong>", donde dimensión es un número entero positivo que indicará el tamaño del <span title="en">array</span>. Una vez creado el <span title="en">array</span> este no podrá cambiar de tamaño.</li>
+</ul>
+<p>Veamos un ejemplo de su uso:</p>
+<div class="codigo elemento_centrado" style="width: 49.45em;">
+<div class="texto_izquierda">
+<pre>int[] n; // Declaración del array.
+</pre>
+<pre>n = new int[10]; //Creación del array reservando para el un espacio en memoria.
+</pre>
+<pre>int[] m=new int[10]; // Declaración y creación en un mismo lugar.
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Una vez hecho esto, ya podemos almacenar valores en cada una de las posiciones del <span title="en" lang="en">array</span>, usando corchetes e indicando en su interior la posición en la que queremos leer o escribir, teniendo en cuenta que la primera posición es la cero y la última el tamaño del <span title="en" lang="en">array</span> menos uno. En el ejemplo anterior, la primera posición sería la 0 y la última sería la 9.</p></div></div>
+</div>
+<div class="SeleccionmultiplefpdIdevice" id="id38">
+<div class="iDevice emphasis_autoevaluacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_autoevaluacionfpd.gif">
+<span class="iDeviceTitle"><strong>Autoevaluación</strong></span>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion38_55" class="block" style="display:block;position:relative"><p><strong>¿Cuáles de las siguientes opciones permitiría almacenar más de 50 números reales?</strong></p></div><div style="display: table; overflow: auto; width:100%;"><div style="display: table-row; clear: both;">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="checkbox" id="op38_550" value="False">
+</div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="ans38_550">
+<div id="taans38_58" class="block" style="display:block;position:relative"><p>int[] numeros; numeros=new int[51];</p></div></div></div>
+</div>
+<div style="display: table-row; clear: both;"><div style="float: left; display: table-cell; margin-left: 2em;">
+<div id="op38_550_1" style="display:none;">
+<strong>Correcto</strong></div><div id="op38_550_0" style="display:none;">
+Incorrecto</div></div>
+</div>
+<div style="display: table-row; clear: both;">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="checkbox" id="op38_551" value="False">
+</div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="ans38_551">
+<div id="taans38_133" class="block" style="display:block;position:relative"><p>int[] numeros; numeros=new float[52];</p></div></div></div>
+</div>
+<div style="display: table-row; clear: both;"><div style="float: left; display: table-cell; margin-left: 2em;">
+<div id="op38_551_1" style="display:none;">
+<strong>Correcto</strong></div><div id="op38_551_0" style="display:none;">
+Incorrecto</div></div>
+</div>
+<div style="display: table-row; clear: both;">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="checkbox" id="op38_552" value="True">
+</div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="ans38_552">
+<div id="taans38_135" class="block" style="display:block;position:relative"><p>double[] numeros; numeros=new double[53];</p></div></div></div>
+</div>
+<div style="display: table-row; clear: both;"><div style="float: left; display: table-cell; margin-left: 2em;">
+<div id="op38_552_1" style="display:none;">
+<strong>Correcto</strong></div><div id="op38_552_0" style="display:none;">
+Incorrecto</div></div>
+</div>
+<div style="display: table-row; clear: both;">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="checkbox" id="op38_553" value="True">
+</div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="ans38_553">
+<div id="taans38_137" class="block" style="display:block;position:relative"><p>float[] numeros=new float[54];</p></div></div></div>
+</div>
+<div style="display: table-row; clear: both;"><div style="float: left; display: table-cell; margin-left: 2em;">
+<div id="op38_553_1" style="display:none;">
+<strong>Correcto</strong></div><div id="op38_553_0" style="display:none;">
+Incorrecto</div></div>
+</div>
+</div><input type="button" name="submitSelect" value="Mostrar retroalimentación" onclick="showFeedback(4,&#39;38_55&#39;)"> <br>
+<div id="f38_55" style="display:none"><div id="tafeedback38_55" class="feedback" style="display:block;position:relative"><p>Recuerda, cuando se declara un <span lang="en">array</span> y después se crea, se tiene que usar el mismo tipo de dato o clase.</p></div></div><noscript><br /><div class="feedback">
+<p><strong>Solution: </strong></p><ol>
+<li><em>Incorrecto</em></li><li><em>Incorrecto</em></li><li><em>Correcto</em></li><li><em>Correcto</em></li></ol><p><strong>Retroalimentación: </strong></p>
+<p>Recuerda, cuando se declara un <span lang="en">array</span> y después se crea, se tiene que usar el mismo tipo de dato o clase.</p></div></noscript></div>
+</div></div>
+</div>
+<div class="RecomendacionfpdIdevice" id="id133">
+<div class="iDevice emphasis_recomendacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_recomendacionfpd.gif">
+<span class="iDeviceTitle"><strong>Recomendación</strong></span>
+<div class="iDevice_inner">
+<div id="ta133_46" class="block" style="display:block;position:relative"><p><span class="resaltado_inline">Error común de programación</span></p>
+<p>Un índice debe ser un valor 1nt, o un valor de un tipo que pueda promoverse a int; byte, short o char, pero no long. De lo contrario, ocurre un error de compilación.</p>
+<p>En la declaración de un arreglo, si se especifica e l  número de elementos en los corchetes de la declaración (por ejemplo, int [12] c ; ), se produce un error de sintaxis.</p>
+<p>Exponer múltiples variables tipo arreglo en una sola declaración puede provocar errores sutiles. Considere la declaración int [ ]  a, b, c;. Si a, b y  c deben declararse como varia­ bles tipo arreglo, entonces esta declaración es correcta; al colocar corchetes directamente después del tipo, indicamos que todos los identificadores en la declaración son variables tipo arreglo. No obstante, si sólo a debe ser una variable tipo arreglo, y  b y  cdeben ser variables i  nt individuales, entonces esta declaración es incorrecta; la declaración int a[], b, c ; lograrla el resultado deseado.<br><br></p>
+<p><span class="resaltado_inline">Buena práctica de programación</span></p>
+<p>Por cuestión de legibilidad, declare sólo una variable en cada declaración. Mantenga cada declaración en una línea separada e introduzca un comentario que describa a la variable que está declarando.</p>
+<p><span class="resaltado_inline">Nota  de rendimiento</span></p>
+<p>Pasar arreglos por referencia tiene sentido por cuestiones de rendimiento. Si  los  arreglos se pasaran por valor, se pasaría una copia de cada elemento. En los  arreglos grandes que se pasan con frecuencia, esto desperdiciaría tiempo y  consumiría una cantidad considerable de almacenamiento para las  copias de los  arreglos.</p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+3.1.- Uso de arrays unidimensionales.</h1></div>
+<div class="FreeTextfpdIdevice" id="id39">
+<div class="iDevice emphasis0">
+<div id="ta39_73" class="block" style="display:block;position:relative"><p><img alt="Hombre mirando la pantalla de un ordenador mientras está trabajando." class="elemento_derecha" src="./PROG_T4_files/BU004809.png" title="Hombre trabajando." height="160" width="160"></p>
+<p>Ya sabes declarar y crear de <span lang="en">arrays</span>, pero, ¿cómo y cuándo se usan?</p>
+<p>Existen tres ámbitos principalmente donde se pueden usar, y los tres son muy importantes:</p>
+<ul class="lista_verificacion">
+<li>modificación de una posición del <span lang="en">array;</span></li>
+<li>acceso a una posición del <span lang="en">array</span>;</li>
+<li>paso de parámetros.</li>
+</ul>
+<p>La <strong>modificación de una posición del <span lang="en">array</span></strong> se realiza con una simple asignación. Simplemente se especifica entre corchetes la posición a modificar después del nombre del <span lang="en">array</span>. Veámoslo con un simple ejemplo:</p>
+<div class="codigo elemento_centrado" style="width: 45.6em;">
+<div class="texto_izquierda">
+<pre>int[] numeros = new int[3] ; // Array de 3 números (posiciones del 0 al 2).
+</pre>
+<pre>numeros[0] = 99 ; // Primera posición del array.
+</pre>
+<pre>numeros[1] = 120 ; // Segunda posición del array.
+</pre>
+<pre>numeros[2] = 33; // Tercera y última posición del array.
+</pre>
+</div>
+</div>
+<p> </p>
+<p>El <strong>acceso a un valor ya existente dentro de una posición del <span lang="en">array</span></strong> se consigue de forma similar, simplemente poniendo el nombre del <span lang="en">array</span> y la posición a la cual se quiere acceder entre corchetes:</p>
+<div class="codigo elemento_centrado" style="width: 31.3em;">
+<div class="texto_izquierda">
+<pre>int suma = numeros[0] + numeros[1] + numeros[2];
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Para nuestra comodidad, los <span lang="en">arrays</span>, como objetos que son en <span lang="en">Java</span>, disponen de una propiedad pública muy útil. La propiedad length nos permite saber el tamaño de cualquier <span lang="en">array</span>, lo cual es especialmente útil en métodos que tienen como argumento un <span lang="en">array</span>.</p>
+<div class="codigo elemento_centrado" style="width: 37.9em;">
+<div class="texto_izquierda">
+<pre>System.out.println("Longitud del array: " + numeros.length);
+</pre>
+</div>
+</div>
+<p> </p>
+<p><strong>El tercer uso principal de los <span lang="en">arrays</span> es en el paso de parámetros</strong>, como se dijo antes. Para pasar como argumento un <span lang="en">array</span> a una función o método, ésta debe tener en su definición un parámetro declarado como <span lang="en">array</span>. Esto es simplemente que uno de los parámetros de la función sea un <span lang="en">array</span>. Veamos un ejemplo:</p>
+<div class="codigo elemento_centrado" style="width: 28em;">
+<div class="texto_izquierda">
+<pre>int sumaArray (int[] j) {
+</pre>
+<pre>        int suma = 0;
+</pre>
+<pre>        for (int i=0; i&lt;j.length;i++)
+</pre>
+<pre>            suma = suma + j[i];
+</pre>
+<pre>        return suma; 
+</pre>
+<pre>} 
+</pre>
+</div>
+</div>
+<p> </p>
+<p>En el método anterior se pasa como argumento un <span lang="en">array</span> numérico, sobre el cual se calcula la suma de todos los números que contiene. Es un uso típico de los <span lang="en">arrays</span>, fíjate que especificar que un argumento es un <span lang="en">array</span> es igual que declarar un <span lang="en">array</span>, sin la creación del mismo. Para pasar como argumento un <span lang="en">array</span> a una función, simplemente se pone el nombre del <span lang="en">array</span>:</p>
+<div class="codigo elemento_centrado" style="width: 21.95em;">
+<div class="texto_izquierda">
+<pre>int suma = sumaArray (numeros);
+</pre>
+</div>
+</div>
+<p> </p></div></div>
+</div>
+<div class="DestacadofpdIdevice" id="id40">
+<div class="iDevice emphasis0">
+<div class="iDevice_destacadofpd">
+<div id="ta40_70" class="block" style="display:block;position:relative"><p>En los métodos y funciones <span lang="en">Java</span> <strong>las variables se pasan por copia</strong>. Esto quiere decir que cuando se pasa una variable a un método, y se realiza una modificación de su valor en dicho método, el valor de la variable en el método desde el que se ha realizado la invocación no se modifica. Pero cuidado, <strong>eso no pasa con los <span lang="en">arrays</span></strong>. Cuando dicha modificación se realiza en un <span lang="en">array</span>, es decir, se cambia el valor de uno de los elementos del <span lang="en">array</span>, <strong>sí que cambia su valor de forma definitiva</strong>. Veamos un ejemplo que ilustra ambas cosas:</p>
+<div class="codigo elemento_centrado" style="width: 68.7em;">
+<div class="texto_izquierda">
+<pre>public static void main(String[] args) {
+</pre>
+<pre>     int j=0; int[] i=new int[1];  i[0]=0;
+</pre>
+<pre>     modificaArray(j,i); 
+</pre>
+<pre>     System.out.println(j + "-" + i[0]);  /* Mostrará por pantalla "0–1", puesto que el contenido del array es   
+</pre>
+<pre>          modificado en la función, y aunque la variable j también se modifica, se modifica una copia de la misma,
+</pre>
+<pre>          dejando el original intacto */
+</pre>
+<pre>}  </pre>
+<pre>&lt;br /&gt;static void modificaArray(int j, int[] i) {
+</pre>
+<pre>     j++ ; i[0]++ ;  /* Modificación de los valores de la variable, solo afectará al array, no a j */
+</pre>
+<pre>}
+</pre>
+</div>
+</div></div></div>
+</div>
+</div>
+<div class="RecomendacionfpdIdevice" id="id134">
+<div class="iDevice emphasis_recomendacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_recomendacionfpd.gif">
+<span class="iDeviceTitle"><strong>Recomendación</strong></span>
+<div class="iDevice_inner">
+<div id="ta134_46" class="block" style="display:block;position:relative"><p><span class="resaltado_inline">Buena práctica de programación </span></p>
+<p>Las variables constantes también se conocen como constantes con nombre. Con frecuencia mejoran la legibilidad de un programa, en comparación con los programas que utilizan valores literales (por ejemplo, 10); una constante con nombre como LONGITUD_ARREGLO indica sin duda su propósito, mientras que un valor literal podría tener distintos signifi­cados, con base en su contexto.</p>
+<p><span class="resaltado_inline">Error común de programación</span></p>
+<p>Asignar un valor a una variable constante después de inicializarla es un error de com­pilación.</p>
+<p>Tratar de usar una constante antes de inicializarla es un error de compilación.</p>
+<p><span class="resaltado_inline">Observación para prevenir errores</span></p>
+<p>Al escribir código para acceder al elemento de un arreglo, hay que asegurarse de que el subíndice del arreglo siempre sea mayor o igual a 0 y menor que la longitud del arreglo. Esto ayudará a evitar excepciones del tipo <span style="font-family: courier new,courier;">ArraylndexOutOfBoundsException</span>  en tu programa.</p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+3.2.- Inicialización.</h1></div>
+<div class="FreeTextfpdIdevice" id="id41">
+<div class="iDevice emphasis0">
+<div id="ta41_73" class="block" style="display:block;position:relative"><p><img alt="Imagen que muestra una colección ordenada de piezas de diferente color." class="elemento_derecha" src="./PROG_T4_files/PROG05_CONT_R021_organizacion.jpg" title="Los arrays tienen sus símiles en la vida real." height="192" width="128"></p>
+<p>Rellenar un <span lang="en">array</span>, para su primera utilización, es una tarea muy habitual que puede ser rápidamente simplificada. Vamos a explorar dos sistemas que nos van a permitir inicializar un <span lang="en">array</span> de forma cómoda y rápida.</p>
+<p>En primer lugar, una forma habitual de crear un <span lang="en">array</span> y rellenarlo es simplemente a través de un método que lleve a cabo la creación y el rellenado del <span lang="en">array</span>. Esto es sencillo desde que podemos hacer que un método retorne un <span lang="en">array</span> simplemente indicando en la declaración que el valor retornado es tipo[], donde tipo es un tipo de dato primitivo (int, short, float,...) o una clase existente (String por ejemplo). Veamos un ejemplo:</p>
+<div class="codigo elemento_centrado" style="width: 39.55em;">
+<div class="texto_izquierda">
+<pre>static int[] arrayConNumerosConsecutivos (int totalNumeros) {
+</pre>
+<pre>        int[] r=new int[totalNumeros];
+</pre>
+<pre>        for (int i=0;i&lt;totalNumeros;i++)&lt;br /&gt;             r[i]=i;
+</pre>
+<pre>        return r;
+</pre>
+<pre>}
+</pre>
+</div>
+</div>
+<p> </p>
+<p>En el ejemplo anterior se crea un <span lang="en">array</span> con una serie de números consecutivos, empezando por el cero, ¿sencillo no? Este uso suele ahorrar bastantes líneas de código en tareas repetitivas. Otra forma de inicializar los <span lang="en">arrays</span>, cuando el número de elementos es fijo y sabido a priori, es indicando entre llaves el listado de valores que tiene el <span lang="en">array</span>. En el siguiente ejemplo puedes ver la inicialización de un <span lang="en">array</span> de tres números, y la inicialización de un <span lang="en">array</span> con tres cadenas de texto:</p>
+<div class="codigo elemento_centrado" style="width: 58.8em;">
+<div class="texto_izquierda">
+<pre>int[] array = {10, 20, 30};
+</pre>
+<pre>String[] diassemana= {"Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"};
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Pero cuidado, la inicialización solo se puede usar en ciertos casos. La inicialización anterior funciona cuando se trata de un tipo de dato primitivo (int, short, float, double, <abbr title="etcétera.">etc.</abbr>) o un String, y algunos pocos casos más, pero no funcionará para cualquier objeto.</p>
+<p>Cuando se trata de un <span lang="en">array</span> de objetos, la inicialización del mismo es un poco más liosa, dado que el valor inicial de los elementos del <span lang="en">array</span> de objetos será <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/"><strong>null</strong><span><em>Null o nulo</em>Una variable que almacena un objeto en realidad es un apuntador a la zona de memoria donde se almacena dicho objeto. Cuando dicha variable, no apunta a ningún objeto, porque el objeto no se ha creado con el operador new, entonces la variable apunta a null, para indicar que no hace referencia todavía a ningún objeto.</span></a>, o lo que es lo mismo, crear un <span lang="en">array</span> de objetos no significa que se han creado las instancias de los objetos. Hay que crear, para cada posición del <span lang="en">array</span>, el objeto del tipo correspondiente con el operador new. Veamos un ejemplo con la clase StringBuilder. En el siguiente ejemplo solo aparecerá null por pantalla:</p>
+<div class="codigo elemento_centrado" style="width: 68.7em;">
+<div class="texto_izquierda">
+<pre>StringBuilder[] j=new StringBuilderStringBuilder[10];
+</pre>
+<pre>for (int i=0; i&lt;j.length;i++)&lt;br /&gt;    System.out.println("Valor" + i + "=" + j[i]); // Imprimirá null para los 10 valores.
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Para solucionar este problema podemos optar por lo siguiente, crear para cada posición del <span lang="en">array</span> una instancia del objeto:</p>
+<div class="codigo elemento_centrado" style="width: 45.05em;">
+<div class="texto_izquierda">
+<pre>StringBuilder[] j=new StringBuilder[10];
+</pre>
+<pre>for (int i=0; i&lt;j.length;i++) &lt;br /&gt;     j[i]=new StringBuilder("cadena "+i);  
+</pre>
+</div>
+</div></div></div>
+</div>
+<div class="ReflectionfpdmodifIdevice" id="id42">
+<div class="iDevice emphasis_reflexionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_reflexionfpd.gif">
+<span class="iDeviceTitle"><strong>Reflexiona</strong></span>
+<script type="text/javascript" src="./PROG_T4_files/common.js.descarga"></script>
+<div class="iDevice_inner">
+<div id="ta42_40" class="block" style="display:block;position:relative"><p>Para acceder a una propiedad o a un método cuando los elementos del <span lang="en">array</span> son objetos, puedes usar la notación de punto detrás de los corchetes, por ejemplo: diassemana[0].length.</p>
+<p>Fíjate bien en el <span lang="en">array</span> diassemana anterior y piensa en lo que se mostraría por pantalla con el siguiente código:</p>
+<div class="codigo elemento_centrado" style="width: 33.5em;">
+<div class="texto_izquierda">
+<pre>System.out.println(diassemana[0].substring(0,2)); 
+</pre>
+</div>
+</div></div></div>
+</div>
+</div>
+<div class="EleccionmultiplefpdIdevice" id="id43">
+<script type="text/javascript" src="./PROG_T4_files/common.js.descarga"></script>
+<script type="text/javascript" src="./PROG_T4_files/libot_drag.js.descarga"></script>
+<div class="iDevice emphasis_autoevaluacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_autoevaluacionfpd.gif">
+<span class="iDeviceTitle"><strong>Autoevaluación</strong></span>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion43_60" class="block" style="display:block;position:relative"><p><strong>¿Cuál es el valor de la posición 3 del siguiente <span lang="en">array</span>: String[] m=new String[10]?</strong></p></div><div style="display: table; overflow: auto; width: 100%;">
+<div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option43_60" id="i43_63" onclick="getFeedback(0,3,&#39;43_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans43_63" class="block" style="display:block;position:relative"><p>null.</p></div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option43_60" id="i43_75" onclick="getFeedback(1,3,&#39;43_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans43_75" class="block" style="display:block;position:relative"><p>Una cadena vacía.</p></div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option43_60" id="i43_78" onclick="getFeedback(2,3,&#39;43_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans43_78" class="block" style="display:block;position:relative"><p>Daría error y no se podría compilar.</p></div></div>
+</div></div>
+<div id="sa0b43_60" class="feedback" style="display: none;"><div id="taf43_63" class="" style="display:block;position:relative"><p>Efectivamente, los objetos no se han creado todavía.</p></div></div>
+<div id="sa1b43_60" class="feedback" style="display: none;"><div id="taf43_75" class="" style="display:block;position:relative"><p>Incorrecto, recuerda que String es al fin y al cabo un objeto.</p></div></div>
+<div id="sa2b43_60" class="feedback" style="display: none;"><div id="taf43_78" class="" style="display:block;position:relative"><p>Incorrecto, sí se puede compilar. Revisa el apartado.</p></div></div>
+<noscript><br /><div class="feedback">
+<p><strong>Solution: </strong></p>
+<ol><li><strong>Opción correcta</strong> <p>Efectivamente, los objetos no se han creado todavía.</p></li><li><strong>Incorrecto</strong> <p>Incorrecto, recuerda que String</code> es al fin y al cabo un objeto.</p></li><li><strong>Incorrecto</strong> <p>Incorrecto, sí se puede compilar. Revisa el apartado.</p></li></ol>
+</div></noscript></div>
+</div>
+</div>
+</div>
+<div class="EjercicioresueltofpdIdevice" id="id125">
+<div class="iDevice emphasis_ejercicioresueltofpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_ejercicioresueltofpd.gif">
+<span class="iDeviceTitle"><strong>Ejercicio Resuelto</strong></span>
+<div class="iDevice_inner">
+<div id="ta125_63" class="block" style="display:block;position:relative"><p>Ya sabemos lo que son los arrays, y cómo inicializarlos. Supongamos un array, por ejemplo de enteros, ¿se te ocurre cómo haríamos para ordenarlo?</p></div><div class="question">
+<div id="taquesQuestion0b125" class="block" style="display:block;position:relative"><p>La idea puede ser ir recorriendo el array, y para cada elemento del mismo, hacemos una segunda pasada, un segundo recorrido del array desde el siguiente elemento más uno en adelante y comparo. Así, si el elemento del array que estoy recorriendo en primer lugar es mayor que el de la segunda pasada, entonces intercambio esos elementos. Intenta resolverlo antes de mirar la solución.</p></div><div id="viewq0b125" style="display:block;"><input type="button" name="btnshowq0b125" value="Mostrar retroalimentación" class="feedbackbutton" onclick="showAnswer(&#39;q0b125&#39;,1)">
+</div><div id="hideq0b125" style="display:none;"><input type="button" name="btnhideq0b125" value="Ocultar retroalimentación" class="feedbackbutton" onclick="showAnswer(&#39;q0b125&#39;,0)">
+<p></p></div><div id="sq0b125" class="feedback" style=" display: none;"><div id="taquesFeedback0b125" class="block" style="display:block;position:relative"><p style="text-align: center;"><a title="Descargar OrdenaInt.java [.java - 2 KB]" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_R021_1_OrdenaInt.java"><span class="documento">Ordenar array ascendentemente.</span></a><span class="credenciales"> (2 KB)</span></p></div></div>
+<noscript><div class="feedback">
+<p><strong>Solution: </strong></p>
+<p style="text-align: center;"><a title="Descargar OrdenaInt.java [.java - 2 KB]" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_R021_1_OrdenaInt.java"><span class="documento">Ordenar array ascendentemente.</span></a><span class="credenciales"> (2 KB)</span></p></div></noscript>
+</div>
+<div class="question">
+<div id="taquesQuestion1b125" class="block" style="display:block;position:relative"><p>Ahora supón que tenemos un array de números enteros, ordenado, pero que puede contener huecos (null) donde insertar un número. Supongamos que los nulos, los huecos están al final. Queremos poder insertar un número al array, y que siga estando ordenado ascendentemente. ¿Cómo lo harías? Una idea puede ser: primero comprobar si hay hueco, y si no lo hay aviso y termino. Si lo hay, empiezo a recorrer el array y si es nulo, lo inserto sin más, si no, comparo si el elemento que quiero insertar es menor que el de la posición actual del array. Cuando detecte un número mayor que el que yo quiero insertar, tendré que desplazar los elementos del array desde esa posición en adelante para abrir hueco. ¿Eres capaz de hacerlo? ¡Adelante! Inténtalo antes de ver la solución más abajo.</p></div><div id="viewq1b125" style="display:block;"><input type="button" name="btnshowq1b125" value="Mostrar retroalimentación" class="feedbackbutton" onclick="showAnswer(&#39;q1b125&#39;,1)">
+</div><div id="hideq1b125" style="display:none;"><input type="button" name="btnhideq1b125" value="Ocultar retroalimentación" class="feedbackbutton" onclick="showAnswer(&#39;q1b125&#39;,0)">
+<p></p></div><div id="sq1b125" class="feedback" style=" display: none;"><div id="taquesFeedback1b125" class="block" style="display:block;position:relative"><p style="text-align: center;"><a class="documento" title="Descargar InsertarInt.java [.java - 2 KB]" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/InsertarEnteros.java">Insertar elemento en array ordenado.</a><span class="credenciales"> (2 KB)</span></p></div></div>
+<noscript><div class="feedback">
+<p><strong>Solution: </strong></p>
+<p style="text-align: center;"><a class="documento" title="Descargar InsertarInt.java [.java - 2 KB]" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/InsertarEnteros.java">Insertar elemento en array ordenado.</a><span class="credenciales"> (2 KB)</span></p></div></noscript>
+</div>
+<div class="question">
+<div id="taquesQuestion2b125" class="block" style="display:block;position:relative"><p>Por último, veamos cómo borrar un elemento de un array manteniendo el array ordenado y empaquetado (sin huecos null en medio, esto quiere decir que todos los espacios vacíos que tenga el vector van a estar siempre juntos en las últimas posiciones del vector). ¿Cómo lo harías? La idea es desplazar todos los elementos de las posiciones siguientes al elemento que queremos borrar una posición hacia abajo, para mantener el vector empaquetado, sin abrir huecos en medio. Una vez hecho esto, debemos asegurarnos de igualar a null la última persona del vector, para que no aparezca duplicada, y para que el vector tenga un hueco más de los que tenía Como siempre, antes de mirar la solución, intenta hacerlo.</p></div><div id="viewq2b125" style="display:block;"><input type="button" name="btnshowq2b125" value="Mostrar retroalimentación" class="feedbackbutton" onclick="showAnswer(&#39;q2b125&#39;,1)">
+</div><div id="hideq2b125" style="display:none;"><input type="button" name="btnhideq2b125" value="Ocultar retroalimentación" class="feedbackbutton" onclick="showAnswer(&#39;q2b125&#39;,0)">
+<p></p></div><div id="sq2b125" class="feedback" style=" display: none;"><div id="taquesFeedback2b125" class="block" style="display:block;position:relative"><p style="text-align: center;"><a title="Descargar InsertarInt.java [.java - 4 KB]" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_21_3_BorraInt.java"><span class="documento">Borrar elemento en array ordenado.</span></a><span class="credenciales"> (4 KB)</span></p></div></div>
+<noscript><div class="feedback">
+<p><strong>Solution: </strong></p>
+<p style="text-align: center;"><a title="Descargar InsertarInt.java [.java - 4 KB]" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_21_3_BorraInt.java"><span class="documento">Borrar elemento en array ordenado.</span></a><span class="credenciales"> (4 KB)</span></p></div></noscript>
+</div>
+<div class="question">
+<div id="taquesQuestion3b125" class="block" style="display:block;position:relative"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+4.- Arrays multidimensionales.</h1></div>
+<div class="CasopracticofpdIdevice" id="id44">
+<div class="iDevice emphasis_casopracticofpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_casopracticofpd.gif">
+<span class="iDeviceTitle"><strong>Caso práctico</strong></span>
+<div class="iDevice_inner">
+<div id="ta44_66" class="block" style="display:block;position:relative"><p><img alt="Fotografía de María." class="elemento_izquierda" src="./PROG_T4_files/CASO_PERSONAJES_26.png" style="width: 188px; height: 160px;" title="María." height="160" width="188"></p>
+<p><strong>Ana</strong> reflexiona sobre la gran utilidad que ofrecen los <span lang="en">arrays</span>. Ya no solamente cuando interesa almacenar listas sencillas de elementos, sino que es posible manejar <span lang="en">arrays</span> bidimensionales, tridimensionales, <abbr title="etcétera.">etc.</abbr>, permitiendo así tener matrices. Así, declarando un <span lang="en">array</span> bidimensional, podríamos tener un elemento en una posición a la que se accede indicando dos coordenadas. La manera más fácil de comprenderlo es mediante un ejemplo, así que <strong>Ana</strong> le pregunta su tutora, <strong>María</strong>, que le pone un ejemplo referente a una imagen digital, a cómo almacenar los distintos puntos de la misma.</p></div></div>
+</div>
+</div>
+<div class="FreeTextfpdIdevice" id="id45">
+<div class="iDevice emphasis0">
+<div id="ta45_73" class="block" style="display:block;position:relative"><p>¿Qué estructura de datos utilizarías para almacenar los <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">píxeles<span><em>Píxel</em>Punto que compone una imagen digital.</span></a> de una imagen digital?</p>
+<p>Normalmente las imágenes son cuadradas así que una de las estructuras más adecuadas es la <a class="glosario" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/">matriz<span><em>Matriz</em>Estructura matemática compuesta de datos numéricos dispuestos en filas y columnas, similar a una tabla.</span></a>. En la matriz cada valor podría ser el color de cada píxel. Pero, ¿qué es una matriz a nivel de programación? Pues es un <span lang="en">array</span> con dos dimensiones, o lo que es lo mismo, un <span lang="en">array</span> cuyos elementos son <span lang="en">arrays</span> de números.</p>
+<p>Los <span lang="en">arrays</span> multidimensionales están en todos los lenguajes de programación actuales, y obviamente también en <span lang="en">Java</span>. La forma de crear un <span lang="en">array</span> de dos dimensiones en <span lang="en">Java</span> es la siguiente:</p>
+<div class="codigo elemento_centrado" style="width: 20.3em;">
+<div class="texto_izquierda">
+<pre>int[][] a2d=new int[4][5];
+</pre>
+</div>
+</div>
+<p> </p>
+<p>El código anterior creará un <span lang="en">array</span> de dos dimensiones, o lo que es lo mismo, creará un <span lang="en">array</span> que contendrá 4 <span lang="en">arrays</span> de 5 números cada uno. Veámoslo con un ejemplo gráfico:</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_R022_Array2Dim1.jpg"><img alt="Imagen en la que se muestra visualmente como un array de dos dimensiones es en realidad un array en el que cada posición es otro array. En la imagen se ve un array donde la primera dimensión es 4 (contiene 4 arrays), y la segunda dimensión es 5 (cada array contiene un array de 5 elementos)." class="imagen_ampliable" src="./PROG_T4_files/PROG05_CONT_R022_Array2Dim1_miniatura.jpg" style="width: 200px; height: 136px;" title="Array de dos dimensiones."></a></div>
+</div>
+<p>Al igual que con los <span lang="en">arrays</span> de una sola dimensión, los <span lang="en">arrays</span> multidimensionales deben <strong>declararse y crearse</strong>. Podremos hacer <span lang="en">arrays</span> multidimensionales de todas las dimensiones que queramos y de cualquier tipo. En ellos todos los elementos del <span lang="en">array</span> serán del mismo tipo, como en el caso de los <span lang="en">arrays</span> de una sola dimensión.</p>
+<p>La <strong>declaración</strong> comenzará especificando el tipo o la clase de los elementos que forman el <span lang="en">array</span>, después pondremos tantos corchetes como dimensiones tenga el <span lang="en">array</span> y por último el nombre del <span lang="en">array</span>, por ejemplo:</p>
+<div class="codigo elemento_centrado" style="width: 19.2em;">
+<div class="texto_izquierda">
+<pre>int [][][] arrayde3dim; 
+</pre>
+</div>
+</div>
+<p> </p>
+<p>La <strong>creación</strong> se consigue igualmente usando el operador new, seguido del tipo y los corchetes, en los cuales se especifica el tamaño de cada dimensión:</p>
+<div class="codigo elemento_centrado" style="width: 21.95em;">
+<div class="texto_izquierda">
+<pre>arrayde3dim=new int[2][3][4];
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Todo esto, como ya has visto en un ejemplo anterior, se puede escribir en una única sentencia.</p></div></div>
+</div>
+<div class="ClozefpdIdevice" id="id46">
+<div class="iDevice emphasis_autoevaluacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_autoevaluacionfpd.gif">
+<span class="iDeviceTitle"><strong>Autoevaluación</strong></span>
+<script type="text/javascript" src="./PROG_T4_files/common.js.descarga"></script>
+<div class="iDevice_inner">
+<div id="ta46_41" class="block" style="display:block;position:relative"><p align="left">
+<strong>Completa con los números
+que faltan:</strong>
+</p>
+<div class="codigo elemento_centrado" style="width: 24.15em">
+<div class="texto_izquierda">
+<pre>int[][][] k=new int[10][11][12]; 
+</pre>
+</div>
+</div>
+</div><div id="cloze46_42">
+<script>var YOUR_SCORE_IS = "Su puntuación es ";</script>
+<input type="hidden" name="clozeFlag46_42.strictMarking" id="clozeFlag46_42.strictMarking" value="false">
+
+<input type="hidden" name="clozeFlag46_42.checkCaps" id="clozeFlag46_42.checkCaps" value="false">
+
+<input type="hidden" name="clozeFlag46_42.instantMarking" id="clozeFlag46_42.instantMarking" value="false">
+
+<p>
+El <span lang="en">array</span>
+anterior es de 
+ <input type="text" value="" id="clozeBlank46_42.0" style="width:1em">
+
+<span style="display: none;" id="clozeAnswer46_42.0">JXUwMDZi
+</span>
+
+dimensiones, y tiene un total de 
+ <input type="text" value="" id="clozeBlank46_42.1" style="width:4em">
+
+<span style="display: none;" id="clozeAnswer46_42.1">JXUwMDY5JXUwMDAyJXUwMDAxJXUwMDAy
+</span>
+
+números enteros.
+</p>
+
+<div class="block">
+
+<input type="button" name="submit46_42" value="Enviar" id="submit46_42" onclick="clozeSubmit(&#39;46_42&#39;)">
+
+<input type="button" name="restart46_42" value="Reiniciar" style="display: none;" id="restart46_42" onclick="clozeRestart(&#39;46_42&#39;)">
+
+  
+<input type="button" name="46_42showAnswersButton" value="Mostrar las respuestas" style="display: none;" id="showAnswersButton46_42" onclick="fillClozeInputs(&#39;46_42&#39;)">
+
+<div id="clozeScore46_42"></div>
+</div>
+</div></div>
+<noscript><div class="feedback">
+<strong>Solution: </strong><br />
+<p>
+El <span lang="en">array</span>
+anterior es de <u>3</u>
+dimensiones, y tiene un total de <u>1320</u>
+números enteros.
+</p>
+</div></noscript></div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+4.1.- Uso de arrays multidimensionales.</h1></div>
+<div class="FreeTextfpdIdevice" id="id47">
+<div class="iDevice emphasis0">
+<div id="ta47_73" class="block" style="display:block;position:relative"><p>¿Y en que se diferencia el uso de un <span lang="en">array</span> multidimensional con respecto a uno de una única dimensión?</p>
+<p>Pues en muy poco la verdad. Continuaremos con el ejemplo del apartado anterior:</p>
+<div class="codigo elemento_centrado" style="width: 20.3em;">
+<div class="texto_izquierda">
+<pre>int[][] a2d=new int[4][5];
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Para acceder a cada uno de los elementos del <span lang="en">array</span> anterior, habrá que indicar su posición en las dos dimensiones, teniendo en cuenta que los índices de cada una de las dimensiones empieza a numerarse en 0 y que la última posición es el tamaño de la dimensión en cuestión menos 1.</p>
+<p>Puedes asignar un valor a una posición concreta dentro del <span lang="en">array</span>, indicando la posición en cada una de las dimensiones entre corchetes:</p>
+<div class="codigo elemento_centrado" style="width: 12.6em;">
+<div class="texto_izquierda">
+<pre>a2d[0][0]=3;
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Y como es de imaginar, puedes usar un valor almacenado en una posición del <span lang="en">array</span> multidimensional simplemente poniendo el nombre del <span lang="en">array</span> y los índices del elemento al que deseas acceder entre corchetes, para cada una de las dimensiones del <span lang="en">array</span>. Por ejemplo:</p>
+<div class="codigo elemento_centrado" style="width: 38.45em;">
+<div class="texto_izquierda">
+<pre>int suma=a2d[0][0]+a2d[0][1]+a2d[0][2]+a2d[0][3]+a2d[0][4];
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Como imaginarás, los <span lang="en">arrays</span> multidimensionales pueden también ser pasados como parámetros a los métodos, simplemente escribiendo la declaración del <span lang="en">array</span> en los argumentos del método, de forma similar a como se realizaba para <span lang="en">arrays</span> de una dimensión. Por ejemplo:</p>
+<div class="codigo elemento_centrado" style="width: 50em;">
+<div class="texto_izquierda">
+<pre>static int sumaArray2d(int[][] a2d) {
+</pre>
+<pre>        int suma = 0;
+</pre>
+<pre>        for (int i1 = 0; i1 &lt; a2d.length; i1++) 
+</pre>
+<pre>            for (int i2 = 0; i2 &lt; a2d[i1].length; i2++)  suma += a2d[i1][i2];
+</pre>
+<pre>        return suma;
+</pre>
+<pre>    }
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Del código anterior, fijate especialmente en el uso del atributo length (que nos permite obtener el tamaño de un <span lang="en">array</span>). Aplicado directamente sobre el <span lang="en">array</span> nos permite saber el tamaño de la primera dimensión (a2d.length). Como los <span lang="en">arrays</span> multidimensionales son <span lang="en">arrays</span> que tienen como elementos <span lang="en">arrays</span> (excepto el último nivel que ya será del tipo concreto almacenado), para saber el tamaño de una dimensión superior tenemos que poner el o los índices entre corchetes seguidos de length (<code>a2d[i1].length</code>).</p>
+<p>Para saber el tamaño de una segunda dimensión (dentro de una función por ejemplo) hay que hacerlo así y puede resultar un poco engorroso, pero gracias a esto podemos tener <span lang="en">arrays</span> multidimensionales irregulares.</p>
+<div class="elemento_derecha">
+<div class="elemento_centrado"><a title="Ampliar imagen." href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG05_CONT_R023_ArrayIrregular.jpg"><img alt="Imagen en la que se muestra visualmente como se crea un array de dos dimensiones irregular. Aparece escrito el código para crear el array irregular, similar al que aparece en los contenidos. El array creado tiene una primera dimensión de tamaño 4, en la que se almacenan 4 arrays, cada uno de un tamaño diferente (4, 5, 3 y 5 respectivamente)." class="imagen_ampliable" src="./PROG_T4_files/PROG05_CONT_R023_ArrayIrregular_miniatura.jpg" title="Array irregular de dos dimensiones." height="100" width="200"></a></div>
+</div>
+<p>Una matriz es un ejemplo de <span lang="en">array</span> multidimensional regular. ¿Por qué?</p>
+<p>Pues porque es un <span lang="en">array</span> que contiene <span lang="en">arrays</span> de números todos del mismo tamaño. Cuando esto no es así, es decir, cuando los <span lang="en">arrays</span> de la segunda dimensión son de diferente tamaño entre sí, se puede decir que es un <span lang="en">array</span> multidimensional irregular. En <span lang="en">Java</span> se puede crear un <span lang="en">array</span> irregular de forma relativamente fácil, veamos un ejemplo para dos dimensiones.</p>
+<ul class="lista_verificacion">
+<li><strong>Declaramos y creamos el </strong><strong><span lang="en">array</span></strong><strong> pero sin especificar la segunda dimensión.</strong> Lo que estamos haciendo en realidad es crear simplemente un <span lang="en">array</span> que contendrá <span lang="en">arrays</span>, sin decir como son de grandes los <span lang="en">arrays</span> de la siguiente dimensión: <strong><span style="font-size: medium;">int[][] irregular=new int[3][];</span></strong></li>
+<li><strong>Después creamos cada uno de los </strong><strong><span lang="en">arrays</span></strong><strong> unidimensionales</strong> (del tamaño que queramos) y lo asignamos a la posición correspondiente del <span lang="en">array</span> anterior:<strong><span style="font-size: medium;"> irregular[0]=new int[7]; irregular[1]=new int[15]; irregular[2]=new int[9];</span></strong></li>
+</ul></div></div>
+</div>
+<div class="RecomendacionfpdIdevice" id="id48">
+<div class="iDevice emphasis_recomendacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_recomendacionfpd.gif">
+<span class="iDeviceTitle"><strong>Recomendación</strong></span>
+<div class="iDevice_inner">
+<div id="ta48_50" class="block" style="display:block;position:relative"><p>Cuando uses <span lang="en">arrays</span> irregulares, por seguridad, es conveniente que verifiques siempre que el <span lang="en">array</span> no sea null en segundas dimensiones, y que la longitud sea la esperada antes de acceder a los datos:</p>
+<div class="codigo elemento_centrado" style="width: 41.2em;">
+<div class="texto_izquierda">
+<pre>if (irregular[1]!=null &amp;&amp; irregular[1].length&gt;10) {...} 
+</pre>
+</div>
+</div></div></div>
+</div>
+</div>
+<div class="ParasabermasfpdIdevice" id="id127">
+<div class="iDevice emphasis_parasabermasfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_parasabermasfpd.gif">
+<span class="iDeviceTitle"><strong>Para saber más</strong></span>
+<div class="iDevice_inner">
+<div id="ta127_43" class="block" style="display:block;position:relative"><p>Puedes echar un vistazo a este vídeo donde se habla sobre arrays multidimensionales:</p>
+<div class="elemento_centrado">
+<div class="elemento_centrado"><iframe src="./PROG_T4_files/nfAR9QDy1lU.html" frameborder="0" width="425" height="350"></iframe></div>
+<div class="credenciales elemento_centrado"><a title="Resumen textual alternativo para " tutorial="" herencia="" en="" java""="" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/PROG10_Descripcion_Video_ArrasysMultidimensionales.html">Resumen textual alternativo</a></div>
+</div></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+4.2.- Inicialización de arrays multidimensionales.</h1></div>
+<div class="FreeTextfpdIdevice" id="id49">
+<div class="iDevice emphasis0">
+<div id="ta49_73" class="block" style="display:block;position:relative"><div class="elemento_derecha">
+<div class="elemento_centrado"><img src="./PROG_T4_files/PROG05_CONT_R024_pantallas.jpg" alt="Fotografía nocturna de un edificio con un montón de monitores mostrando diferentes cosas." title="Monitores."></div>
+<div class="elemento_centrado credenciales"><a class="cc-by-nc" title="CC by-nc" href="http://creativecommons.org/licenses/by-nc/3.0/deed.es" target="_blank"><span class="transparente">CC by-nc</span></a> <a title="Geoff LMV" href="http://www.flickr.com/photos/geoff_mv/2080100008/sizes/m/in/photolist-4aP4gf-FcdHE-6rfE7a-8SAMb5-2ANC9-2ANC8-2ANCa-4EHAvD-c8GNZ5-3G9PJv-GPGer-b82kB-2ECvm-7wLbNR-4Zng8Y-bn657e-GwNZ-zX8we-6jVTaX-DTQS-34ebii-amLmAq-8FWn6u-6hB1GV-CZtc-7347Y6-61Abd6-5zUNzH-9RYG9P-eqzrH-asimY3-9sG1-o9qwn-5rQv8w-5rQvdN-eZVmE-4LTU29-3WrBW-3WrCi-5QTxTh-3WrBD-2zdYbA-gNSyB2-bU18sM-4GuG6a-Lj75-ni1Mt-DoH2-x2Byk-6YZBks-bz5dSm/" target="_blank">Geoff LMV</a></div>
+</div>
+<p>¿En qué se diferencia la inicialización de <span lang="en">arrays</span> unidimensionales de <span lang="en">arrays</span> multidimensionales? En muy poco. La inicialización de los <span lang="en">arrays</span> multidimensionales es igual que la de los <span lang="en">arrays</span> unidimensionales.</p>
+<p>Para que una función retorne un <span lang="en">array</span> multidimensional, se hace igual que en <span lang="en">arrays</span> unidimensionales. Simplemente hay que poner el tipo de dato seguido del número de corchetes correspondiente, según el número de dimensiones del <span lang="en">array</span>. Eso claro, hay que ponerlo en la definición del método:</p>
+<div class="codigo elemento_centrado" style="width: 27.45em;">
+<div class="texto_izquierda">
+<pre>int[][] inicializarArray (int n, int m)
+</pre>
+<pre>{
+</pre>
+<pre>     int[][] ret=new int[n][m];
+</pre>
+<pre>     for (int i=0;i&lt;n;i++)
+</pre>
+<pre>          for (int j=0;j&lt;m;j++)
+</pre>
+<pre>               ret[i][j]=n*m;
+</pre>
+<pre>     return ret;
+</pre>
+<pre>}
+</pre>
+</div>
+</div>
+<p> </p>
+<p>También se puede inicializar un <span lang="en">array</span> multidimensional usando las llaves, poniendo después de la declaración del <span lang="en">array</span> un símbolo de igual, y encerrado entre llaves los diferentes valores del <span lang="en">array</span> separados por comas, con la salvedad de que hay que poner unas llaves nuevas cada vez que haya que poner los datos de una nueva dimensión, lo mejor es verlo con un ejemplo:</p>
+<div class="codigo elemento_centrado" style="width: 32.4em;">
+<div class="texto_izquierda">
+<pre>int[][] a2d={{0,1,2},{3,4,5},{6,7,8},{9,10,11}};
+</pre>
+<pre>int[][][] a3d={{{0,1},{2,3}},{{0,1},{2,3}}};
+</pre>
+</div>
+</div>
+<p> </p>
+<p>El primer <span lang="en">array</span> anterior sería un <span lang="en">array</span> de 4 por 3 y el siguiente sería un <span lang="en">array</span> de <abbr title="Dos por dos por dos"><span title="Primera dimensión 2, segunda dimensión 2 y tercera dimensión 2.">2x2x2</span></abbr>. Como puedes observar esta notación a partir de 3 dimensiones ya es muy liosa y normalmente no se usa. Utilizando esta notación también podemos inicializar rápidamente <span lang="en">arrays</span> irregulares, simplemente poniendo separados por comas los elementos que tiene cada dimensión:</p>
+<div class="codigo elemento_centrado" style="width: 42.85em;">
+<div class="texto_izquierda">
+<pre>int[][] i2d={{0,1},{0,1,2},{0,1,2,3},{0,1,2,3,4},{0,1,2,3,4,5}};
+</pre>
+<pre>int[][][] i3d={ { {0,1},{0,2} } , {{0,1,3}} , {{0,3,4},{0,1,5} } };
+</pre>
+</div>
+</div></div></div>
+</div>
+<div class="DestacadofpdIdevice" id="id50">
+<div class="iDevice emphasis0">
+<div class="iDevice_destacadofpd">
+<div id="ta50_70" class="block" style="display:block;position:relative"><p>Es posible que en algunos libros y en Internet se refieran a los <span lang="en">arrays</span> usando otra terminología. A los <span lang="en">arrays</span> unidimensionales es común llamarlos también <strong>arreglos </strong>o <strong>vectores</strong>, a los <span lang="en">arrays</span> de dos dimensiones es común llamarlos directamente <strong>matrices</strong>, y a los <span lang="en">arrays</span> de más de dos dimensiones es posible que los veas escritos como <strong>matrices multidimensionales</strong>. Sea como sea, lo más normal en la jerga informática es llamarlos <span lang="en">arrays</span>, término que procede del inglés.</p></div></div>
+</div>
+</div>
+<div class="EleccionmultiplefpdIdevice" id="id51">
+<script type="text/javascript" src="./PROG_T4_files/common.js.descarga"></script>
+<script type="text/javascript" src="./PROG_T4_files/libot_drag.js.descarga"></script>
+<div class="iDevice emphasis_autoevaluacionfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_autoevaluacionfpd.gif">
+<span class="iDeviceTitle"><strong>Autoevaluación</strong></span>
+<div class="iDevice_inner">
+<div class="question">
+<div id="taquestion51_60" class="block" style="display:block;position:relative"><p>
+<strong>Dado
+el siguiente <span lang="en">array</span>: </strong>int[][][] i3d={{{0,1},{0,2}}, {{0,1,3}},{{0,3,4},{0,1,5}}}; 
+</p>
+<p>
+<strong>¿Cuál es
+el valor de la posición [1][1][2]?</strong>
+</p>
+</div><div style="display: table; overflow: auto; width: 100%;">
+<div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option51_60" id="i51_63" onclick="getFeedback(0,4,&#39;51_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans51_63" class="block" style="display:block;position:relative">3
+</div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option51_60" id="i51_87" onclick="getFeedback(1,4,&#39;51_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans51_87" class="block" style="display:block;position:relative">4
+</div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option51_60" id="i51_90" onclick="getFeedback(2,4,&#39;51_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans51_90" class="block" style="display:block;position:relative">5
+</div></div>
+</div><div style="display: table-row; clear: both;" class="answer">
+<div style="float: left; display: table-cell; margin-left: 0.2em;">
+<input type="radio" name="option51_60" id="i51_93" onclick="getFeedback(3,4,&#39;51_60&#39;,&#39;multi&#39;)"></div>
+<div style="float: left; display: table-cell; margin-left: 0.5em; width: 93%;">
+<div id="taans51_93" class="block" style="display:block;position:relative"><p>
+Ninguno
+de los anteriores.
+</p>
+</div></div>
+</div></div>
+<div id="sa0b51_60" class="feedback" style="display: none;"><div id="taf51_63" class="" style="display:block;position:relative"><p align="left">
+No
+es correcto. No es lo que parece, algo se te ha pasado por alto.
+</p>
+</div></div>
+<div id="sa1b51_60" class="feedback" style="display: none;"><div id="taf51_87" class="" style="display:block;position:relative"><p align="left">
+No
+es correcto, deberías analizar con mayor detenimiento el <span lang="en">array</span>.
+</p>
+</div></div>
+<div id="sa2b51_60" class="feedback" style="display: none;"><div id="taf51_90" class="" style="display:block;position:relative"><p align="left">
+Incorrecto,
+revisa de nuevo el <span lang="en">array</span>.
+</p>
+</div></div>
+<div id="sa3b51_60" class="feedback" style="display: none;"><div id="taf51_93" class="" style="display:block;position:relative"><p>
+Muy
+bien, efectivamente esa posición no existe y si intentas acceder a
+ella sin verificarlo obtendrías una excepción tipo ArrayIndexOutOfBoundsException
+(excepción de indice de <span lang="en">array</span>
+fuera de los límites).
+</p>
+</div></div>
+<noscript><br /><div class="feedback">
+<p><strong>Solution: </strong></p>
+<ol><li><strong>Incorrecto</strong> <p align="left">
+No
+es correcto. No es lo que parece, algo se te ha pasado por alto.
+</p>
+</li><li><strong>Incorrecto</strong> <p align="left">
+No
+es correcto, deberías analizar con mayor detenimiento el <span lang="en">array</span>.
+</p>
+</li><li><strong>Incorrecto</strong> <p align="left">
+Incorrecto,
+revisa de nuevo el <span lang="en">array</span>.
+</p>
+</li><li><strong>Opción correcta</strong> <p>
+Muy
+bien, efectivamente esa posición no existe y si intentas acceder a
+ella sin verificarlo obtendrías una excepción tipo ArrayIndexOutOfBoundsException</code>
+(excepción de indice de <span lang="en">array</span>
+fuera de los límites).
+</p>
+</li></ol>
+</div></noscript></div>
+</div>
+</div>
+</div>
+<div class="ParasabermasfpdIdevice" id="id52">
+<div class="iDevice emphasis_parasabermasfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_parasabermasfpd.gif">
+<span class="iDeviceTitle"><strong>Para saber más</strong></span>
+<div class="iDevice_inner">
+<div id="ta52_47" class="block" style="display:block;position:relative"><p>Las matrices tienen asociadas un amplio abanico de operaciones (transposición, suma, producto, <abbr title="etcétera.">etc</abbr>.). En la siguiente página tienes ejemplos de cómo realizar algunas de estas operaciones, usando por supuesto <span lang="en">arrays</span>:</p>
+<p class="enlace_centrado"><a class="html" title="Acceder a páginas web sobre operaciones básicas con matrices en Java." href="http://www.sc.ehu.es/sbweb/fisica/cursoJava/numerico/matrices/matriz/matriz.htm">Operaciones básicas con matrices.</a></p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+Anexo I.- Formateado de cadenas en Java.</h1></div>
+<div class="FreeTextfpdIdevice" id="id19">
+<div class="iDevice emphasis0">
+<div id="ta19_73" class="block" style="display:block;position:relative"><p><a title="anexo_i_formateado_de_cadenas_en_java.html" name="anexo_i_formateado_de_cadenas_en_java.html" href="https://educacionadistancia.juntadeandalucia.es/cursos/pluginfile.php/100909/mod_scorm/content/0/"></a></p>
+<p class="texto_centrado"><strong>Sintaxis de las cadenas de formato y uso del método </strong>format()<strong>.</strong></p>
+<p>En Java, el método estático format() de la clase String permite formatear los datos que se muestran al usuario o a la usuaria de la aplicación. El método format() tiene los siguientes argumentos:</p>
+<ul class="lista_verificacion">
+<li><strong>Cadena de formato</strong>. Cadena que especifica cómo será el formato de salida; en ella se mezclará texto normal con especificadores de formato, que indicarán cómo se deben formatear los datos.</li>
+<li><strong>Lista de argumentos</strong>. Variables que contienen los datos que se formatearán. Tiene que haber tantos argumentos como especificadores de formato haya en la cadena de formato.</li>
+</ul>
+<p>Los especificadores de formato comienzan siempre por "<span style="font-size: medium;"><strong>%</strong></span>", es lo que se denomina un carácter de escape (carácter que sirve para indicar que lo que hay a continuación no es texto normal, sino algo especial que debe ser interpretado de una determinada manera). El especificador de formato debe llevar como mínimo el símbolo "<strong><span style="font-size: medium;">%</span></strong>" y un carácter que indica la conversión a realizar, por ejemplo "%d".</p>
+<p> </p>
+<p>La conversión se indica con un simple carácter, e indica al método format() cómo debe ser formateado el argumento. Dependiendo del tipo de dato podemos usar unas conversiones u otras. Veamos las conversiones más utilizadas:</p>
+<table class="tabla" summary="Tabla que contiene las conversiones más utilizadas a la hora de formatear cadenas en Java con el método estático format. La tabla muestra una primera columna que indica el tipo de la conversión, una segunda columna que indica cómo es el especificador de formato para dicha conversión, una tercera columna que indica los tipos de datos que se pueden utilizar como argumento, una cuarta columna con un ejemplo de utilización y una quinta con el resultado de la ejecución del ejemplo."><caption>Listado de conversiones más utilizada y ejemplos.</caption>
+<thead>
+<tr><th scope="col">Tipo de conversión</th><th scope="col">Especificación de formato</th><th scope="col">Tipos de datos aplicables</th><th scope="col">Ejemplo</th><th scope="col">Resultado del ejemplo</th></tr>
+</thead>
+<tbody>
+<tr>
+<td scope="row"><span style="font-size: x-small;">Valor lógico o booleano.</span></td>
+<td><span style="font-size: small;"><strong>"<span style="font-size: medium;">%b</span>" </strong><span style="font-size: x-small;">o<span style="font-size: medium;"><strong> "%B"</strong></span></span></span></td>
+<td><strong><span style="font-size: medium;">Boolean</span></strong> (cuando se usan otros tipos de datos siempre lo formateará escribiendo<strong><span style="font-size: medium;"> true</span></strong>).</td>
+<td>
+<div class="codigo elemento_centrado" style="width: 30.2em;">
+<div class="texto_izquierda">
+<pre>boolean b=true;
+</pre>
+<pre>String d= String.format("Resultado: %b", b);
+</pre>
+<pre>System.out.println (d);
+</pre>
+</div>
+</div>
+</td>
+<td>
+<p><strong><span style="font-size: small;">true</span></strong></p>
+</td>
+</tr>
+<tr>
+<td scope="row">Cadena de caracteres.</td>
+<td><strong><span style="font-size: medium;">"%s"</span></strong> o <strong><span style="font-size: medium;">"%S"</span></strong></td>
+<td>Cualquiera, se convertirá el objeto a cadena si es posible (invocando el método <span style="font-size: medium;">toString()</span>).</td>
+<td>
+<div class="codigo elemento_centrado" style="width: 31.3em;">
+<div class="texto_izquierda">
+<pre>String cad="hola mundo";
+</pre>
+<pre>String d= String.format("Resultado: %s", cad);
+</pre>
+<pre>System.out.println (d);
+</pre>
+</div>
+</div>
+</td>
+<td>
+<p>hola mundo</p>
+</td>
+</tr>
+<tr>
+<td scope="row">Entero decimal</td>
+<td><span style="font-size: medium;"><strong>"%d"</strong></span></td>
+<td>Un tipo de dato entero.</td>
+<td>
+<div class="codigo elemento_centrado" style="width: 30.2em;">
+<div class="texto_izquierda">
+<pre>int i=10;
+</pre>
+<pre>String d= String.format("Resultado: %d", i);
+</pre>
+<pre>System.out.println (d);
+</pre>
+</div>
+</div>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td scope="row">Número en notación científica</td>
+<td><strong><span style="font-size: small;">"<span style="font-size: medium;">%e</span>" o "<span style="font-size: medium;">%E</span>"</span></strong></td>
+<td>Flotantes simples o dobles.</td>
+<td>
+<div class="codigo elemento_centrado" style="width: 30.2em;">
+<div class="texto_izquierda">
+<pre>double i=10.5;
+</pre>
+<pre>String d= String.format("Resultado: %E", i);
+</pre>
+<pre>System.out.println (d);
+</pre>
+</div>
+</div>
+</td>
+<td>
+<p>1.050000E+01</p>
+</td>
+</tr>
+<tr>
+<td scope="row">Número decimal</td>
+<td><strong><span style="font-size: small;">"<span style="font-size: medium;">%f</span>"</span></strong></td>
+<td>Flotantes simples o dobles.</td>
+<td>
+<div class="codigo elemento_centrado" style="width: 30.2em;">
+<div class="texto_izquierda">
+<pre>float i=10.5f;
+</pre>
+<pre>String d= String.format("Resultado: %f", i);
+</pre>
+<pre>System.out.println (d);
+</pre>
+</div>
+</div>
+</td>
+<td>
+<p>10,500000</p>
+</td>
+</tr>
+<tr>
+<td scope="row">Número en notación científica o decimal (lo más corto)</td>
+<td><strong><span style="font-size: small;">"<span style="font-size: medium;">%g</span>" o "%G"</span></strong></td>
+<td>Flotantes simples o dobles. El número se mostrará como decimal o en notación científica dependiendo de lo que sea mas corto.</td>
+<td>
+<div class="codigo elemento_centrado" style="width: 30.2em;">
+<div class="texto_izquierda">
+<pre>double i=10.5;
+</pre>
+<pre>String d= String.format("Resultado: %g", i);
+</pre>
+<pre>System.out.println (d);
+</pre>
+</div>
+</div>
+</td>
+<td>
+<p>10.5000</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Ahora que ya hemos visto alguna de las conversiones existentes (las más importantes), veamos algunos modificadores que se le pueden aplicar a las conversiones, para ajustar como queremos que sea la salida. Los modificadores se sitúan entre el carácter de escape ("<span style="font-size: medium;"><strong>%</strong></span>") y la letra que indica el tipo de conversión (d, f, g, <abbr title="etcétera.">etc.</abbr>).</p>
+<p>Podemos especificar, por ejemplo, el número de caracteres que tendrá como mínimo la salida de una conversión. Si el dato mostrado no llega a ese ancho en caracteres, se rellenará con espacios (salvo que se especifique lo contrario):</p>
+<div class="codigo elemento_centrado" style="width: 15.9em;">
+<div class="texto_izquierda">
+<pre>%[Ancho]Conversión
+</pre>
+</div>
+</div>
+<p> </p>
+<p>El hecho de que esté entre corchetes significa que es opcional. Si queremos por ejemplo que la salida genere al menos 5 caracteres (poniendo espacios delante) podríamos ponerlo así:</p>
+<div class="codigo elemento_centrado" style="width: 19.75em;">
+<div class="texto_izquierda">
+<pre>String.format ("%5d",10);
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Se mostrará el "10" pero también se añadirán 3 espacios delante para rellenar. Este tipo de modificador se puede usar con cualquier conversión.</p>
+<p>Cuando se trata de conversiones de tipo numéricas con decimales, solo para tipos de datos que admitan decimales, podemos indicar también la precisión, que será el número de decimales mínimos que se mostrarán:</p>
+<div class="codigo elemento_centrado" style="width: 22.5em;">
+<div class="texto_izquierda">
+<pre>%[Ancho][.Precisión]Conversión
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Como puedes ver, tanto el ancho como la precisión van entre corchetes, los corchetes no hay que ponerlos, solo indican que son modificaciones opcionales. Si queremos, por ejemplo, que la salida genere 3 decimales como mínimo, podremos ponerlo así:</p>
+<div class="codigo elemento_centrado" style="width: 21.4em;">
+<div class="texto_izquierda">
+<pre>String.format ("%.3f",4.2f);
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Como el número indicado como parámetro solo tiene un decimal, el resultado se completará con ceros por la derecha, generando una cadena como la siguiente: "4,200".</p>
+<p>Una cadena de formato puede contener varios especificadores de formato y varios argumentos. Veamos un ejemplo de una cadena con varios especificadores de formato:</p>
+<div class="codigo elemento_centrado" style="width: 69.25em;">
+<div class="texto_izquierda">
+<pre>String np="Lavadora";
+</pre>
+<pre>int u=10;
+</pre>
+<pre>float ppu = 302.4f;
+</pre>
+<pre>float p=u*ppu;
+</pre>
+<pre>String output=String.format("Producto: %s; Unidades: %d; Precio por unidad: %.2f €; Total: %.2f €", np, u, ppu, p);
+</pre>
+<pre>System.out.println(output);
+</pre>
+</div>
+</div>
+<p> </p>
+<p>Cuando el orden de los argumentos es un poco complicado, porque se reutilizan varias veces en la cadena de formato los mismos argumentos, se puede recurrir a los índices de argumento. Se trata de especificar la posición del argumento a utilizar, indicando la posición del argumento (el primer argumento sería el 1 y no el 0) seguido por el símbolo del dólar ("$"). El índice se ubicaría al comienzo del especificador de formato, después del porcentaje, por ejemplo:</p>
+<div class="codigo elemento_centrado" style="width: 50.55em;">
+<div class="texto_izquierda">
+<pre>int i=10;
+</pre>
+<pre>int j=20;
+</pre>
+<pre>String d=String.format("%1$d multiplicado por %2$d (%1$dx%2$d) es %3$d",i,j,i*j);
+</pre>
+<pre>System.out.println(d);
+</pre>
+</div>
+</div>
+<p> </p>
+<p>El ejemplo anterior mostraría por pantalla la cadena "10 multiplicado por 20 (10x20) es 200". Los índices de argumento se pueden usar con todas las conversiones, y es compatible con otros modificadores de formato (incluida la precisión).</p></div></div>
+</div>
+<div class="ParasabermasfpdIdevice" id="id20">
+<div class="iDevice emphasis_parasabermasfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_parasabermasfpd.gif">
+<span class="iDeviceTitle"><strong>Para saber más</strong></span>
+<div class="iDevice_inner">
+<div id="ta20_47" class="block" style="display:block;position:relative"><p>Si quieres profundizar en los especificadores de formato puedes acceder a la siguiente página (en inglés), donde encontrarás información adicional acerca de la sintaxis de los especificadores de formato en <span lang="en">Java</span>:</p>
+<p class="enlace_centrado"><a class="html" title="Acceder a información adicional sobre los especificadores de formato." href="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Formatter.html#syntax">Sintaxis de los especificadores de formato.</a></p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div><div id="outer">
+<div id="main">
+<div id="nodeDecoration">
+<h1 id="nodeTitle">
+Anexo II.- Saber más acerca de arrays</h1></div>
+<div class="ParasabermasfpdIdevice" id="id135">
+<div class="iDevice emphasis_parasabermasfpd">
+<img alt="" class="iDevice_icon" src="./PROG_T4_files/icon_parasabermasfpd.gif">
+<span class="iDeviceTitle"><strong>Para saber más</strong></span>
+<div class="iDevice_inner">
+<div id="ta135_43" class="block" style="display:block;position:relative"><p><a class="html" title="La clase Arrays" href="http://aprenderaprogramar.es/index.php?option=com_content&amp;view=article&amp;id=642:clase-arrays-del-api-java-metodos-equals-comparar-copyof-copiar-fill-rellenar-ejemplos-cu00676b&amp;catid=68:curso-aprender-programacion-java-desde-cero&amp;Itemid=188" target="_blank">La clase Arrays</a></p>
+<p><span style="text-decoration: underline;"><strong>Introducción a las Colecciones y la clase ArrayList</strong></span></p>
+<p><a class="html" title="Concepto de clase ArrayList" href="http://aprenderaprogramar.es/index.php?option=com_content&amp;view=article&amp;id=631:clase-arraylist-del-api-java-metodos-add-size-etc-concepto-de-clase-generica-o-parametrizada-cu00665b&amp;catid=68:curso-aprender-programacion-java-desde-cero&amp;Itemid=188" target="_blank">Concepto de clase genérica y parametrizada</a></p>
+<p><a class="html" title="Ejemplos de ArrayList" href="http://jarroba.com/arraylist-en-java-ejemplos/" target="_blank">Ejemplos</a></p></div></div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-before: always;"></div>
+
+</body></html>

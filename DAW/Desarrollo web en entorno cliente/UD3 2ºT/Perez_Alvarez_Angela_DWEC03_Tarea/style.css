@@ -1,0 +1,36 @@
+body{
+  text-align: center;
+  color: black;
+}
+
+table{
+  margin-left:auto; 
+  margin-right:auto;
+  width: 70%;
+  text-align: left;
+}
+
+td{
+  padding: 15px;
+}
+
+.square {
+  border: 2px solid #10af10;
+  padding: 10px;
+  margin: 10px;
+  color:black;
+  text-align: center;
+  background: hsl(120, 71%, 84%);
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  color: white;
+  display: table-cell;
+  text-align: center;
+  font-size:18px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: forestgreen;
+  }

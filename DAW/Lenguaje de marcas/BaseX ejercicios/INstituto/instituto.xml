@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instituto> 
+  <nombre>IES Pablo Serrano</nombre> 
+  <ciudad>Zaragoza</ciudad> 
+  <ciclos> 
+    <ciclo cod_ciclo="inf-301"> 
+      <nombre>Administración de sistemas informáticos en red</nombre> 
+      <grado>Superior</grado> 
+      <plan>2009</plan> 
+      <horas>2000</horas> 
+      <comentario>Implantado en curso 2010/2011</comentario> 
+    </ciclo> 
+    <ciclo cod_ciclo="inf-302"> 
+      <nombre>Desarrollo de aplicaciones multiplataforma</nombre> 
+      <grado>Superior</grado> 
+      <plan>2010</plan> 
+      <horas>2000</horas> 
+    </ciclo> 
+    <ciclo cod_ciclo="ifc-02"> 
+      <nombre>Sistemas Microinformáticos y Redes</nombre> 
+      <grado>Medio</grado> 
+      <plan>2007</plan> 
+      <horas>2000</horas> 
+    </ciclo> 
+  </ciclos> 
+  <asignaturas> 
+    <asignatura codigo="a01" cod_ciclo="inf-301"> 
+      <nombre>Lenguajes de marcas</nombre> 
+      <horas_semanales>3</horas_semanales> 
+      <horas_totales>96</horas_totales> 
+      <curso>1º</curso> 
+    </asignatura> 
+    <asignatura codigo="a02" cod_ciclo="inf-301"> 
+      <nombre>Planificación y administración de redes</nombre> 
+      <horas_semanales>7</horas_semanales> 
+      <horas_totales>224</horas_totales> 
+      <curso>1º</curso> 
+    </asignatura> 
+    <asignatura codigo="a03" cod_ciclo="inf-302"> 
+      <nombre>Entornos de desarrollo</nombre> 
+      <horas_semanales>3</horas_semanales> 
+      <horas_totales>96</horas_totales> 
+      <curso>1º</curso> 
+    </asignatura> 
+    <asignatura codigo="a04" cod_ciclo="inf-302"> 
+      <nombre>Programación de dispositivos móviles</nombre> 
+      <horas_semanales>5</horas_semanales> 
+      <horas_totales>110</horas_totales> 
+      <curso>2º</curso> 
+    </asignatura> 
+    <asignatura codigo="a05" cod_ciclo="ifc-02"> 
+      <nombre>Montaje y mantenimiento de equipos</nombre> 
+      <horas_semanales>6</horas_semanales> 
+      <horas_totales>192</horas_totales> 
+      <curso>1º</curso> 
+    </asignatura> 
+    <asignatura codigo="a06" cod_ciclo="inf-302"> 
+      <nombre>Acceso a datos</nombre> 
+      <horas_semanales>6</horas_semanales> 
+      <horas_totales>126</horas_totales> 
+      <curso>2º</curso> 
+    </asignatura> 
+    <asignatura codigo="a07" cod_ciclo="ifc-02"> 
+      <nombre>Sistemas operativos en red</nombre> 
+      <horas_semanales>7</horas_semanales> 
+      <horas_totales>147</horas_totales> 
+      <curso>2º</curso> 
+    </asignatura> 
+    <asignatura codigo="a08" cod_ciclo="inf-301"> 
+      <nombre>Servicios de red e Internet</nombre> 
+      <horas_semanales>6</horas_semanales> 
+      <horas_totales>126</horas_totales> 
+      <curso>2º</curso> 
+    </asignatura> 
+  </asignaturas> 
+  <alumnos> 
+    <alumno matricula="alu01"> 
+      <apellido1>Santos</apellido1> 
+      <apellido2>Santos</apellido2> 
+      <nombre>Alicia</nombre> 
+      <sexo>Mujer</sexo> 
+      <estudios> 
+        <ciclo cod_ciclo="inf-301"/> 
+        <asignaturas> 
+          <asignatura codigo="a01"/> 
+          <asignatura codigo="a02"/> 
+          <asignatura codigo="a08"/> 
+        </asignaturas> 
+      </estudios> 
+    </alumno> 
+    <alumno matricula="alu02"> 
+      <apellido1>García</apellido1> 
+      <apellido2>García</apellido2> 
+      <nombre>Braulio</nombre> 
+      <sexo>Hombre</sexo> 
+      <estudios> 
+        <ciclo cod_ciclo="ifc-02"/> 
+        <asignaturas> 
+          <asignatura codigo="a05"/> 
+          <asignatura codigo="a07"/> 
+        </asignaturas> 
+        <proyecto>Joomla de tienda virtual</proyecto> 
+      </estudios> 
+    </alumno> 
+    <alumno matricula="alu03" beca="si"> 
+      <apellido1>Sanz</apellido1> 
+      <apellido2>Romero</apellido2> 
+      <nombre>Juan</nombre> 
+      <sexo>Hombre</sexo> 
+      <estudios> 
+        <ciclo cod_ciclo="inf-302"/> 
+        <asignaturas> 
+          <asignatura codigo="a04"/> 
+          <asignatura codigo="a06"/> 
+        </asignaturas> 
+      </estudios> 
+    </alumno> 
+    <alumno matricula="alu04" beca="si"> 
+      <apellido1>Díaz</apellido1> 
+      <apellido2>Moreau</apellido2> 
+      <nombre>María</nombre> 
+      <sexo>Mujer</sexo> 
+      <estudios> 
+        <ciclo cod_ciclo="inf-301"/> 
+        <asignaturas> 
+          <asignatura codigo="a08"/> 
+        </asignaturas> 
+        <proyecto>Administración servidores web y ftp</proyecto> 
+      </estudios> 
+    </alumno> 
+  </alumnos> 
+</instituto>

@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+/* VARIABLES DE COLORES */
+/*
+:root {
+  --amarillo: #FFD011;
+}*/
+
+/* ================
+   Base Flex Styles
+   ================
+*/
+html{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+body {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-content: stretch;
+}
+section{
+  display: flex;
+  flex-flow: row wrap;
+}
+article{
+  display: flex;
+  flex-flow: column wrap;
+}
+aside{
+  display: flex;
+  flex-flow: row wrap;
+}
+header, footer {
+  width: 100%;
+}
+
+/*---------------------   MEDIA QUERIES   ------------------*/
+/* ===============================
+ Mobile Styles: 0px to 480px
+ ===============================
+*/
+@media only screen and (max-width: 480px) {
+  nav.menuNavegacion a {
+   font-size: 1.5em;
+   line-height: 2.2em;
+  }
+  aside {
+   display: none;
+  }
+}
+/* ================================
+ Tablet Styles: 481px and greater
+ ================================
+*/
+@media only screen and (min-width: 481px) {
+  ul.mainMenu > li {
+   float: left;
+   position: relative;
+   width: 20%;
+  }
+  ul.subMenu {
+   width: 200%;
+   box-shadow: rgb(51, 51, 51) 5px 5px 15px;
+   position: absolute;
+  }
+}
+/* =================================
+ Desktop Styles: 769px and greater
+ =================================
+*/
+@media only screen and (min-width: 769px) {
+
+}
+/* HTML Styles */
+html {
+   background: url(img/fondo.jpg) center center / cover no-repeat fixed;
+   height: 100%;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+
+
+/* Body Styles */
+body {
+/*  display: block;*/
+  background-color: #FFD011;
+  margin: 0px;
+  max-width: 1024px;
+  min-width: 320px;
+  height: auto;
+  padding: 0px;
+  box-shadow: rgb(51, 51, 51) 5px 0px 15px ;
+}
+
+/* Header  Styles*/
+body > header > img {
+ display: block;
+ width: 100%;
+}
+/* Menu de Navegacion */
+header > nav.menuNavegacion {
+ width: 100%;
+ height: 30px;
+ min-height: 2em;
+ background: white;
+}
+nav.menuNavegacion > ul.mainMenu{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  position:relative;
+  float:left;
+}
+.menuNavegacion a {
+  display: block;
+  padding: 1em;
+}
+nav.menuNavegacion li {
+  background-color: rgb(34, 75, 154);
+  line-height: 2em;
+  text-transform: uppercase;
+  box-shadow: rgb(51, 51, 51) 0px 0px 0px;
+  text-align: center;
+}
+
+nav.menuNavegacion a:visited, nav.menuNavegacion a:link {
+   color: rgb(14, 14, 13);
+}
+
+nav.menuNavegacion a:hover, nav.menuNavegacion a:active {
+   background-color: rgb(31, 73, 125);
+   color: white;
+}
+
+nav.menuNavegacion a {
+   display: block;
+   font-size: 1em;
+}
+/* mainMenu Styles */
+ul.mainMenu {
+  width: 100%;
+  display: block;
+}
+ul.mainMenu > li {
+   text-indent: 15px;
+}
+
+/* Submenu Styles */
+
+ul.subMenu {
+   width: 100%;
+   background-color: rgb(228, 27, 7);
+   display: block;
+
+}
+
+/* Section  Styles*/
+body > section{
+  width: 100%;
+  line-height: 1.4em;
+}
+section{
+  display: flex;
+}
+
+/* Estilos para Article */
+section > article{
+  display: flex;
+  width: 30%;
+  background-color: rgb(216, 65, 25);
+}
+
+.noticias {
+  width: 95%;
+  margin: 10px;
+  text-align: justify;
+}
+
+article > .noticias > img {
+  display: block;
+  width: 90%;
+}
+
+/* Estilos para Aside */
+section > aside{
+  display: flex;
+  width: 69%;
+  background-color: rgb(99, 160, 191);
+}
+
+aside > .titulopersonajes{
+    border: 1px solid;
+    flex: 3 0 80%;
+    box-shadow: 5px 10px 5px #888888;
+    background-color: rgb(244, 244, 243);
+    margin: 5px;
+    height: 5%;
+    flex-grow: 3;
+
+}
+
+aside > .personajes{
+  text-align: center;
+  height: 10%;
+  width: auto;
+  padding: 5px;
+}
+
+li {
+  background-color: rgb(13, 107, 161);
+  border: 1px solid;
+  box-shadow: 5px 10px 5px #888888;
+  display: block;
+  float: left;
+}
+aside > .personajes > img {
+  display: block;
+  width: 90%;
+}
+
+/* Footer  Styles*/
+footer{
+  display: block;
+  height: 60px;
+  background-color: rgb(241, 193, 20);
+}

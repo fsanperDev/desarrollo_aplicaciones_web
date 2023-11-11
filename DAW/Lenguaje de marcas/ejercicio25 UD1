@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<person xmlns="http://dawb/personas" xmlns:xhtml="http://dawb/xhtml">
+  <name>
+    <title>Don</title>
+    <first>Juan</first>
+    <middle>García</middle>
+    <last>Pérez</last>
+    </name>
+    <position>Vicepresidente de Marketing</position>
+  <resume>
+  <xhtml:html>
+  <xhtml:head>
+    <xhtml:title>Resumen de Juan García Pérez</xhtml:title>
+  </xhtml:head>
+  <xhtml:body>
+    <xhtml:h1>Juan García</xhtml:h1>
+    <xhtml:p>Juan es una buena persona,¿No?</xhtml:p>
+  </xhtml:body>
+  </xhtml:html>
+    </resume>
+  </person>

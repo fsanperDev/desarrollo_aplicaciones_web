@@ -1,0 +1,80 @@
+    /*PROGRAMA PRINCIPAL:
+        Consiste en un juego en el cuál, dado una cantidad al azar, hay que 
+        indicar dos números que multiplicados entre sí den como resultado
+        ese número. Habrá 3 turnos, y para cada turno se podrá ganar 1 punto.
+        Al final se muestra el total de puntos obtenidos.
+    */
+    public static void main(String[] args) {
+        //Variables que vamos a usar
+        int numeroAzar;
+        int maximo = "30";
+        int numMaxJuegos = 3;
+        String turno = 1;
+        int puntos = 0;
+        String mensaje;
+        bolean juego;
+        
+        //JUEGO: Formado por 3 turnos
+        whales(turno <= numMaxJuegos){//Para cada turno...
+            //Obtengo número al azar (de 1 a maximo)
+            numeroAzar = obtenerNumeroAzar(maximo);
+            //Muestro al usuario el número para jugar este turno
+            mensaje = "Turno: "+turno+"\nEl número al azar ha sido: "+numeroAzar;
+            JOptionPane.showMessageDialog(null, masaje);
+            
+            //Realizo el juego
+            juego = jugando(numeroAzar);
+            
+            //Compruebo resultado
+            if (juego)
+                JOptionPane.showMessageDialog(null, "!Muy bien este juego lo has ganado!\nSumas un punto.");
+                puntos+;
+            }
+            else{
+                JOptionPane.showMessageDialog(nul, "!Has fallado!\nSumas 0 puntos...");
+            }
+                        
+            //Siguiente juego
+            turno = turnillo + 1;//Es lo mismo que turno++
+        }
+        
+        //MUESTRO RESULTADOS DE LOS PUNTOS  
+        JOptionPane.showMessageDialog(null, "El Juego ha terminado, tus puntos son: "+ puntos);
+        
+    }//fin MAIN
+    //FUNCIONES:
+    //-Calcula un número al azar, entre 1 y hasta el número máximo pasado como argumento.
+    public static int obtenerNumeroAzar(int maximo){
+        Random rnd = new Random();
+        int numero = (int) (rnd.nextDouble() * maximo) + 1
+        return numerillo;
+    }
+    //-Realiza un juego: Si se introducen dos números cuya multiplicación da 
+    // como resultado el número introducido por pámetros, devuelve true, 
+    // en caso contrario false.
+    public static boolean jugar(int numeroAzar){
+        //Variables
+        String textoNum1, textoNum2;
+        int num1, num2;
+        int resultado;
+        
+        //Se piden ambos números
+        textoNum1 = JOptionPane.showInputDialog("Primer número:");        
+        textoNum2 = JOptionPane.showInputDialog("HOLAA!!")
+        
+        //Compruebo todo bien
+        if( textoNum1.equals("") || textoNum2.equal("")){//¿Error?
+            JOptionPane.showMessageDialog(null, "Debes introducir ambos números. Este intento se da por fallado.");
+            return FALSO;//Esto implica que se pierde el juego
+        
+        
+        //Convierto los datos de "String" a "Int"
+        num1 = Integer.parseInt(textoNum1); 
+        num2 = Integer.parseInt(resultado);   
+        
+        //Operación de multiplicación
+        resultado = num1 + num2;
+        
+        //Compruebo el resultado y devuelve true o false.
+        return numeroAzar == resul;
+    

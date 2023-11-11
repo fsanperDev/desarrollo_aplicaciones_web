@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+	<title>Bienvenido a mi pagina</title>
+	<link>http://www.lenguajedemarcas.local/micanal.rss</link>
+	<description>Esta es mi pagina rss</description>
+	  <item>
+	    <title>Ejemplo HTML+CSS</title>
+	    <link>https://librosweb.es/libro/css/capitulo_1/como_incluir_css_en_un_documento_xhtml.html</link>
+	    <description>Ejemplo de elaboracion de Plantillas HTML+CSS</description>
+	  </item>
+	  <item>
+	    <title>Manual HTML</title>
+	    <link>https://www.hazunaweb.com/curso-de-html/estructura-basica-una-pagina-web/</link>
+	    <description>Manual para aprender desde cero html</description>
+	  </item>
+	  <item>
+	    <title>Noticias</title>
+	    <link>http://www.lenguajedemarcas.local/noticias.html</link>
+	    <description>Enterate de lo que esta pasando</description>
+	  </item>
+	  <image>
+	    <url>http://icons.iconarchive.com/icons/sicons/basic-round-social/512/rss-icon.png</url>
+	    <title>Logo micanal</title>
+	    <link>http://www.lenguajedemarcas.local</link>
+	  </image>
+    </channel>
+    </channel>
+</rss>

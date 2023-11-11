@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* Ejemplo para aumentar el tamaño y girar la imagen.
+img{
+transition: transform 0.1s;
+}
+
+img:hover{
+transform: rotate(45deg) scale(1.2);
+}
+*/
+
+
+  @keyframes MovHexagono {
+    from {transform: translateY(10px);}
+    40% {transform: translateY(40px);}
+    to {transform: translateY(10px);}
+  }
+
+  img{
+    animation: MovHexagono 2s linear infinite; 
+  }

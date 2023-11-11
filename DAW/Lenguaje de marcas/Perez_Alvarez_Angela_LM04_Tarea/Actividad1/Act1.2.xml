@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <socios>
+        <socio>
+            <datos_personales>
+                <cod_socio>SP-649</cod_socio>
+                <nombre>Sara</nombre>
+                <apellidos>Perez</apellidos>
+                <localidad>Talavera de la Reina</localidad>
+                <provincia>Toledo</provincia>
+                <fecha_de_socio>2015-09-13</fecha_de_socio>
+                <email>SP@gmail.com</email>
+                <socio_vip></socio_vip>
+            </datos_personales>
+            <juego>
+                <nombre_juego>Mario Kart 8</nombre_juego>
+                <cod_juego>WII11</cod_juego>
+                <plataforma>WII</plataforma>
+                <estreno>2014</estreno>
+                <adquisicion>2016-02-01</adquisicion>
+                <estado>bueno</estado>
+                <online></online>
+            </juego>
+            <juego>
+                <nombre_juego>Far Cry 3</nombre_juego>
+                <cod_juego>PS432</cod_juego>
+                <plataforma>PS4</plataforma>
+                <estreno>2009</estreno>
+                <adquisicion>2016-03-08</adquisicion>
+                <estado>bueno</estado>
+                <multijugador></multijugador>
+            </juego>
+            <juego>
+                <nombre_juego>Fable III</nombre_juego>
+                <cod_juego>XBOX13</cod_juego>
+                <plataforma>XBOX</plataforma>
+                <estreno>2013</estreno>
+                <adquisicion>2016-09-09</adquisicion>
+                <estado>bueno</estado>
+                <online></online>
+                <multijugador></multijugador>
+            </juego>
+        </socio>
+    </socios>

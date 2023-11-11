@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<academia>
+    <curso>
+        <nombre>Introduccio a Java</nombre>
+        <precio>600</precio>
+        <fechaInicio>15 Sep</fechaInicio>
+        <fechafinal>20 Abril</fechafinal>
+        <maxalumnos>30</maxalumnos>
+        <profesor>Manuel Carro</profesor>
+        <idcurso>001AA</idcurso>
+    </curso>
+    <curso>
+        <nombre>Redes</nombre>
+        <precio>400</precio>
+        <fechaInicio>2 Obt</fechaInicio>
+        <fechafinal>25 Mar</fechafinal>
+        <maxalumnos>25</maxalumnos>
+        <profesor>Lena Oxton</profesor>
+        <idcurso>002AB</idcurso>
+    </curso>
+    <curso>
+        <nombre>Sistemas Operativos</nombre>
+        <precio>800</precio>
+        <fechaInicio>20 Sep</fechaInicio>
+        <fechafinal>19 May</fechafinal>
+        <maxalumnos>32</maxalumnos>
+        <profesor>Wiston Lopez</profesor>
+        <idcurso>003BB</idcurso>
+    </curso>
+    <profesores>
+        <idprofesor>001</idprofesor>
+            <datospersonales>
+                <nombre>Lena</nombre>
+                <apellidos>Oxton</apellidos>
+                <direccion>c/el huerto</direccion>
+                <telefonos>654654654</telefonos>
+                <email>leano@gmail.com</email>
+            </datospersonales>
+        <sueldo>800</sueldo>
+    </profesores>
+      <profesores>
+        <idprofesor>017</idprofesor>
+            <datospersonales>
+                <nombre>Manuel</nombre>
+                <apellidos>Carro</apellidos>
+                <direccion>c/ la constitucion</direccion>
+                <telefonos>111222333</telefonos>
+                <email>mcarro@gmail.com</email>
+            </datospersonales>
+        <sueldo>800</sueldo>
+    </profesores>
+</academia>

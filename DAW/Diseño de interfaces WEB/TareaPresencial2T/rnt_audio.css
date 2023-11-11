@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* Audio Styles */
+
+audio{
+  width:80%;
+  display: block;
+  box-shadow: rgb(60, 58, 58) 8px 8px 15px;
+  margin: 20px auto;
+}
+
+audio::-webkit-media-controls-panel{
+  background: rgb(128, 128, 255);
+}

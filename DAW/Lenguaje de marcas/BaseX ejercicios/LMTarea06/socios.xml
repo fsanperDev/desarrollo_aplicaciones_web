@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<socios>
+    <socio num='1001'> 
+        <nombre>Pedro</nombre>
+        <apellido>Gutiérrez</apellido>
+        <apellido>Solero</apellido> 
+        <telefono>950333222</telefono>
+        <domicilio>C/Gran Vía, 33</domicilio> 
+        <poblacion>Roquetas de Mar</poblacion>
+        <fecha_nacimiento>1970-11-16</fecha_nacimiento> 
+    </socio>
+    <socio num='1002'> 
+        <nombre>María</nombre>
+        <apellido>López</apellido>
+        <apellido>López</apellido> 
+        <telefono>65565565</telefono>
+        <domicilio>C/Nicaragua, 4</domicilio> 
+        <poblacion>Aguadulce</poblacion>
+        <fecha_nacimiento>1981-05-22</fecha_nacimiento> 
+    </socio>
+    <socio num='1003'> 
+        <nombre>Rubén</nombre>
+        <apellido>Danco</apellido>
+        <apellido>Romero</apellido> 
+        <telefono>950033022</telefono>
+        <domicilio>C/Violeta, 3</domicilio> 
+        <poblacion>Aguadulce</poblacion>
+        <fecha_nacimiento>1985-02-02</fecha_nacimiento> 
+    </socio>
+    <socio num='1004'> 
+        <nombre>Jesús</nombre>
+        <apellido>Estevan</apellido>
+        <apellido>Díaz</apellido> 
+        <telefono>950342342</telefono>
+        <domicilio>Plaza Central, 17</domicilio> 
+        <poblacion>Roquetas de Mar</poblacion>
+        <fecha_nacimiento>1972-01-30</fecha_nacimiento> 
+    </socio>
+    <socio num='1005'> 
+        <nombre>Lucía</nombre>
+        <apellido>Cerros</apellido>
+        <apellido>Pla</apellido> 
+        <telefono>611222333</telefono>
+        <domicilio>C/Comercio, 22</domicilio> 
+        <poblacion>Roquetas de Mar</poblacion>
+        <fecha_nacimiento>1992-07-12</fecha_nacimiento> 
+    </socio>
+    <socio num='1006'> 
+        <nombre>Marga</nombre>
+        <apellido>Jiménez</apellido>
+        <apellido>Ganga</apellido> 
+        <telefono>744222333</telefono>
+        <domicilio>C/Mercado, 178</domicilio> 
+        <poblacion>El Parador</poblacion>
+        <fecha_nacimiento>1995-10-20</fecha_nacimiento> 
+    </socio>   
+</socios>

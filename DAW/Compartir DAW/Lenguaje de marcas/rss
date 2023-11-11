@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="https://www.w3.org/2005/Atom" xml:lang="es-es">
+  <title>Ejemplo de Canal usando Atom</title>
+  <id>https://lenguejedemarcas-daw</id>
+  <update>2017-11-20T20:38:50Z</update>
+  <!-- Elementos opcionales pero recomendados -->
+  
+</feed>

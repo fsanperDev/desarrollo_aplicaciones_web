@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curriculum SYSTEM "curriculum.dtd">
+<curriculum>
+    <datos_personales>
+        <nombre>Fernando</nombre>
+        <apellido>Sánchez</apellido>
+        <apellido>Bernal</apellido>
+        <fechaNacimiento>1995-01-15</fechaNacimiento>
+        <direccion>Avda. Sin-nombre n.34 Blq.4-3ºC</direccion>
+        <email>minombre@correo.com</email>
+        <telefono>958565685</telefono>
+        <web>http://www.miweb.com</web>
+        <profesion>Informático</profesion>
+        <titulo>Técnico Superio en Desarrollo de Aplicaciones Web</titulo>
+        <imagen>fernando-sanchez.jpg</imagen>
+    </datos_personales>
+    <objetivo>Actualmente estoy buscando una empresa en la que pueda desarrollar mi carrera profesional.
+        Soy una persona muy trabajadora, con muchas habilidades sociales, con muchas ganas de aprender
+        y a la vez de aportar mis conocimientos adquiridos en mis años de estudios. Me gusta trabajar en grupo.
+        Tengo disponibilidad geográfica y dispongo de coche propio.
+    </objetivo>
+    <formacion>
+        <estudios>
+            <entidad>IES Al-Guadaira</entidad>
+            <titulo>Bachillerato Ciencias</titulo>
+            <fechaInicio>2021-09-01</fechaInicio>
+            <fechaFin>2023-07-31</fechaFin>
+        </estudios>
+        <estudios>
+            <entidad>IES Cristóbal de Monroy</entidad>
+            <titulo>Técnico Superior en Desarrollo de Aplicaciones Web</titulo>
+            <fechaInicio>2023-09-01</fechaInicio>
+            <fechaFin>2025-07-31</fechaFin>
+        </estudios>
+        <estudios>
+            <entidad>Universidad de Sevilla</entidad>
+            <titulo>Ingeniero Superior Informático</titulo>
+            <fechaInicio>2025-09-01</fechaInicio>
+            <fechaFin/>
+        </estudios>
+    </formacion>
+    <experiencias>
+        <experiencia>
+            <entidad>Academia Zeus</entidad>
+            <titulo>Profesor de Matemáticas</titulo>
+            <fechaInicio>2025-05-01</fechaInicio>
+            <fechaFin>2026-08-07</fechaFin>
+            <descripcion>
+                <item>Alcalá de Guadaira - Sevilla</item>
+                <item>Trabajé impartiendo clases de Matemáticas para la ESO y Bachillerato</item>
+                <item>Algunas de las clases se impartían en Inglés</item>
+            </descripcion>
+        </experiencia>
+        <experiencia>
+            <entidad>Electrónica Informática Alcalá</entidad>
+            <titulo>Reparador de equipos informáticos</titulo>
+            <fechaInicio>2026-09-07</fechaInicio>
+            <fechaFin>2027-12-30</fechaFin>
+            <descripcion>
+                <item>Técnico reparador de equipos informáticos</item>
+                <item>Formateado de ordenadores, instalación de software</item>
+                <item>Montaje de equipos</item>
+                <item>Seguridad de equipos</item>
+            </descripcion>
+        </experiencia>
+    </experiencias>
+    <habilidades>
+        <habilidad>
+            <nombre>Idiomas</nombre>
+            <valor nivel="alto">Inglés</valor>
+            <valor nivel="básico">Francés</valor>
+        </habilidad>
+        <habilidad>
+            <nombre>Programación</nombre>
+            <valor nivel="medio">Java</valor>
+            <valor nivel="alto">HTML</valor>
+            <valor nivel="alto">CSS</valor>
+            <valor nivel="medio">JavaScript</valor>
+            <valor nivel="medio">PHP</valor>
+        </habilidad>
+    </habilidades>
+</curriculum>

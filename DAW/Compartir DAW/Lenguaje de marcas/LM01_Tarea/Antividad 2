@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<empresa>
+      <tienda>
+          <nombre>Hardware Sevilla</nombre>
+          <direccion>C/. Ingeniero mecánico nº 48</direccion>
+          <ciudad>Sevilla</ciudad>
+          <provincia>Sevilla</provincia>
+          <codpostal>123456</codpostal>
+          <tfn>955123456</tfn>
+          <articulo>
+              <nombre>USB3.0</nombre>
+              <codart>usb3</codart>
+              <material tipo="hardw">Hardware</material>
+              <stock>15</stock>
+              <precio unidad="1">5€</precio>
+          </articulo>
+            <articulo>
+              <nombre>Antivirus</nombre>
+              <codart>antvirus</codart>
+              <material tipo="soft">Software</material>
+              <stock>3</stock>
+              <precio>40€</precio>
+          </articulo>
+            <articulo>
+              <nombre>RAM DDR3</nombre>
+              <codart>ram3</codart>
+              <material tipo="hardw">Hardware</material>
+              <stock>8</stock>
+              <precio unidad="1">72.95€</precio>
+          </articulo>
+     </tienda>
+     <tienda>
+          <nombre>Informática Alcalá</nombre>
+          <direccion>C/. Circuito Integrado n.10 - Local 2</direccion>
+          <ciudad>Alcalá de Guadaira</ciudad>
+          <provincia>Sevilla</provincia>
+          <codpostal>41500</codpostal>
+          <tfn>955654321</tfn>
+          <articulo>
+              <nombre>Tinta Impresora</nombre>
+              <codart>tinimp</codart>
+              <material tipo="cons">consumible</material>
+              <stock>6</stock>
+              <precio unidad="1">20€</precio>
+          </articulo>
+            <articulo>
+              <nombre>Antivirus</nombre>
+              <codart>antvirus</codart>
+              <material tipo="soft">Software</material>
+              <stock>1</stock>
+              <precio>40€</precio>
+          </articulo>
+            <articulo>
+              <nombre>DVD</nombre>
+              <codart>dvd</codart>
+              <material tipo="cons">consumible</material>
+              <stock>9</stock>
+              <precio cantidad="5">3.20€</precio>
+          </articulo>
+     </tienda>
+     <tienda>
+          <nombre>Electroinformática Al-ándalus</nombre>
+          <direccion>Av. del Electrón nº 129, Blq 3-4ºA</direccion>
+          <ciudad>Sevilla</ciudad>
+          <provincia>Sevilla</provincia>
+          <codpostal>123456</codpostal>
+          <tfn>955111111</tfn>
+          <articulo>
+              <nombre>Disco duro</nombre>
+              <codart>hdd</codart>
+              <material tipo="hardw">Hardware</material>
+              <stock>5</stock>
+              <precio unidad="1">56€</precio>
+          </articulo>
+            <articulo>
+              <nombre>Altavoces</nombre>
+              <codart>altvo</codart>
+              <material tipo="hardw">Hardware</material>
+              <stock>13</stock>
+              <precio>16€</precio>
+          </articulo>
+            <articulo>
+              <nombre>Antivirus</nombre>
+              <codart>antvirus</codart>
+              <material tipo="soft">Software</material>
+              <stock>9</stock>
+              <precio>40€</precio>
+          </articulo>
+     </tienda>
+</empresa>

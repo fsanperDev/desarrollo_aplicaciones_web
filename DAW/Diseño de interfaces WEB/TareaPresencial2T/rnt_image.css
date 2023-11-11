@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/* Image Styles */
+
+/* HTML*/
+html {
+   background-color: rgb(247, 247, 247);
+   background-repeat: no-repeat;
+   background-image: url(./multimedia/rnt_back.webp), url(./multimedia/rnt_back.tiff), url(./multimedia/rnt_back.png);
+}

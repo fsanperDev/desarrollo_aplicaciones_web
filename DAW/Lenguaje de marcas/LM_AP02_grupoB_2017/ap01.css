@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+
+*{
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++
+  TODO EL CÓDIGO CSS QUE TENGAS QUE DESARROLLAR,
+   REALIZALO EN LA SEGUIENTES LÍNEAS
+   HASTA DONDE SE ENCUENTRA EL DELIMITADOR
++++++++++++++++++++++++++++++++++++++++++++++*/
+#contenedor {
+  margin: 0;
+  float: left;
+  width: 80%;
+
+}
+
+#portatil{
+  float: right;
+  background-color: rgb(48, 48, 61);
+  width: 30%;
+  padding: 10px;
+  border-bottom-right-radius: 20px;
+
+  border-top-right-radius: 20px;
+
+
+}
+
+#instrucciones {
+  margin-bottom: 10px;
+  float: left;
+  width: 80%;
+  text-align: justify;
+  padding-top: 30px;
+
+
+}
+
+#subtitulo1 {
+  float: left;
+  width: 45%;
+  margin-top: 20px;
+}
+
+#subtitulo2 {
+  float: left;
+  width: 45%;
+  margin-top: 20px;
+ padding-left: 40px;
+}
+
+img {
+  width: 250px;
+  margin: 10px;
+  padding-left: 20px;
+  overflow: hidden;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+
+h1 {
+  text-align: center;
+  text-decoration-color: gray;
+}
+h3 {
+  font-family: inherit;
+  text-decoration: underline;
+
+}
+
+p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++
+  FIN DE INSERCCIÓN DE CÓDIGO
+++++++++++++++++++++++++++++++++++++++++++++*/
+body{
+  background-color: rgb(28, 28, 38);
+  color:rgb(173, 180, 203);
+  font-family: 'Catamaran', sans-serif;
+}
+
+/* 1- título de la página */
+header {
+  min-height: 250px;
+  background-image: url('images/pc5.jpg');
+  background-position: left;
+  text-align: center;
+  padding-top:60px;
+  overflow: hidden;
+}
+header #titulo {
+  width:80%;
+  max-width:500px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.73);
+  padding:15px;
+  border: 2px solid rgb(28, 28, 38);
+  box-shadow: rgb(28, 28, 38) 5px 5px 10px;
+}
+header #titulo h1{
+  font-size: 3em;
+  color:rgb(9, 18, 48);
+  text-shadow: 3px 3px 3px rgb(100, 113, 158);
+}
+header #titulo h2{
+margin-top:-20px;
+  font-size: 2em;
+  color: white;
+  text-shadow: 3px 3px 3px #000000
+}
+/* fin de título de la página */
+
+/* 2 - contenido principal de la página */
+#contenido {
+  margin:0 auto;
+  padding:0;
+  max-width:1000px;
+  width:80%;
+}
+/* 2 (1) - menú de navegación */
+nav{
+  margin-bottom: 15px;
+}
+nav li{
+  list-style: none;
+  display: inline-block;
+  width:32%;
+  box-sizing: border-box;
+  color:white;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top:10px;
+}
+nav a{
+  color:white;
+  text-decoration: none;
+}
+nav li:hover, nav a:hover{
+  color:rgba(228, 228, 228, 0.73);
+}
+/* fin de menú de navegación */
+
+
+/* 2 (2) - sección principal de la página*/
+section#principal{
+  margin:20px auto;
+}
+section#principal li{
+  color:rgb(157, 159, 161);
+  margin-left: 20px;
+}
+
+section#principal img{
+  width:100%;
+  max-width: 1000px;
+}
+section#principal em{
+  color:white;
+}
+section#principal ul>li{
+  color:rgb(122, 124, 128);
+}
+
+section#principal tbody td{
+  border: 1px solid gray;
+  background:rgb(142, 169, 214);
+  font-size: 12px;
+  color:black;
+  padding:3px;
+}
+/* fin de la sección principal */
+/* fin del contenido principal de la página */
+
+/* 3 - pié de página */
+footer{
+  background-color: rgba(228, 228, 228, 0.73);
+  clear:both;
+  text-align: center;
+  color:black;
+  font-size: 0.8em;
+  padding:10px;
+}
+footer img{
+  border-width:0
+}
+/* fin de pié de página */

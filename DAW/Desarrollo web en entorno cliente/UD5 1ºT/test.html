@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>Test Tabla</title>
+
+<script type="text/javascript">
+	function changeColor(event) {
+		if (event.srcElement.style.backgroundColor == "red") {
+			event.srcElement.style.backgroundColor = "blue";
+		}else{
+			event.srcElement.style.backgroundColor = "red";
+		}
+	}
+</script>
+
+</head>
+
+<body>
+
+<table id="tablaPrincipal" cellspacing="4" cellpadding="10">
+
+</table>
+
+</body>
+
+<script type="text/javascript">
+	var i, j;
+	var table = document.getElementById("tablaPrincipal");
+	var row, cell;
+	for (i = 0; i < 10; i++) {
+		row = table.insertRow(0);
+		for (j = 0; j < 10; j++){
+			cell = row.insertCell(0);
+			cell.setAttribute("onclick", "changeColor(event);");
+			cell.style = "background-color:red; cursor:default;";
+			cell.innerHTML = "test " + (10 * (10 - i - 1) + (10 - j - 1));
+		}
+	}
+</script>
+
+</html>

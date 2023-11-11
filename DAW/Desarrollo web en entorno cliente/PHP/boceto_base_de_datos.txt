@@ -1,0 +1,26 @@
+ENTIDADES
+- posteos
+-- ID
+-- Titulo
+-- Fecha Alta
+-- Imagen
+-- Texto
+-- Categorias
+
+- usuarios
+-- ID
+-- Nombre
+-- Apellido
+-- Email
+-- Contraseña
+-- Fecha Alta
+-- Nivel
+-- Nacionalidad
+-- Sexo
+
+
+RELACIONES
+- Usuarios - Posteos: Publicar
+- Usuarios - Posteos: Comentar
+- Usuarios - Posteos: Calificar
+- Usuarios - Posteos: Denunciar
